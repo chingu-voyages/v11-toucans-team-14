@@ -55,6 +55,12 @@ button:hover {
     background-color: rgb(6, 53, 75);
 }
 
+.cardHolder:hover {
+    zoom: 100%; 
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+}
+
 .cardHolderTitle {
     position: absolute;
     background-color: rgb(15, 34, 87);
@@ -81,7 +87,7 @@ button:hover {
     background-color: #111;
     align-self: center;
     justify-items: center;
-    width: 90%;
+    width: 100%;
     margin-top: 18px;
     padding: 24px;
 }
@@ -102,6 +108,59 @@ button:hover {
     min-height: 24px;
 }
 
+
+/* GAME PAGE */
+
+.gameInfo {
+    display: grid;
+    min-width: 100%;
+    grid-gap: 18px;
+    grid-template-columns: 200px 1fr;
+}
+
+.gamePageHolder {
+    display: grid;
+    background-color: #111;
+    width: 100%;
+    margin-top: 18px;
+    padding: 24px;
+}
+
+.gameCover img {
+    width: 180px;
+}
+
+.gamePageTitle {
+    display: inline-block;
+    width: 100%;
+}
+
+.gameDetails {
+    align-items: stretch;
+    margin-left: 15px;
+    color: #efefef;
+}
+
+.gamePageTitle h1 {
+    display: inline;
+}
+
+.gamePage li {
+    display: block;
+}
+
+.gamePage ul {
+    list-style-type: none;
+}
+
+.closeButton {
+    display: inline;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 4px;
+    color: #fff;
+    background-color: red;
+}
 
 @media (max-width: 1200px) { 
     .resultPage {
