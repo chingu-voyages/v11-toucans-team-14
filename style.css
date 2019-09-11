@@ -8,65 +8,96 @@ body {
 }
 
 .PageHolder {
-    display: grid;
-    justify-items: center;
-    width: 85vw;
+    margin: 0 auto;
+    width: 75vw;
 }
+
+/* SEARCH FORM */
 
 .searchContainer {
     display: grid;
-    grid-template-columns: 100% 124px;
-}
-
-.searchHolder {
-    align-self: center;
-    justify-self: center;
-    background-color: #000;
-    width: 90%;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
-    margin-top: 48px;
-    padding: 24px;
-}
-
-.searchResults {
-    display: grid;
-    color: #eee;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 18px;
-    justify-items: center;
-    min-width: 100%;
-    min-height: 24px;
-}
-
-.cardHolder {
-    background-image: url('./img/cover.jpg');
-    background-size: cover;
-    min-height: 164px;
-    min-width: 128px;
-    background-color: rgb(6, 53, 75);
+    grid-template-columns: 80% 124px;
+    margin-bottom: 24px;
 }
 
 input[type="text"] {
-    background-color: #000;
+    background-color: #111;
     font-size: 1.4em;
-    color: #eee;
-    border: 0;
+    color: #efefef;
+    border: 1px solid #444;
     padding: 9px;
     border-radius: 4px;
-    min-height: 36px;
-    min-width: 80%;
+    min-height: 24px;
 }
 
 button {
     margin-left: 18px;
-    background-color: #000;
-    font-size: 1.4em;
+    background-color: rgb(17, 49, 78);
+    border: 1px solid rgb(68, 68, 68);
+    font-size: 1.2em;
     color: #eee;
-    border: 0;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgb(8, 21, 34);
+}
+
+/* SEARCH ITEMS */
+
+.cardHolder {
+    position: relative;
+    background-image: url('./img/cover.jpg');
+    background-size: cover;
+    min-height: 240px;
+    min-width: 192px;
+    background-color: rgb(6, 53, 75);
+}
+
+.cardHolderTitle {
+    position: absolute;
+    background-color: rgb(15, 34, 87);
+    min-width: 100%;
+    top: 4px;
+    padding: 9px 0px 9px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #eee;
+    border-top: 1px solid rgb(46, 46, 46);
+    border-bottom: 1px solid rgb(46, 46, 46);
+}
+
+/* SEARCH RESULT DISPLAY */
+
+.contentHolder h1 {
+    color: #eee;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.resultPageHolder {
+    display: grid;
+    background-color: #111;
+    align-self: center;
+    justify-items: center;
+    width: 90%;
+    margin-top: 18px;
+    padding: 24px;
+}
+
+.no_results {
     padding: 9px;
-    border-radius: 4px;
-    height: 54px;
+    background-color: rgb(83, 67, 67);
+    border: 2px dotted rgb(129, 0, 0);
+}
+
+.resultPage {
+    display: grid;
+    color: #eee;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 18px;
+    justify-items: center;
+    width: 100%;
+    min-height: 24px;
 }

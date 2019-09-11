@@ -2,29 +2,29 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
     <title>
-        SongGam - Matching tunes to games
+        Matching tunes to games
     </title>
 </head>
 
 <body>
-
-    <div class='PageHolder' id="PageHolder">
-        <div class='searchContainer'>
-            <input type='text' name='searchField' id='searchField'>
-            <button>Search</button>
-        </div>
-
-        <div class='searchHolder'>
-            <div class='searchResults' id='searchResults'>
+    <div class="PageHolder" id="PageHolder">
+        <form id="searchForm">
+            <div class="searchContainer">
+                <input type="text" name="searchField" id="searchField">
+                <button>Search</button>
             </div>
+        </form>
+
+        <div class="contentHolder" id="contentHolder">
         </div>
-
-
-        <script src='./JS/app.js'></script>
-        <script src='./JS/functions.js'></script>
-        <script src='./JS/data.js'></script>
+    </div>
+    <script src="./JS/app.js"></script>
+    <script src="./JS/functions.js"></script>
+    <script src="./JS/data.js"></script>
 </body>
 
 </html>
