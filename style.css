@@ -95,9 +95,28 @@ button:hover {
 .resultPage {
     display: grid;
     color: #eee;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 18px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 24px;
     justify-items: center;
     width: 100%;
     min-height: 24px;
 }
+
+
+@media (max-width: 1200px) { 
+    .resultPage {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
+
+ @media (max-width: 860px) { 
+    .resultPage {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media (max-width: 600px) { 
+    .resultPage {
+        grid-template-columns: 1fr;
+    }
+ }
