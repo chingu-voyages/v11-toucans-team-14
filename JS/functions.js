@@ -18,8 +18,7 @@ function renderResults(searchTerm) {
     createSongPage(gamesFound); // create result page
     // add animation to reveal content, visual cue for visitor that new search is finished
     contentHolder.style.display = "none"; // dirty hack to hide div before adding animations
-    $("#contentHolder").fadeIn("slow"); // add fadeIn with slow speed
-    $("#contentHolder").fadeIn(5000); // set fadeIn duration
+    $("#contentHolder").fadeIn(250); // set fadeIn duration
   }
 
   else {
