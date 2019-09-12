@@ -99,7 +99,7 @@ function createGamePage(gameid) {
   gamePageHolder.appendChild(gamePageTitle); // add title element as songPageHolder child
 
   gamePage.classList.add("gamePage"); // add class to gamePage
-  gamePage.id = "gamePage"; // set gamePage id for possible future manipulation
+  gamePage.id = "gamePage"; // set gamePage id for poslivesible future manipulation
   gamePageHolder.appendChild(gamePage); // add gamePage as SongPageHolder children
   contentHolder.appendChild(gamePageHolder); // add gamePage as contentHolder contentHolder
   contentHolder.insertBefore(gamePageTitle, gamePageHolder); // move section h1 element before content div
