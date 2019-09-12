@@ -11,7 +11,8 @@ function songSearch(searchTerm) {
     game.songs.some(
       song =>
         song.title.toLowerCase() === searchTerm ||
-        song.artist.toLowerCase() === searchTerm // match both song title and artist, convert to lowercase to ignore case sensitive
+        song.artist.toLowerCase() === searchTerm 
+        // match both song title and artist, convert to lowercase to ignore case sensitive
     )
   ));
 }
@@ -52,10 +53,20 @@ function createSearchResultPage(gamesFound) {
     let titleHolder = document.createElement("div"); // create card title div
     titleHolder.classList.add("cardHolderTitle"); // add class to card title
     titleHolder.textContent = item.title; // set item text
-    cardHolder.addEventListener("click", e => {
+
+    cardHolder.addEventListener("click", (e) => {
       window.location.hash = e.target.getAttribute("gameid");
       createGamePage(window.location.hash);
     });
+
+    cardHolder.addEventListener('mouseover', () => {
+      titleHolder.classList.add("active");
+    });
+
+    cardHolder.addEventListener('mouseout', () => {
+      titleHolder.classList.remove("active");
+    });
+
     cardHolder.appendChild(titleHolder);
     songPage.appendChild(cardHolder); // place item inside result page div
   });
@@ -99,7 +110,7 @@ function createGamePage(gameid) {
   gamePageHolder.appendChild(gamePageTitle); // add title element as songPageHolder child
 
   gamePage.classList.add("gamePage"); // add class to gamePage
-  gamePage.id = "gamePage"; // set gamePage id for poslivesible future manipulation
+  gamePage.id = "gamePage"; // set gamePage id for possible future manipulation
   gamePageHolder.appendChild(gamePage); // add gamePage as SongPageHolder children
   contentHolder.appendChild(gamePageHolder); // add gamePage as contentHolder contentHolder
   contentHolder.insertBefore(gamePageTitle, gamePageHolder); // move section h1 element before content div
@@ -129,16 +140,14 @@ function createGamePage(gameid) {
     renderResults(searchTerm.Keyword); // return to main view and render search results again with last used search keyword
   });
 
-
-
   let songListHeader = document.createElement("div"); // create "song list header" div element
   songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
-    for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
-      let songListElement = document.createElement("div"); // create "song element" element
-      songListElement.classList.add("song-item"); // add class to "song element"
-      songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
-      songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
-    }
+  for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
+        let songListElement = document.createElement("div"); // create "song element" element
+        songListElement.classList.add("song-item"); // add class to "song element"
+        songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
+        songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
+  }
   gameDetails.appendChild(songListHeader); // append song element into game details list
 
   // Loop each song item and add them under "Game Details" as song-list element

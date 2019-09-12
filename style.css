@@ -1,7 +1,7 @@
 /* QUICK AND DIRTY CSS FOR PROTOTYPE APP */
 
 body {
-    background-color: #333;
+    background-color: #000;
     margin-top: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -18,41 +18,40 @@ body {
     display: grid;
     grid-template-columns: 70% 15% 15%;
     grid-gap: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
 
 input[type="text"] {
-    background-color: #111;
+    background-color: rgb(16, 45, 73);
+    border: 1px solid rgb(114, 114, 114);
     font-size: 1.4em;
     color: #efefef;
-    border: 1px solid #444;
     padding: 9px;
     border-radius: 4px;
     min-height: 24px;
 }
 
 select {
-    background-color: rgb(17, 49, 78);
+    background-color: rgb(16, 45, 73);
+    border: 1px solid rgb(114, 114, 114);
     color: #eee;
     padding: 9px;
     font-size: 1em !important;
     width: 100%;
     align-self: center;
-    height: 42px;
-    border: 0;
+    height: 48px;
 }
 
 button {
-    margin-left: 24px;
+    background-color: rgb(16, 45, 73);
+    border: 1px solid rgb(114, 114, 114);
     margin-right: 24px;
     height: 48px;
     align-self: center;
-    background-color: rgb(17, 49, 78);
-    border: 1px solid rgb(68, 68, 68);
     font-size: 1.2em;
     color: #eee;
     padding: 4px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 button:hover {
@@ -63,24 +62,37 @@ button:hover {
 
 .cardHolder {
     position: relative;
+    cursor: pointer;
     background-image: url('./img/cover.jpg');
     background-size: cover;
-    min-height: 240px;
-    min-width: 192px;
+    min-height: 360px;
+    min-width: 240px;
     background-color: rgb(6, 53, 75);
+    border-radius: 8px;
+    border: 1px solid rgb(124, 124, 124);
 }
 
 .cardHolderTitle {
     position: absolute;
-    background-color: rgb(15, 34, 87);
-    min-width: 100%;
-    top: 4px;
+    background-color: rgb(131, 30, 114);
+    color: rgb(255, 255, 255);
+    width: 100%;
     padding: 9px 0px 9px 0px;
     text-transform: uppercase;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     text-align: center;
-    color: #eee;
-    border-top: 1px solid rgb(46, 46, 46);
-    border-bottom: 1px solid rgb(46, 46, 46);
+}
+
+.cardHolderTitle.active {
+    background-color: rgb(255, 255, 255);
+    border: 1x solid #666;
+    align-self: center;
+    min-height: 48px;
+    border-radius: 0;
+    width: 100%;
+    color: #222;
+    font-weight: bold;
 }
 
 /* SEARCH RESULT DISPLAY */
@@ -93,11 +105,13 @@ button:hover {
 
 .resultPageHolder {
     display: grid;
-    background-color: #111;
+    background-color: rgb(19, 19, 19);
+    border: 1px solid #333;
     align-self: center;
     justify-items: center;
-    width: 100%;
+    width: 99%;
     margin-top: 18px;
+    margin-bottom: 24px;
     padding: 24px;
 }
 
@@ -114,7 +128,6 @@ button:hover {
     grid-row-gap: 24px;
     justify-items: center;
     width: 100%;
-    min-height: 24px;
 }
 
 
@@ -129,9 +142,10 @@ button:hover {
 
 .gamePageHolder {
     display: grid;
-    background-color: #111;
-    width: 100%;
-    margin-top: 18px;
+    background-color: rgb(19, 19, 19);
+    border: 1px solid #333;
+    width: 98%;
+    margin-top: 36px;
     padding: 24px;
 }
 
@@ -152,17 +166,32 @@ button:hover {
 
 .gamePageTitle h1 {
     display: inline;
+    margin-left: 15px;
+    padding: 9px 18px 9px 18px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #881947;
+}
+
+.closeButton {
+    display: inline;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 4px;
+    padding: 8px 18px 8px 18px;
+    color: #fff;
+    background-color: red;
 }
 
 .song-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #fff;
 }
 
 .song-list-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-top: 1px solid rgb(71, 71, 71);
     color: #fff;
     font-weight: 700;
@@ -183,16 +212,7 @@ button:hover {
     border-bottom: 1px solid rgb(71, 71, 71);
 }
 
-.closeButton {
-    display: inline;
-    cursor: pointer;
-    margin-left: 15px;
-    padding: 4px;
-    color: #fff;
-    background-color: red;
-}
-
-@media (max-width: 1200px) { 
+@media (max-width: 1260px) { 
     .searchContainer {
         display: grid;
         grid-template-columns: 55% 20% 20%;
@@ -205,13 +225,30 @@ button:hover {
     }
  }
 
- @media (max-width: 860px) { 
+ @media (max-width: 960px) { 
     .resultPage {
         grid-template-columns: 1fr 1fr;
     }
  }
 
- @media (max-width: 600px) { 
+ @media (max-width: 680px) { 
+    .cardHolder {
+        min-height: 260px;
+        min-width: 140px;
+    }
+    
+    .resultPage {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+
+ @media (max-width: 460px) { 
+    .cardHolder {
+        min-height: 420px;
+        min-width: 300px;
+    }
+    
     .resultPage {
         grid-template-columns: 1fr;
     }

@@ -6,25 +6,22 @@ const gamesEntries = [
     year: "2018", // Year when game was released
     cover: "cover.jpg", // Example: cover-art.jpg
     songs: [
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
-      { title: "The Waves", artist: "Bastille", album: "Doom Days" }
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons", genre: "Pop" },
+      { title: "The Waves", artist: "Bastille", album: "Doom Days", genre: 'Indie Rock' }
     ]
   },
   {
