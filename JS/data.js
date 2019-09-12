@@ -7,6 +7,23 @@ const gamesEntries = [
     cover: "cover.jpg", // Example: cover-art.jpg
     songs: [
       { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
       { title: "The Waves", artist: "Bastille", album: "Doom Days" }
     ]
   },

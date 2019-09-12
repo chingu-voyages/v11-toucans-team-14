@@ -16,7 +16,8 @@ body {
 
 .searchContainer {
     display: grid;
-    grid-template-columns: 80% 124px;
+    grid-template-columns: 70% 15% 15%;
+    grid-gap: 24px;
     margin-bottom: 24px;
 }
 
@@ -30,8 +31,22 @@ input[type="text"] {
     min-height: 24px;
 }
 
+select {
+    background-color: rgb(17, 49, 78);
+    color: #eee;
+    padding: 9px;
+    font-size: 1em !important;
+    width: 100%;
+    align-self: center;
+    height: 42px;
+    border: 0;
+}
+
 button {
-    margin-left: 18px;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 48px;
+    align-self: center;
     background-color: rgb(17, 49, 78);
     border: 1px solid rgb(68, 68, 68);
     font-size: 1.2em;
@@ -53,12 +68,6 @@ button:hover {
     min-height: 240px;
     min-width: 192px;
     background-color: rgb(6, 53, 75);
-}
-
-.cardHolder:hover {
-    zoom: 100%; 
-    -moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
 }
 
 .cardHolderTitle {
@@ -151,6 +160,16 @@ button:hover {
     color: #fff;
 }
 
+.song-list-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid rgb(71, 71, 71);
+    color: #fff;
+    font-weight: 700;
+    background-color: rgb(42, 51, 80);
+    letter-spacing: 2px;
+}
+
 .song-list:hover {
     background-color: #222;
 }
@@ -174,6 +193,13 @@ button:hover {
 }
 
 @media (max-width: 1200px) { 
+    .searchContainer {
+        display: grid;
+        grid-template-columns: 55% 20% 20%;
+        grid-gap: 48px;
+        margin-bottom: 24px;
+    }
+
     .resultPage {
         grid-template-columns: 1fr 1fr 1fr;
     }

@@ -130,6 +130,17 @@ function createGamePage(gameid) {
   });
 
 
+
+  let songListHeader = document.createElement("div"); // create "song list header" div element
+  songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
+    for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
+      let songListElement = document.createElement("div"); // create "song element" element
+      songListElement.classList.add("song-item"); // add class to "song element"
+      songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
+      songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
+    }
+  gameDetails.appendChild(songListHeader); // append song element into game details list
+
   // Loop each song item and add them under "Game Details" as song-list element
   foundGame.songs.forEach(song => {
     let songListHolder = document.createElement("div"); // create "song holder" div element
