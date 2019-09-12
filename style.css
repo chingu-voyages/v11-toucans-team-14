@@ -145,12 +145,23 @@ button:hover {
     display: inline;
 }
 
-.gamePage li {
-    display: block;
+.song-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
 }
 
-.gamePage ul {
-    list-style-type: none;
+.song-list:hover {
+    background-color: #222;
+}
+
+.song-list.active {
+    background-color: rgb(87, 24, 62);
+}
+
+.song-item {
+    padding: 9px 9px 9px 9px;
+    border-bottom: 1px solid rgb(71, 71, 71);
 }
 
 .closeButton {

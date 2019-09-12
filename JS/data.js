@@ -4,9 +4,9 @@ const gamesEntries = [
   {
     title: "Fifa 20", // Game title (name)
     year: "2018", // Year when game was released
-    cover: "Not used", // Example: cover-art.jpg
+    cover: "cover.jpg", // Example: cover-art.jpg
     songs: [
-      { title: "Before I Go", artist: "American Authors", album: "Seasons" },
+      { title: "Another Sky", artist: "The Cracks", album: "Seasons" },
       { title: "The Waves", artist: "Bastille", album: "Doom Days" }
     ]
   },
