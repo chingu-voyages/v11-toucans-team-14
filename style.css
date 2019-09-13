@@ -152,7 +152,11 @@ button:hover {
     border: 1px solid #333;
     width: 98%;
     margin-top: 36px;
-    padding: 24px;
+    padding: 24px 0px 24px 0;
+}
+
+.gameProfile {
+    padding-left: 18px;
 }
 
 .gameProfile img {
@@ -167,6 +171,7 @@ button:hover {
 .gameDetails {
     align-items: stretch;
     margin-left: 15px;
+    padding: 0 9px 0 9px;
     color: #efefef;
 }
 
@@ -249,13 +254,23 @@ button:hover {
 
  @media (max-width: 690px) { 
     .cardHolder {
-        min-height: 260px;
-        min-width: 140px;
+        min-height: 248px;
+        min-width: 148px;
     }
     
+    .gameInfo {
+        display: grid;
+        min-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .gameDetails {
+        margin: 18px 0 0 0;
+    }
 
     .resultPage {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 18px;
     }
  }
 
