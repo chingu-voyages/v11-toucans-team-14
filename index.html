@@ -14,7 +14,11 @@
     <div class="PageHolder" id="PageHolder">
         <form id="searchForm">
             <div class="searchContainer">
-                <input type="text" name="searchField" id="searchField">
+                <input type="text" name="searchField" placeholder="Search terms here..." id="searchField">
+                <select id="searchType" name="searchType">
+                    <option value="artist">Search by artist</option>
+                    <option value="game">Search By Game</option>
+                </select>
                 <select id="selectGenre" name="selectGenre">
                     <option value="">ALL GENRES</option>
                     <option value="pop">POP</option>

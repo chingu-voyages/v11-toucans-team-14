@@ -2,19 +2,56 @@ const contentHolder = document.getElementById("contentHolder"); // reference for
 
 let searchTerm = {
   Keyword: "",
-  Genre: ""
+  Genre: "",
+  Type: "artist"
 };
 
 // get games by search terms
-function songSearch(searchTerm) {
-  return (searchResults = gamesEntries.filter(game =>
-    game.songs.some(
-      song =>
-        song.title.toLowerCase() === searchTerm ||
-        song.artist.toLowerCase() === searchTerm 
-        // match both song title and artist, convert to lowercase to ignore case sensitive
-    )
-  ));
+function songSearch() {
+  let foundSongs = ""; // variable reference
+
+  // if search type is "artist", run this function
+  if (searchTerm.Type === "artist") {
+    if (searchTerm.Genre.length > 1) {
+      foundSongs = gamesEntries.filter(game =>
+        game.songs.some(
+          song =>
+            song.genre.toLowerCase() === searchTerm.Genre &&
+            song.artist.toLowerCase().includes(searchTerm.Keyword)
+        )
+      );
+    } else if (searchTerm.Genre.length < 1) {
+      foundSongs = gamesEntries.filter(game =>
+        game.songs.some(song =>
+          song.artist.toLowerCase().includes(searchTerm.Keyword)
+        )
+      );
+    }
+  }
+
+  // if search type is "game", run this function
+  else if (searchTerm.Type === "game") {
+    if (searchTerm.Genre.length > 1) {
+      if (searchTerm.Keyword.length < 1) {
+        foundSongs = gamesEntries.filter(game =>
+          game.songs.some(song => song.genre.toLowerCase() === searchTerm.Genre)
+        );
+      } else if (searchTerm.Keyword.length > 1) {
+        foundSongs = gamesEntries.filter(game =>
+          game.songs.some(
+            song =>
+              song.genre.toLowerCase() === searchTerm.Genre &&
+              game.title.toLowerCase().includes(searchTerm.Keyword)
+          )
+        );
+      }
+    } else {
+      foundSongs = gamesEntries.filter(game =>
+        game.title.toLowerCase().includes(searchTerm.Keyword)
+      );
+    }
+  }
+  return foundSongs;
 }
 
 // create search result display game
@@ -54,16 +91,20 @@ function createSearchResultPage(gamesFound) {
     titleHolder.classList.add("cardHolderTitle"); // add class to card title
     titleHolder.textContent = item.title; // set item text
 
-    cardHolder.addEventListener("click", (e) => {
-      window.location.hash = e.target.getAttribute("gameid");
+    cardHolder.addEventListener("click", e => {
+      // Replace whitespaces with dash, avoiding errors when searching complex game titles
+      if (e.target.getAttribute("gameid") === null) return;
+      window.location.hash = e.target
+        .getAttribute("gameid")
+        .replace(/\s/g, "-");
       createGamePage(window.location.hash);
     });
 
-    cardHolder.addEventListener('mouseover', () => {
+    cardHolder.addEventListener("mouseover", () => {
       titleHolder.classList.add("active");
     });
 
-    cardHolder.addEventListener('mouseout', () => {
+    cardHolder.addEventListener("mouseout", () => {
       titleHolder.classList.remove("active");
     });
 
@@ -93,8 +134,9 @@ function createGamePage(gameid) {
     .replace("%20", " ")
     .toLowerCase();
   const foundGame = gamesEntries.find(
-    game => game.title.toLowerCase() === gameid
+    game => game.title.toLowerCase().replace(/\s/g, "-") === gameid
   );
+
   contentHolder.innerHTML = null;
 
   const gamePageHolder = document.createElement("div"); // reference for gamePageHolder element
@@ -121,18 +163,22 @@ function createGamePage(gameid) {
   closeButton.id = "closeGamePage"; /// add ID for closeButton
   gamePageTitleHolder.appendChild(closeButton); // set closeButton as gamePageTitleHolder child
 
-  const gameInfo = document.createElement("div");
-  const gameCover = document.createElement("div");
-  const gameDetails = document.createElement("div");
-  gameInfo.classList.add("gameInfo");
-  gameCover.classList.add("gameCover");
-  gameDetails.classList.add("gameDetails");
+  const gameInfo = document.createElement("div"); // create Game info element
+  const gameProfile = document.createElement("div"); // reference for game profile
+  const gameDetails = document.createElement("div"); // reference for game details
+  const gameCover = document.createElement("IMG"); // reference for game cover
 
+  gameInfo.classList.add("gameInfo"); // add class for gameinfo div
+  gameProfile.classList.add("gameProfile"); // add class for game profile div
+  gameDetails.classList.add("gameDetails"); // add class for game details div
+  gameCover.setAttribute("src", `./img/${foundGame.cover}`); // set game cover image SRC
+
+  // Put sections where they belong
   gamePage.appendChild(gameInfo);
-  gameInfo.appendChild(gameCover);
+  gameInfo.appendChild(gameProfile);
   gameInfo.appendChild(gameDetails);
-
-  gameCover.innerHTML = `<img src='./img/${foundGame.cover}'>`;
+  gameProfile.appendChild(gameCover);
+  gameProfile.appendChild(gameCover);
 
   // add event listener for closing page
   closeButton.addEventListener("click", () => {
@@ -142,27 +188,38 @@ function createGamePage(gameid) {
 
   let songListHeader = document.createElement("div"); // create "song list header" div element
   songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
+
   for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
-        let songListElement = document.createElement("div"); // create "song element" element
-        songListElement.classList.add("song-item"); // add class to "song element"
-        songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
-        songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
+    let songListElement = document.createElement("div"); // create "song element" element
+    songListElement.classList.add("song-item"); // add class to "song element"
+    songListElement.textContent = Object.keys(foundGame.songs[0])[
+      x
+    ].toUpperCase(); // add song detail into song list element
+    songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
   }
+
   gameDetails.appendChild(songListHeader); // append song element into game details list
 
   // Loop each song item and add them under "Game Details" as song-list element
   foundGame.songs.forEach(song => {
     let songListHolder = document.createElement("div"); // create "song holder" div element
     songListHolder.classList.add("song-list"); // add class to "song list holder" element
-      for (let x = 0; x < Object.keys(song).length; x++) {
-        let songListElement = document.createElement("div"); // create "song element" element
-        songListElement.classList.add("song-item"); // add class to "song element"
-        songListElement.textContent = Object.entries(song)[x][1]; // add song detail into song list element
-        songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
-        if (Object.entries(song)[x][1].toLowerCase() === searchTerm.Keyword) {
-          songListElement.parentElement.classList.add('active');
-        }
+    for (let x = 0; x < Object.keys(song).length; x++) {
+      let songListElement = document.createElement("div"); // create "song element" element
+      songListElement.classList.add("song-item"); // add class to "song element"
+      songListElement.textContent = Object.entries(song)[x][1]; // add song detail into song list element
+      songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
+
+      // Highlight row which matches searchTerm Keyword
+      if (
+        searchTerm.Keyword.length > 2 &&
+        Object.entries(song)
+          [x][1].toLowerCase()
+          .includes(searchTerm.Keyword)
+      ) {
+        songListElement.parentElement.classList.add("active");
+      }
     }
     gameDetails.appendChild(songListHolder); // append song element into game details list
-  })
+  });
 }
