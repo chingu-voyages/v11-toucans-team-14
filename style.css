@@ -18,8 +18,8 @@ body {
 .searchContainer {
     display: grid;
     text-transform: uppercase;
-    grid-template-columns: 54% 15% 15% 15%;
-    grid-gap: 24px;
+    grid-template-columns: 52% 15% 15% 15%;
+    grid-gap: 28px;
     margin-bottom: 48px;
 }
 
@@ -115,12 +115,10 @@ button:hover {
     display: grid;
     background-color: rgb(19, 19, 19);
     border: 1px solid #333;
-    align-self: center;
-    justify-items: center;
-    width: 99%;
+    min-width: 100%;
     margin-top: 18px;
     margin-bottom: 24px;
-    padding: 24px;
+    padding: 18px 0px 18px 0px;
 }
 
 .no_results {
@@ -226,8 +224,8 @@ button:hover {
 @media (max-width: 1260px) { 
     .searchContainer {
         display: grid;
-        grid-template-columns: 55% 20% 20%;
-        grid-gap: 48px;
+        grid-template-columns: 38% 20% 20% 20%;
+        grid-gap: 24px;
         margin-bottom: 24px;
     }
 
@@ -237,17 +235,25 @@ button:hover {
  }
 
  @media (max-width: 960px) { 
+    .searchContainer {
+        display: grid;
+        grid-template-columns: 30% 23% 23% 23%;
+        grid-gap: 18px;
+        margin-bottom: 24px;
+    }
+
     .resultPage {
         grid-template-columns: 1fr 1fr;
     }
  }
 
- @media (max-width: 680px) { 
+ @media (max-width: 690px) { 
     .cardHolder {
         min-height: 260px;
         min-width: 140px;
     }
     
+
     .resultPage {
         grid-template-columns: 1fr 1fr;
     }

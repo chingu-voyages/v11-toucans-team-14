@@ -23,6 +23,12 @@ const gamesEntries = [
         artist: "Artist #1",
         album: "Album #1",
         genre: "metal"
+      },
+      {
+        title: 'This song title is long',
+        artist: 'This Artist name Here',
+        album: 'This album Title Is Long',
+        genre: 'Unnecessary-long-genre'
       }
     ]
   },
