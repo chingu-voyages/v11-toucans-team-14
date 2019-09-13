@@ -19,7 +19,7 @@ body {
     display: grid;
     text-transform: uppercase;
     grid-template-columns: 52% 15% 15% 15%;
-    grid-gap: 28px;
+    grid-gap: 18px;
     margin-bottom: 48px;
 }
 
@@ -150,9 +150,33 @@ button:hover {
     display: grid;
     background-color: rgb(19, 19, 19);
     border: 1px solid #333;
-    width: 98%;
+    width: 100%;
     margin-top: 36px;
     padding: 24px 0px 24px 0;
+}
+
+.gamePageTitle {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 1fr 125px;
+}
+
+.gamePageTitle h1 {
+    font-size: 1.4em;
+    margin: 0 5px 0 0;
+    padding: 9px 18px 9px 18px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.closeButton {
+    cursor: pointer;
+    font-size: 1.4em;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: red;
 }
 
 .gameProfile {
@@ -163,38 +187,11 @@ button:hover {
     width: 180px;
 }
 
-.gamePageTitle {
-    display: inline-block;
-    width: 100%;
-}
-
 .gameDetails {
     align-items: stretch;
     margin-left: 15px;
     padding: 0 9px 0 9px;
     color: #efefef;
-}
-
-.gamePageTitle h1 {
-    display: inline;
-    font-size: 1.4em;
-    margin-left: 15px;
-    padding: 9px 18px 9px 18px;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #881947;
-}
-
-.closeButton {
-    display: inline;
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-left: 15px;
-    border-radius: 4px;
-    padding: 8px 18px 8px 18px;
-    color: #fff;
-    background-color: red;
 }
 
 .song-list {
@@ -229,9 +226,8 @@ button:hover {
 @media (max-width: 1260px) { 
     .searchContainer {
         display: grid;
-        grid-template-columns: 38% 20% 20% 20%;
+        grid-template-columns: 35% 20% 20% 20%;
         grid-gap: 24px;
-        margin-bottom: 24px;
     }
 
     .resultPage {
@@ -240,9 +236,14 @@ button:hover {
  }
 
  @media (max-width: 960px) { 
+
+    .PageHolder {
+        width: 100%;
+    }
+
     .searchContainer {
         display: grid;
-        grid-template-columns: 30% 23% 23% 23%;
+        grid-template-columns: 30% 25% 25% 15%;
         grid-gap: 18px;
         margin-bottom: 24px;
     }
@@ -253,6 +254,7 @@ button:hover {
  }
 
  @media (max-width: 690px) { 
+
     .cardHolder {
         min-height: 248px;
         min-width: 148px;
