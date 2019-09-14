@@ -168,7 +168,8 @@ button:hover {
 
 .gamePageTitle {
     display: inline-grid;
-    grid-template-columns: 1fr 120px;
+    text-transform: uppercase;
+    grid-template-columns: 1fr 120px 120px;
 }
 
 .gamePageTitle h1 {
@@ -184,10 +185,21 @@ button:hover {
     justify-self: center;
     align-self: center;
     padding: 4px 9px 4px 9px;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 4px;
     color: #fff;
     background-color: red;
+}
+
+.saveButton {
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    padding: 4px 9px 4px 9px;
+    font-size: 1em;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(6, 79, 128);
 }
 
 .gameProfile {
@@ -247,7 +259,6 @@ button:hover {
  }
 
  @media (max-width: 960px) { 
-
     .PageHolder {
         width: 100%;
     }
@@ -265,7 +276,6 @@ button:hover {
  }
 
  @media (max-width: 690px) { 
-
     .cardHolder {
         min-height: 248px;
         min-width: 148px;
@@ -286,7 +296,6 @@ button:hover {
         grid-gap: 18px;
     }
  }
-
 
  @media (max-width: 460px) { 
     .cardHolder {

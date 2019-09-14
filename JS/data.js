@@ -1,5 +1,4 @@
 // Data entries
-
 const gamesEntries = [
   {
     title: "Fifa 20", // Game title (name)

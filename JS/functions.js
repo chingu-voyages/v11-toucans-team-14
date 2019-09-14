@@ -1,5 +1,7 @@
 const contentHolder = document.getElementById("contentHolder"); // reference for content holder
 
+let savedGames = getLocalSavedGames();
+
 let searchTerm = {
   Keyword: "",
   Genre: "",
@@ -145,12 +147,14 @@ function createGamePage(gameid) {
     game => game.title.toLowerCase().replace(/\s/g, "-") === gameid
   );
 
-  contentHolder.innerHTML = null;
+  contentHolder.innerHTML = null; // clear content secion
+  let isAlreadySaved = savedGames.findIndex((game) => foundGame.title === game.title); // get if item is already saved into localStorage (-1 if not)
 
   const gamePageHolder = document.createElement("div"); // reference for gamePageHolder element
   const gamePageTitleHolder = document.createElement("div"); // reference for gamePage title H1 element
   const gamePageTitle = document.createElement("h1"); // reference for gamePage title H1 element
   const closeButton = document.createElement("div"); // reference for closeButton element
+  const saveButton = document.createElement("div"); // reference for closeButton element
   const gamePage = document.createElement("div"); // reference for gamePage element
 
   gamePageHolder.classList.add("gamePageHolder"); // add class to gamePageHolder
@@ -166,6 +170,11 @@ function createGamePage(gameid) {
   contentHolder.insertBefore(gamePageTitle, gamePageHolder); // move section h1 element before content div
   gamePageTitleHolder.appendChild(gamePageTitle);
 
+  saveButton.classList.add("saveButton"); // add class to Save Game button
+  saveButton.textContent = isAlreadySaved < 0 ? 'Save Game' : 'Remove Game'; // add text to Save Game button
+  saveButton.id = "saveGame"; /// add ID for closeButton
+  gamePageTitleHolder.appendChild(saveButton); // set Save Game button as gamePageTitleHolder child
+  
   closeButton.classList.add("closeButton"); // add class to closeButton
   closeButton.textContent = "Close Page"; // add text to closeButton
   closeButton.id = "closeGamePage"; /// add ID for closeButton
@@ -192,6 +201,12 @@ function createGamePage(gameid) {
   closeButton.addEventListener("click", () => {
     history.pushState("", document.title, window.location.pathname); // clear hash from URL, answer found from https://stackoverflow.com/questions/4508574/remove-hash-from-url
     renderResults(searchTerm.Keyword); // return to main view and render search results again with last used search keyword
+  });
+
+
+    // add event listener for saving/removing localStorage game item
+  saveButton.addEventListener("click", () => {    
+    localGameStatus(foundGame);
   });
 
   let songListHeader = document.createElement("div"); // create "song list header" div element
@@ -230,4 +245,36 @@ function createGamePage(gameid) {
     }
     gameDetails.appendChild(songListHolder); // append song element into game details list
   });
+}
+
+function localGameStatus (foundGame) {
+  let isAlreadySaved = savedGames.findIndex((game) => foundGame.title === game.title); // get if item is already saved into localStorage (-1 if not)
+  isAlreadySaved < 0 ? document.getElementById("saveGame").textContent = "Remove Game" : document.getElementById("saveGame").textContent = "Save Game";
+  isAlreadySaved < 0 ? saveLocalGame(foundGame) : removeLocalGame(foundGame)
+}
+
+function getLocalSavedGames () {
+  if (JSON.parse(localStorage.getItem("SavedGames")) !== null) {
+    return JSON.parse(localStorage.getItem("SavedGames"));
+  }
+
+  return [];
+
+}
+
+function saveLocalGame (foundGame) {
+  savedGames.push ({
+    title: foundGame.title
+  })
+
+  localStorage.setItem("SavedGames", JSON.stringify(savedGames));
+}
+
+function removeLocalGame (foundGame) {
+  console.log("moro");
+  const removeIndex = savedGames.findIndex((game) => foundGame.title === game.title);
+  console.log(removeIndex);
+  let tempGames = savedGames;
+  tempGames.splice(removeIndex, 1);
+  localStorage.setItem("SavedGames", JSON.stringify(tempGames));
 }
