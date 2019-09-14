@@ -13,6 +13,39 @@ body {
     width: 75vw;
 }
 
+/* HEADER */
+.header {
+    position: relative;
+    display: grid;
+    text-transform: uppercase;
+    grid-template-columns: 52% 15% 15% 15%;
+    grid-gap: 18px;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    z-index: 1;
+    color: #efefef;
+}
+
+.header::after {
+    position: absolute;
+    bottom: 24px;
+    margin-left: 18px;
+    display: block;
+    content: '';
+    min-width: 200px;
+    border: 1px solid #f30196;
+}
+
+.header h1::first-letter {
+    background-color: #5c1249;
+    border: 2px solid #f30196;
+    border-radius: 50%;
+    padding: 3px 12px 3px 12px;
+    margin-right: 4px;
+}
+
 /* SEARCH FORM */
 
 .searchContainer {
