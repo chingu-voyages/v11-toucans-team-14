@@ -270,6 +270,7 @@ function saveLocalGame(foundGame) {
     title: foundGame.title
   });
   localStorage.setItem("SavedGames", JSON.stringify(savedGames));
+  updateLocalSavedGamesCount();
 }
 
 function removeLocalGame(foundGame) {
@@ -279,4 +280,10 @@ function removeLocalGame(foundGame) {
   let tempGames = savedGames;
   tempGames.splice(removeIndex, 1);
   localStorage.setItem("SavedGames", JSON.stringify(tempGames));
+  updateLocalSavedGamesCount();
+}
+
+function updateLocalSavedGamesCount () {
+  let savedGameCount = getLocalSavedGames();
+  document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
 }
