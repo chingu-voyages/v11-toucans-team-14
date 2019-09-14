@@ -68,7 +68,7 @@ button:hover {
 
 /* SEARCH ITEMS */
 
-.cardHolder {
+.gameCard {
     position: relative;
     cursor: pointer;
     background-image: url('./img/cover.jpg');
@@ -80,7 +80,7 @@ button:hover {
     border: 1px solid rgb(124, 124, 124);
 }
 
-.cardHolderTitle {
+.gameCardTitle {
     position: absolute;
     background-color: rgb(131, 30, 114);
     color: rgb(255, 255, 255);
@@ -92,7 +92,7 @@ button:hover {
     text-align: center;
 }
 
-.cardHolderTitle.active {
+.gameCardTitle.active {
     background-color: rgb(255, 255, 255);
     border: 1x solid #666;
     align-self: center;
@@ -121,12 +121,6 @@ button:hover {
     padding: 18px 0px 18px 0px;
 }
 
-.no_results {
-    padding: 9px;
-    background-color: rgb(83, 67, 67);
-    border: 2px dotted rgb(129, 0, 0);
-}
-
 .resultPage {
     display: grid;
     color: #eee;
@@ -136,6 +130,23 @@ button:hover {
     width: 100%;
 }
 
+.resultPage h1 {
+    text-align: center;
+}
+
+/* NO RESULTS FOUND PAGE */
+
+.noResults {
+    display: grid;
+    font-size: 1.2em;
+    color: #eee;
+    align-content: center;
+    justify-content: center;
+}
+
+.noResults h1 {
+    text-align: center;
+}
 
 /* GAME PAGE */
 

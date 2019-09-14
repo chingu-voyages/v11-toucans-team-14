@@ -71,27 +71,27 @@ function renderResults(searchTerm) {
 
 // create result page content
 function createSearchResultPage(gamesFound) {
-  const songPageHolder = document.createElement("div"); // reference for songPageHolder element
-  songPageHolder.classList.add("resultPageHolder"); // add class to songPageHolder
-  const songPageTitle = document.createElement("h1"); // reference for songPage title H1 element
-  songPageTitle.textContent = `${gamesFound.length} Games matched with search terms`; // text content for title element
-  songPageHolder.appendChild(songPageTitle); // add title element as songPageHolder child
+  const resultPageHolder = document.createElement("div"); // reference for resultPageHolder element
+  resultPageHolder.classList.add("resultPageHolder"); // add class to resultPageHolder
+  const resultPageTitle = document.createElement("h1"); // reference for songPage title H1 element
+  resultPageTitle.textContent = `${gamesFound.length} Games matched with search terms`; // text content for title element
+  resultPageHolder.appendChild(resultPageTitle); // add title element as resultPageHolder child
   const songPage = document.createElement("div"); // reference for songPage element
   songPage.classList.add("resultPage"); // add class to songPage
   songPage.id = "songPage"; // set songPage id for possible future manipulation
-  songPageHolder.appendChild(songPage); // add songPage as SongPageHolder children
-  contentHolder.appendChild(songPageHolder); // add songPageHolder as SongPageHolder contentHolder
-  contentHolder.insertBefore(songPageTitle, songPageHolder); // move section h1 element before content div
+  resultPageHolder.appendChild(songPage); // add songPage as resultPageHolder children
+  contentHolder.appendChild(resultPageHolder); // add resultPageHolder as resultPageHolder contentHolder
+  contentHolder.insertBefore(resultPageTitle, resultPageHolder); // move section h1 element before content div
 
   gamesFound.forEach(item => {
-    let cardHolder = document.createElement("div"); // wrap item with div
-    cardHolder.setAttribute("gameid", item.title);
-    cardHolder.classList.add("cardHolder"); // add class to wrapper div
-    let titleHolder = document.createElement("div"); // create card title div
-    titleHolder.classList.add("cardHolderTitle"); // add class to card title
-    titleHolder.textContent = item.title; // set item text
+    let gameCard = document.createElement("div"); // wrap item with div
+    gameCard.setAttribute("gameid", item.title);
+    gameCard.classList.add("gameCard"); // add class to wrapper div
+    let gameCardTitle = document.createElement("div"); // create card title div
+    gameCardTitle.classList.add("gameCardTitle"); // add class to card title
+    gameCardTitle.textContent = item.title; // set item text
 
-    cardHolder.addEventListener("click", e => {
+    gameCard.addEventListener("click", e => {
       // Replace whitespaces with dash, avoiding errors when searching complex game titles
       if (e.target.getAttribute("gameid") === null) return;
       window.location.hash = e.target
@@ -100,31 +100,39 @@ function createSearchResultPage(gamesFound) {
       createGamePage(window.location.hash);
     });
 
-    cardHolder.addEventListener("mouseover", () => {
-      titleHolder.classList.add("active");
+    gameCard.addEventListener("mouseover", () => {
+      gameCardTitle.classList.add("active");
     });
 
-    cardHolder.addEventListener("mouseout", () => {
-      titleHolder.classList.remove("active");
+    gameCard.addEventListener("mouseout", () => {
+      gameCardTitle.classList.remove("active");
     });
 
-    cardHolder.appendChild(titleHolder);
-    songPage.appendChild(cardHolder); // place item inside result page div
+    gameCard.appendChild(gameCardTitle);
+    songPage.appendChild(gameCard); // place item inside result page div
   });
 }
 
 // create "nothing found" page
 function createNoResultPage() {
-  const songPageHolder = document.createElement("div"); // reference for songPageHolder element
-  songPageHolder.classList.add("resultPageHolder");
-  const songPageTitle = document.createElement("h1"); // reference for songPage title H1 element
-  songPageTitle.textContent = `Nothing found :(`; // text contentr for songPageTitle
-  songPageHolder.appendChild(songPageTitle); // add songPageTitle as songPageHolder child
-  const songPage = document.createElement("div"); // reference for songPage title H1 element
-  songPage.classList.add("resultPage"); // add class to songPage
-  songPage.id = "songPage"; // set songPage id for possible future manipulation
-  songPageHolder.appendChild(songPage); // add songPage as songPageHolder child
-  contentHolder.appendChild(songPageHolder); // add songPageHolder as contentHolder child
+  const resultPageHolder = document.createElement("div"); // reference for songPageHolder element
+  resultPageHolder.classList.add("resultPageHolder");
+
+  const noResultsHolders = document.createElement("div") // reference for "not found" page holder
+  noResultsHolders.classList.add("noResults");
+
+  const pageTitle = document.createElement("h1"); // reference for pageTitle title H1 element
+  pageTitle.textContent = `Nothing found :(`; // text content for pageTitle
+  resultPageHolder.appendChild(pageTitle);
+
+  const pageSubHeader = document.createElement("p"); // reference for pageTitle title H1 element
+  pageSubHeader.textContent = `Try using other search terms`; // text content for pageTitle
+  resultPageHolder.appendChild(pageSubHeader);
+
+  noResultsHolders.appendChild(pageTitle);
+  noResultsHolders.appendChild(pageSubHeader);
+  resultPageHolder.append(noResultsHolders);
+  contentHolder.appendChild(resultPageHolder); // add result page as contentHolder child
 }
 
 // Create "Game View" page.
