@@ -25,4 +25,3 @@ window.addEventListener("load", () => {
   let savedGameCount = getLocalSavedGames();
   document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
 });
-

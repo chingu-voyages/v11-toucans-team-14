@@ -23,8 +23,11 @@ body {
 }
 
 .header h1 {
-    z-index: 1;
-    color: #efefef;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #00;
+    letter-spacing: 2px;
+    margin-left: 84px;
+    margin-bottom: 30px;
 }
 
 .header::after {
@@ -37,12 +40,20 @@ body {
     border: 1px solid #f30196;
 }
 
-.header h1::first-letter {
+.logo {
+    position: absolute;
+    z-index: 1;
+    color: #f30196;
+    text-shadow: 6px 6px #111;
+    font-size: 64px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    bottom: 0px;
     background-color: #5c1249;
-    border: 2px solid #f30196;
+    border: 3px solid #f30196;
     border-radius: 50%;
-    padding: 3px 12px 3px 12px;
-    margin-right: 4px;
+    padding: 18px;
 }
 
 .SavedGamesContainer {
@@ -53,7 +64,7 @@ body {
     padding: 4px;
     border-radius: 4px;
     margin-bottom: 18px;
-    color: #efefef;
+    color: #ffffff;
 }
 
 /* SEARCH FORM */
