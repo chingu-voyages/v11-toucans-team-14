@@ -287,3 +287,22 @@ function updateLocalSavedGamesCount () {
   let savedGameCount = getLocalSavedGames();
   document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
 }
+
+function buildSavedGameList() {
+  gameList = getLocalSavedGames();
+  let SavedGamesContainerList = document.getElementById("SavedGamesContainerList");
+  SavedGamesContainerList.innerHTML = null;
+  let gameListHolder = document.createElement("ul");
+  SavedGamesContainerList.appendChild(gameListHolder);
+  gameList.forEach((game) => {
+    let gameItem = document.createElement("li");
+    gameItem.textContent = game.title;
+    gameItem.setAttribute('gameid', game.title);
+    gameItem.addEventListener("click", e => {
+      window.location.hash = e.target.getAttribute("gameid").replace(/\s/g, "-");
+      e.target.parentElement.parentElement.style.visibility = 'hidden';
+      createGamePage(window.location.hash);
+    });
+    gameListHolder.appendChild(gameItem);
+  });
+}

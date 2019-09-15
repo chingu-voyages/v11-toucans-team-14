@@ -17,6 +17,17 @@ document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault(); // Prevent form from submit to avoid page refresh
 });
 
+document.getElementById("SavedGamesContainer").addEventListener("click", () => {
+  if (document.getElementById("SavedGamesContainerList").style.visibility === 'visible') {
+    document.getElementById("SavedGamesContainerList").style.visibility = "hidden"; 
+  }
+
+  else {
+    buildSavedGameList();
+    document.getElementById("SavedGamesContainerList").style.visibility = "visible"; 
+  }
+});
+
 // if hash (gameid) is already provided, load game page. This allows linking directly to specified game page without searching
 window.addEventListener("load", () => {
   if (window.location.href.indexOf("#") != -1) {

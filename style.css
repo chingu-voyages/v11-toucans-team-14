@@ -17,6 +17,7 @@ body {
 .header {
     position: relative;
     display: grid;
+    width: 100%;
     text-transform: uppercase;
     grid-template-columns: 75% 25%;
     margin-bottom: 48px;
@@ -24,7 +25,7 @@ body {
 
 .header h1 {
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px #00;
+    text-shadow: 1px 1px #000;
     letter-spacing: 2px;
     margin-left: 84px;
     margin-bottom: 30px;
@@ -57,6 +58,7 @@ body {
 }
 
 .SavedGamesContainer {
+    position: relative;
     background-color: #47125c;
     border: 1px solid #c301f3;
     align-self: center;
@@ -65,6 +67,33 @@ body {
     border-radius: 4px;
     margin-bottom: 18px;
     color: #ffffff;
+}
+
+.SavedGamesContainer:hover {
+    cursor: pointer;
+}
+
+.SavedGamesContainerList {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    color: #eee;
+}
+
+.SavedGamesContainerList ul {
+    list-style-type: none;
+    border: 1px solid #47125c;
+    margin: 0;
+    padding: 0;
+}
+
+.SavedGamesContainerList li {
+    cursor: pointer;
+    color: #fff;
+    background-color: #47125c;
+    border-bottom: 1px solid #111;
+    padding: 9px;
 }
 
 /* SEARCH FORM */
