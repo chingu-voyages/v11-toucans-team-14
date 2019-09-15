@@ -1,14 +1,12 @@
-const contentHolder = document.getElementById("contentHolder"); // reference for content holder
-
-let savedGames = getLocalSavedGames();
-
+const contentHolder = document.getElementById("contentHolder"); // Reference for content holder
+let savedGames = getLocalSavedGames(); // Get saved games from localStorage
 let searchTerm = {
   Keyword: "",
   Genre: "",
   Type: "artist"
 };
 
-// get games by search terms
+// Get games by search terms
 function songSearch() {
   let foundSongs = ""; // variable reference
 
@@ -56,7 +54,7 @@ function songSearch() {
   return foundSongs;
 }
 
-// create search result display game
+// Create search result display game
 function renderResults(searchTerm) {
   let gamesFound = songSearch(searchTerm); // get array from search results
   contentHolder.innerHTML = null; // reset content div (to avoid duplicate sections)
@@ -71,7 +69,7 @@ function renderResults(searchTerm) {
   }
 }
 
-// create result page content
+// Create result page content
 function createSearchResultPage(gamesFound) {
   const resultPageHolder = document.createElement("div"); // reference for resultPageHolder element
   resultPageHolder.classList.add("resultPageHolder"); // add class to resultPageHolder
@@ -115,7 +113,7 @@ function createSearchResultPage(gamesFound) {
   });
 }
 
-// create "nothing found" page
+// Create "nothing found" page
 function createNoResultPage() {
   const resultPageHolder = document.createElement("div"); // reference for songPageHolder element
   resultPageHolder.classList.add("resultPageHolder");
@@ -247,6 +245,7 @@ function createGamePage(gameid) {
   });
 }
 
+// Update game page save/remove button text content
 function localGameStatus(foundGame) {
   let isAlreadySaved = savedGames.findIndex(
     game => foundGame.title === game.title
@@ -257,6 +256,7 @@ function localGameStatus(foundGame) {
   isAlreadySaved < 0 ? saveLocalGame(foundGame) : removeLocalGame(foundGame);
 }
 
+// Load games from localStorage
 function getLocalSavedGames() {
   if (JSON.parse(localStorage.getItem("SavedGames")) !== null) {
     return JSON.parse(localStorage.getItem("SavedGames"));
@@ -265,6 +265,7 @@ function getLocalSavedGames() {
   return [];
 }
 
+// Save game to localStorage
 function saveLocalGame(foundGame) {
   savedGames.push({
     title: foundGame.title
@@ -273,6 +274,7 @@ function saveLocalGame(foundGame) {
   updateLocalSavedGamesCount();
 }
 
+// Remove game from localStorage
 function removeLocalGame(foundGame) {
   const removeIndex = savedGames.findIndex(
     game => foundGame.title === game.title
@@ -283,13 +285,14 @@ function removeLocalGame(foundGame) {
   updateLocalSavedGamesCount();
 }
 
+// Get and set "Saved Games" counter
 function updateLocalSavedGamesCount () {
-  let savedGameCount = getLocalSavedGames();
-  document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
+  document.getElementById("SavedGamesContainer").textContent = `${getLocalSavedGames().length} saved games`;
 }
 
+// Build saved game list to be used for dropdown-list
 function buildSavedGameList() {
-  gameList = getLocalSavedGames();
+  let gameList = getLocalSavedGames();
   let SavedGamesContainerList = document.getElementById("SavedGamesContainerList");
   SavedGamesContainerList.innerHTML = null;
   let gameListHolder = document.createElement("ul");

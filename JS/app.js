@@ -1,14 +1,14 @@
-// set searchTerm Genre
+// Set searchTerm Genre
 document.getElementById("selectGenre").addEventListener("change", e => {
   searchTerm.Genre = e.target.value.toLowerCase();
 });
 
-// set searchTerm Type
+// Set searchTerm Type
 document.getElementById("searchType").addEventListener("change", e => {
   searchTerm.Type = e.target.value.toLowerCase();
 });
 
-// set searchTerm Keyword
+// Set searchTerm Keyword
 document.querySelector("form").addEventListener("submit", e => {
   searchTerm.Keyword = document
     .getElementById("searchField")
@@ -17,6 +17,7 @@ document.querySelector("form").addEventListener("submit", e => {
   e.preventDefault(); // Prevent form from submit to avoid page refresh
 });
 
+// Toggle Save Game dropdown-list visibility
 document.getElementById("SavedGamesContainer").addEventListener("click", () => {
   if (document.getElementById("SavedGamesContainerList").style.visibility === 'visible') {
     document.getElementById("SavedGamesContainerList").style.visibility = "hidden"; 
@@ -28,7 +29,7 @@ document.getElementById("SavedGamesContainer").addEventListener("click", () => {
   }
 });
 
-// if hash (gameid) is already provided, load game page. This allows linking directly to specified game page without searching
+// If hash (gameid) is already provided, load game page. This allows linking directly to specified game page without searching
 window.addEventListener("load", () => {
   if (window.location.href.indexOf("#") != -1) {
     createGamePage(window.location.hash);
