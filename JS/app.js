@@ -36,3 +36,10 @@ window.addEventListener("load", () => {
   let savedGameCount = getLocalSavedGames();
   document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
 });
+
+// Close "Saved Games" dropdown-list if visitor clicks outside it
+document.addEventListener('click', (e) => {
+  if (e.target.id !== 'SavedGamesContainer') {
+    document.getElementById("SavedGamesContainerList").style.visibility = "hidden"; 
+  }
+});
