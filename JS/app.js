@@ -34,8 +34,7 @@ window.addEventListener("load", () => {
   if (window.location.href.indexOf("#") != -1) {
     createGamePage(window.location.hash);
   }
-  let savedGameCount = getLocalSavedGames();
-  document.getElementById("SavedGamesContainer").textContent = `${savedGameCount.length} saved games`;
+  document.getElementById("SavedGamesContainer").textContent = `${getLocalSavedGames().length} saved games`;
 });
 
 // Close "Saved Games" dropdown-list if visitor clicks outside it
