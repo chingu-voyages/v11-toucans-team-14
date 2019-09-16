@@ -310,9 +310,15 @@ button:hover {
 
 .song-info {
     display: none;
-    background-color: rgb(28, 0, 54);
-    padding: 18px 0 18px 0;
-    width: 100%;
+    background-color: #3b092f;
+    padding: 9px 9px 9px 9px;
+    border-bottom: 1px solid #333;
+    width: 98%;
+}
+
+.song-info a {
+    color: rgb(20, 179, 219);
+    text-decoration: none;
 }
 
 .song-list-header {

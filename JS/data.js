@@ -9,25 +9,29 @@ const gamesEntries = [
         title: "Another Sky",
         artist: "The Cracks",
         album: "Seasons",
-        genre: "Pop"
+        genre: "Pop",
+        youtube: 'Z44Kp-cYdM4'
       },
       {
         title: "The Waves",
         artist: "Bastille",
         album: "Doom Days",
-        genre: "Indie Rock"
+        genre: "Indie Rock",
+        youtube: 'Z44Kp-ABC'
       },
       {
         title: "Title #1",
         artist: "Artist #1",
         album: "Album #1",
-        genre: "metal"
+        genre: "metal",
+        youtube: 'Z44Kp-DFG'
       },
       {
         title: 'This song title is long',
         artist: 'This Artist name Here',
         album: 'This album Title Is Long',
-        genre: 'Unnecessary-long-genre'
+        genre: 'Unnecessary-long-genre',
+        youtube: 'Z44Kp-HJK'
       }
     ]
   },
@@ -40,7 +44,8 @@ const gamesEntries = [
         title: "Title #1",
         artist: "Artist #1",
         album: "Album #1",
-        genre: "metal"
+        genre: "metal",
+        youtube: 'Z44Kp-cYdM4'
       }
     ]
   },
@@ -53,7 +58,8 @@ const gamesEntries = [
         title: "Title #1",
         artist: "Artist #1",
         album: "Album #1",
-        genre: "Rock"
+        genre: "Rock",
+        youtube: 'Z44Kp-cYdM4'
       }
     ]
   }

@@ -137,10 +137,7 @@ function createNoResultPage() {
 
 // Create "Game View" page.
 function createGamePage(gameid) {
-  gameid = gameid
-    .substr(1, gameid.length - 1)
-    .replace("%20", " ")
-    .toLowerCase();
+  gameid = gameid.substr(1, gameid.length - 1).replace("%20", " ").toLowerCase();
   const foundGame = gamesEntries.find(
     game => game.title.toLowerCase().replace(/\s/g, "-") === gameid
   );
@@ -210,12 +207,10 @@ function createGamePage(gameid) {
 
   let songListHeader = document.createElement("div"); // create "song list header" div element
   songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
-  for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
+  for (let x = 0; x < Object.keys(foundGame.songs[0]).length - 1; x++) {
     let songListElement = document.createElement("div"); // create "song element" element
     songListElement.classList.add("song-item"); // add class to "song element"
-    songListElement.textContent = Object.keys(foundGame.songs[0])[
-      x
-    ].toUpperCase(); // add song detail into song list element
+    songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
     songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
   }
 
@@ -223,15 +218,17 @@ function createGamePage(gameid) {
   // Loop each song item and add them under "Game Details" as song-list element
   foundGame.songs.forEach(song => {
     let songListHolder = document.createElement("div"); // create "song holder" div element
+    let songInfo = document.createElement("div");
     songListHolder.classList.add("song-list"); // add class to "song list holder" element
-    let songInfo = document.createElement("songInfo");
     songInfo.id = `info-${song.title}`;
     songInfo.classList.add("song-info");
-    for (let x = 0; x < Object.keys(song).length; x++) {
+
+    for (let x = 0; x < Object.keys(song).length - 1; x++) {
       let songListElement = document.createElement("div"); // create "song element" element
       songListElement.classList.add("song-item"); // add class to "song element"
       songListElement.textContent = Object.entries(song)[x][1]; // add song detail into song list element
       songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
+      songInfo.innerHTML = `<a href='https://www.youtube.com/watch?v=${song.youtube}' target='blank'>click to listen from youtube</a> (link opens to new window)`;
       // Highlight row which matches searchTerm Keyword
       if (
         searchTerm.Keyword.length > 2 &&
@@ -242,13 +239,15 @@ function createGamePage(gameid) {
         songListElement.parentElement.classList.add("active");
       }
     }
-
+    // click even to reveal song info panel (youtube link etc)
     songListHolder.addEventListener("click", () => {
       let songDropDown = document.getElementById(`info-${song.title}`);
-      if (songDropDown.style.display === 'block') {
+      document.querySelectorAll(".song-info").forEach(item => {
+        item.style.display = "none";
+      });
+      if (songDropDown.style.display === "block") {
         songDropDown.style.display = "none";
-      }
-      else {
+      } else {
         songDropDown.style.display = "block";
       }
     });
@@ -280,9 +279,7 @@ function getLocalSavedGames() {
 
 // Save game to localStorage
 function saveLocalGame(foundGame) {
-  savedGames.push({
-    title: foundGame.title
-  });
+  savedGames.push({ title: foundGame.title });
   localStorage.setItem("SavedGames", JSON.stringify(savedGames));
   updateLocalSavedGamesCount();
 }
