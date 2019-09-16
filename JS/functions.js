@@ -210,7 +210,6 @@ function createGamePage(gameid) {
 
   let songListHeader = document.createElement("div"); // create "song list header" div element
   songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
-
   for (let x = 0; x < Object.keys(foundGame.songs[0]).length; x++) {
     let songListElement = document.createElement("div"); // create "song element" element
     songListElement.classList.add("song-item"); // add class to "song element"
@@ -225,12 +224,14 @@ function createGamePage(gameid) {
   foundGame.songs.forEach(song => {
     let songListHolder = document.createElement("div"); // create "song holder" div element
     songListHolder.classList.add("song-list"); // add class to "song list holder" element
+    let songInfo = document.createElement("songInfo");
+    songInfo.id = `info-${song.title}`;
+    songInfo.classList.add("song-info");
     for (let x = 0; x < Object.keys(song).length; x++) {
       let songListElement = document.createElement("div"); // create "song element" element
       songListElement.classList.add("song-item"); // add class to "song element"
       songListElement.textContent = Object.entries(song)[x][1]; // add song detail into song list element
       songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
-
       // Highlight row which matches searchTerm Keyword
       if (
         searchTerm.Keyword.length > 2 &&
@@ -241,7 +242,19 @@ function createGamePage(gameid) {
         songListElement.parentElement.classList.add("active");
       }
     }
+
+    songListHolder.addEventListener("click", () => {
+      let songDropDown = document.getElementById(`info-${song.title}`);
+      if (songDropDown.style.display === 'block') {
+        songDropDown.style.display = "none";
+      }
+      else {
+        songDropDown.style.display = "block";
+      }
+    });
+
     gameDetails.appendChild(songListHolder); // append song element into game details list
+    gameDetails.appendChild(songInfo);
   });
 }
 
@@ -286,24 +299,30 @@ function removeLocalGame(foundGame) {
 }
 
 // Get and set "Saved Games" counter
-function updateLocalSavedGamesCount () {
-  document.getElementById("SavedGamesContainer").textContent = `${getLocalSavedGames().length} saved games`;
+function updateLocalSavedGamesCount() {
+  document.getElementById("SavedGamesContainer").textContent = `${
+    getLocalSavedGames().length
+  } saved games`;
 }
 
 // Build saved game list to be used for dropdown-list
 function buildSavedGameList() {
   let gameList = getLocalSavedGames();
-  let SavedGamesContainerList = document.getElementById("SavedGamesContainerList");
+  let SavedGamesContainerList = document.getElementById(
+    "SavedGamesContainerList"
+  );
   SavedGamesContainerList.innerHTML = null;
   let gameListHolder = document.createElement("ul");
   SavedGamesContainerList.appendChild(gameListHolder);
-  gameList.forEach((game) => {
+  gameList.forEach(game => {
     let gameItem = document.createElement("li");
     gameItem.textContent = game.title;
-    gameItem.setAttribute('gameid', game.title);
+    gameItem.setAttribute("gameid", game.title);
     gameItem.addEventListener("click", e => {
-      window.location.hash = e.target.getAttribute("gameid").replace(/\s/g, "-");
-      e.target.parentElement.parentElement.style.visibility = 'hidden';
+      window.location.hash = e.target
+        .getAttribute("gameid")
+        .replace(/\s/g, "-");
+      e.target.parentElement.parentElement.style.visibility = "hidden";
       createGamePage(window.location.hash);
     });
     gameListHolder.appendChild(gameItem);

@@ -308,6 +308,13 @@ button:hover {
     color: #fff;
 }
 
+.song-info {
+    display: none;
+    background-color: rgb(28, 0, 54);
+    padding: 18px 0 18px 0;
+    width: 100%;
+}
+
 .song-list-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -327,17 +334,9 @@ button:hover {
 }
 
 .song-item {
+    cursor: pointer;
     padding: 9px 9px 9px 9px;
     border-bottom: 1px solid rgb(71, 71, 71);
-}
-
-.gameDetails span {
-    position: absolute;
-    color: #eee;
-    width: 100%;
-    min-height: 20px;
-    background-color: red;
-    padding: 9px 0 9px 0;
 }
 
 @media (max-width: 1260px) { 
