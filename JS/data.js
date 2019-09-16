@@ -450,46 +450,123 @@ const gamesEntries = [
         youtube: "VXpBfMVUnNk"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Gray Duck",
+        artist: "Doomtree",
+        album: "All Hands",
+        genre: "Hip-Hop/Rap",
+        youtube: "MCJJ5aR5vwA"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Make The Crowd (NFS Vip Mix)",
+        artist: "	Tropkillaz",
+        album: "(single)",
+        genre: "Trap",
+        youtube: "xpBQgpLcotc"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Don't Stop",
+        artist: "CamelPhat",
+        album: "(single)",
+        genre: "Dance/Electro",
+        youtube: "7XyrH7qxBfQ"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Connection",
+        artist: "Silversun Pickups",
+        album: "Better Nature",
+        genre: "Alternative/Indie, Rock",
+        youtube: "G4Qcl00VlXE"
       },
       {
-        title: "",
-        artist: "",
+        title: "Surface",
+        artist: "Aero Chord",
         album: "",
-        genre: "",
-        youtube: ""
+        genre: "Trap music, Dance/Electronic",
+        youtube: "3FPwcaflCS8"
       },
       {
-        title: "",
-        artist: "",
+        title: "New Coke",
+        artist: "Health",
+        album: "Death Magic",
+        genre: "Alternative/Indie",
+        youtube: "l3_dedjucgM"
+      },
+      {
+        title: "Pyara (Live Edit)",
+        artist: "Fehrplay",
+        album: "(single)",
+        genre: "Progressive House",
+        youtube: "9J5kup92N0s"
+      },
+      {
+        title: "Fuelho Boogie",
+        artist: "Swim Deep",
+        album: "Mothers",
+        genre: "Alternative/Indie",
+        youtube: "F2tpRiNEsWg"
+      },
+      {
+        title: "U Don't Know",
+        artist: "Alison Wonderland",
+        album: "Run",
+        genre: "Dance/Electronic",
+        youtube: "F5MMV5qULV0"
+      },
+      {
+        title: "Brand New World",
+        artist: "Hudson Mohawke",
+        album: "Lantern",
+        genre: "Dance/Electronic",
+        youtube: "GuRGcftljX8"
+      },
+      {
+        title: "Callisto",
+        artist: "Reso",
+        album: "Ricochet",
+        genre: "Jungle/Drum 'n' Bass",
+        youtube: "tv2iQ8TYcvo"
+      },
+      {
+        title: "Modern Slang",
+        artist: "Speaker of the House",
         album: "",
-        genre: "",
-        youtube: ""
+        genre: " Dance/Electronic",
+        youtube: "6JKJc4sDlkU"
+      },
+      {
+        title: "Pure Grinding",
+        artist: "Avicii",
+        album: "Stories",
+        genre: "Dance/Electronic, Pop",
+        youtube: "hzdIoghbFzg"
+      },
+      {
+        title: "Blink",
+        artist: "Zeds Dead",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "50X6FMYTq9k"
+      },
+      {
+        title: "Odyssey",
+        artist: "No Wyld",
+        album: "",
+        genre: " Alternative/Indie",
+        youtube: "Ulbt3tASoxw"
+      },
+      {
+        title: "Better Hide, Better Run",
+        artist: "The Glitch Mob",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "KGrpJWGl6tg"
+      },
+      {
+        title: "Blockbuster Night Part 1",
+        artist: "Run The Jewels",
+        album: "Run the Jewels 2",
+        genre: "Hip-Hop/Rap",
+        youtube: "uuWQyfGa1yI"
       },
       {
         title: "",
