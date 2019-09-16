@@ -76,11 +76,242 @@ const gamesEntries = [
         youtube:"EJ1YhZ2fUZE"
       },
       {
-        title:"",
-        artist:"",
+        title:"Everytime I Run (feat. MEI & Count Counsellor)",
+        artist:"Husky Loops",
+        album:"Spool",
+        genre:"Rock",
+        youtube:"1eQGbWJzbH4"
+      },
+      {
+        title:"Feels Like Summer",
+        artist:"Childish Gambino",
+        album:"Summer Pack",
+        genre:"R&B/Soul",
+        youtube:"F1B9Fk_SgI0"
+      },
+      {
+        title:"Genius",
+        artist:"LSD (Feat. Labrinth, Sia & Diplo)",
+        album:"LSD",
+        genre:"Pop",
+        youtube:"HhoATZ1Imtw"
+      },
+      {
+        title:"Gold Rush",
+        artist:"Death Cab For Cutie",
+        album:"Thank You for Today",
+        genre:"Alternative/Indie",
+        youtube:"XTPZWG5eLf8"
+      },
+      {
+        title:"Good To Be Home",
+        artist:"Tom Misch (Feat. Loyle Carner, Barney Artist, Rebel Kleff)",
+        album:"Good to Be Home",
+        genre:"Hip-Hop/Rap",
+        youtube:"HAaOF2fKyS4"
+      },
+      {
+        title:"Habibi",
+        artist:"Ghali",
         album:"",
-        genre:"",
-        youtube:""
+        genre:"Album",
+        youtube:"fgt6luBwzz0"
+      },
+      {
+        title:"Heaven Only Knows",
+        artist:"Bob Moses",
+        album:"Back Down",
+        genre:"Dance/Electronic",
+        youtube:"xjt6tZmuoWM"
+      },
+      {
+        title:"Island Life",
+        artist:"Atomic Drum Assembly",
+        album:"Atomic Drum Assembly",
+        genre:"Pop",
+        youtube:"la8GsFcKvps"
+      },
+      {
+        title:"It Makes You Forget (Itgehane)",
+        artist:"Peggy Gou",
+        album:"Defected Radio Episode 090 (hosted by Sam Divine)",
+        genre:"Dance/Electronic",
+        youtube:"SlbVgjFvE3I"
+      },
+      {
+        title:"It's Not This",
+        artist:"Bearson (Feat. Lemaitre and Josh Pan)",
+        album:"It's Not This",
+        genre:"Dance/Electronic",
+        youtube:"UlOxYLHBT7A"
+      },
+      {
+        title:"Jackie Chan",
+        artist:"Bantu & Dr. Chaii",
+        album:"Jackie Chan",
+        genre:"Pop",
+        youtube:"OEb7Rh-yknQ"
+      },
+      {
+        title:"Lightning",
+        artist:"Octavian",
+        album:"Spaceman",
+        genre:"Hip-Hop/Rap",
+        youtube:"6dlN37kvY80"
+      },
+      {
+        title:"Losing You (Baio Remix)",
+        artist:"Gizmo Varillas & Baio",
+        album:"(Single)",
+        genre:"Dance",
+        youtube:"cnz5fEHsFNw"
+      },
+      {
+        title:"Love Ain’t Enough",
+        artist:"Jacob Banks",
+        album:"Village",
+        genre:"R&B/Soul",
+        youtube:"57YOevCrFrQ"
+      },
+      {
+        title:"Musika",
+        artist:"Yolanda Be Cool (Feat. Kwanzaa Posse)",
+        album:"Musika",
+        genre:"Dance/Electronic",
+        youtube:"rixlQd0lbFc"
+      },
+      {
+        title:"Ordinary People",
+        artist:"Bugzy Malone (Feat. JP Cooper)",
+        album:"B. Inspired",
+        genre:"Grime/Hip-Hop",
+        youtube:"7gKgb_Hhmao"
+      },
+      {
+        title:"Out The Window",
+        artist:"Confidence Man",
+        album:"Confident Music for Confident People",
+        genre:"Alternative/Indie",
+        youtube:"XQGwjhDANVA"
+      },
+      {
+        title:"Pa’lante",
+        artist:"Lao Ra",
+        album:"Pa'lante",
+        genre:"Pop",
+        youtube:"FGzIAaR0V_s"
+      },
+      {
+        title:"Peach",
+        artist:"Broods",
+        album:"Don't Feed the Pop Monster",
+        genre:"Alternative/Indie, Pop",
+        youtube:"Eiht451O8fM"
+      },
+      {
+        title:"Play God",
+        artist:"Sam Fender",
+        album:"Hypersonic Missiles",
+        genre:"Singer-Songwriter",
+        youtube:"L12ORqw6R7A"
+      },
+      {
+        title:"Pockets",
+        artist:"Easy Life",
+        album:"Creature Habits Mixtape",
+        genre:"Alternative/Indie",
+        youtube:"oeFq3Sta6bY"
+      },
+      {
+        title:"Sorcererz",
+        artist:"Gorillaz",
+        album:"The Now Now",
+        genre:"Alternative/Indie",
+        youtube:"40xG4bMr9F4"
+      },
+      {
+        title:"Porro Maracatu (TOY SELECTAH Remix)",
+        artist:"LADAMA",
+        album:"Porro Maracatu (TOY SELECTAH Remix)",
+        genre:"Rock/Alternative",
+        youtube:"g9v9vnoyZdM"
+      },
+      {
+        title:"Sway",
+        artist:"Tove Styrke",
+        album:"Sway",
+        genre:"Pop",
+        youtube:"bGSNZ7QAoK4"
+      },
+      {
+        title:"Take It Easy",
+        artist:"BC Unidos (Feat. U.S. Girls and Ledinsky)",
+        album:"(single)",
+        genre:"Pop",
+        youtube:"8TTCe9Abppk"
+      },
+      {
+        title:"Tom & Jerry",
+        artist:"Ocean Wisdom",
+        album:"Wizville",
+        genre:"Hip-Hop/Rap",
+        youtube:"tiZxDEXwxUA"
+      },
+      {
+        title:"Top Boy",
+        artist:"Eyez",
+        album:"Square One",
+        genre:"Hip-Hop/Rap",
+        youtube:"0AXhLFMe-Ow"
+      },
+      {
+        title:"Tribe",
+        artist:"Bas & J. Cole",
+        album:"Milky Way",
+        genre:"Hip-Hop/Rap",
+        youtube:"OA8aw07dpg0"
+      },
+      {
+        title:"Truth Is",
+        artist:"Stealth",
+        album:"Chorus EP",
+        genre:"Alternative/Indie",
+        youtube:"yPB-Sgkc6CA"
+      },
+      {
+        title:"Violet City",
+        artist:"Mansionair",
+        album:"Shadowboxer",
+        genre:"Alternative/Indie",
+        youtube:"SNwoPlVqw2Q"
+      },
+      {
+        title:"Warm It Up",
+        artist:"Logic (Feat. Young Sinatra)",
+        album:"Bobby Tarantino II",
+        genre:"Hip-Hop/Rap",
+        youtube:"jBnXPwvr0u4"
+      },
+      {
+        title:"Water",
+        artist:"Kojey Radical, Mahalia & Swindle",
+        album:"Water",
+        genre:"R&B/Soul",
+        youtube:"J_lY8z2l_8E"
+      },
+      {
+        title:"Where No One Knows Your Name",
+        artist:"Stereo Honey",
+        album:"Where No One Knows Your Name",
+        genre:"Alternative/Indie",
+        youtube:"5D6ojB-lLw4"
+      },
+      {
+        title:"you should see me in a crown",
+        artist:"Billie Eilish",
+        album:"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+        genre:"Alternative/Indie",
+        youtube:"Ah0Ys50CqO8"
       },
       {
         title:"",
@@ -96,36 +327,185 @@ const gamesEntries = [
         genre:"",
         youtube:""
       },
-      {
-        title:"",
-        artist:"",
-        album:"",
-        genre:"",
-        youtube:""
-      },
-      {
-        title:"",
-        artist:"",
-        album:"",
-        genre:"",
-        youtube:""
-      },
-      
      
 
     ]
   },
   {
-    title: "Another game",
-    year: "2019",
-    cover: "cover.jpg",
+    title: "Need for Speed",
+    year: "2015",
+    cover: "Need_for_Speed_2015.jpg",
     songs: [
       {
-        title: "Title #1",
-        artist: "Artist #1",
-        album: "Album #1",
-        genre: "metal"
-      }
+        title: "Push It (Feat. Pusha T)",
+        artist: "iSHi",
+        album: "(single)",
+        genre: "Trap",
+        youtube: "VkTJC4A_TtM"
+      },
+      {
+        title: "Insignia",
+        artist: "Muzzy",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "P5LVaGvat7A"
+      },
+      {
+        title: "Vikings",
+        artist: "Botnek",
+        album: "Need for Speed (2015)",
+        genre: "Electro House",
+        youtube: "ecIvEiEVx8Y"
+      },
+      {
+        title: "Lose Ya Love",
+        artist: "Kill The Noise",
+        album: "Occult Classic",
+        genre: "Eurotrapbeat",
+        youtube: "kbNIF2RPG_c"
+      },
+      {
+        title: "Break Yourself",
+        artist: "Hook N Sling",
+        album: "We Are Your Friends (Music From The Original Motion Picture)",
+        genre: "Electronica",
+        youtube: "xw110Qt2JsE"
+      },
+      {
+        title: "Rattlesnake",
+        artist: "Rogue",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "x0E39ug6t70"
+      },
+      {
+        title: "Rio",
+        artist: "Netsky",
+        album: "3",
+        genre: "Dance/Electronic",
+        youtube: "qFDP9egTwfM"
+      },
+      {
+        title: "Turn Up",
+        artist: "Wolfgang Gartner",
+        album: "10 Ways to Steal Home Plate",
+        genre: "Dance/Electronic",
+        youtube: "Vwb-77guWXI"
+      },
+      {
+        title: "Kokayne (Video Games Clean)",
+        artist: "Riff Raff",
+        album: "(single)",
+        genre: "Rap",
+        youtube: "DAnOBWqrOpw"
+      },
+      {
+        title: "Black Sun",
+        artist: "Congorock",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "JmREem1aoVM"
+       
+      },
+      {
+        title: "Flow",
+        artist: "Lokate",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "9cYbiZEZaOM"
+      },
+      {
+        title: "Vibe Out",
+        artist: "GotSome",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "sCES_ssF1Zg"
+      },
+      {
+        title: "Raw",
+        artist: "Going Quantum",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "CRt7vZj4WXM"
+      },
+      {
+        title: "Stand!",
+        artist: "Junior Prom",
+        album: "",
+        genre: "Pop",
+        youtube: "vJX5A0E8w-k"
+      },
+      {
+        title: "Go",
+        artist: "The Chemical Brothers",
+        album: "Born in the Echoes",
+        genre: "Instrumental Hip-Hop, Dance/Electronic",
+        youtube: "LO2RPDZkY88"
+      },
+      {
+        title: "Get Around (Roni Size Remix)",
+        artist: "Michael Woods ft. Sam Obernik",
+        album: "",
+        genre: "Dance/Electronic",
+        youtube: "VXpBfMVUnNk"
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+
     ]
   },
   {
