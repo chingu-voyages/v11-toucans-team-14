@@ -230,28 +230,25 @@ function createGamePage(gameid) {
       songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
       songInfo.innerHTML = `<a href='https://www.youtube.com/watch?v=${song.youtube}' target='blank'>click to listen from youtube</a> (link opens to new window)`;
       // Highlight row which matches searchTerm Keyword
-      if (
-        searchTerm.Keyword.length > 2 &&
-        Object.entries(song)
-          [x][1].toLowerCase()
-          .includes(searchTerm.Keyword)
-      ) {
+      if (searchTerm.Keyword.length > 2 &&Object.entries(song)[x][1].toLowerCase().includes(searchTerm.Keyword)) {
         songListElement.parentElement.classList.add("active");
       }
     }
     // click even to reveal song info panel (youtube link etc)
     songListHolder.addEventListener("click", () => {
       let songDropDown = document.getElementById(`info-${song.title}`);
-      document.querySelectorAll(".song-info").forEach(item => {
-        item.style.display = "none";
+      document.querySelectorAll(".song-info").forEach(item => { 
+        if (item.id !== songDropDown.id) {
+          item.style.display = "none";
+        }
       });
       if (songDropDown.style.display === "block") {
         songDropDown.style.display = "none";
-      } else {
+      } 
+      else {
         songDropDown.style.display = "block";
       }
     });
-
     gameDetails.appendChild(songListHolder); // append song element into game details list
     gameDetails.appendChild(songInfo);
   });
