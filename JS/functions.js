@@ -1,5 +1,5 @@
-const contentHolder = document.getElementById("contentHolder"); // Reference for content holder
-let savedGames = getLocalSavedGames(); // Get saved games from localStorage
+const contentHolder = document.getElementById("contentHolder");
+let savedGames = getLocalSavedGames();
 let searchTerm = {
   Keyword: "",
   Genre: "",
@@ -8,9 +8,8 @@ let searchTerm = {
 
 // Get games by search terms
 function songSearch() {
-  let foundSongs = ""; // variable reference
+  let foundSongs = "";
 
-  // if search type is "artist", run this function
   if (searchTerm.Type === "artist") {
     if (searchTerm.Genre.length > 1) {
       foundSongs = gamesEntries.filter(game =>
@@ -20,7 +19,8 @@ function songSearch() {
             song.artist.toLowerCase().includes(searchTerm.Keyword)
         )
       );
-    } else if (searchTerm.Genre.length < 1) {
+    } 
+    else if (searchTerm.Genre.length < 1) {
       foundSongs = gamesEntries.filter(game =>
         game.songs.some(song =>
           song.artist.toLowerCase().includes(searchTerm.Keyword)
@@ -29,14 +29,14 @@ function songSearch() {
     }
   }
 
-  // if search type is "game", run this function
   else if (searchTerm.Type === "game") {
     if (searchTerm.Genre.length > 1) {
       if (searchTerm.Keyword.length < 1) {
         foundSongs = gamesEntries.filter(game =>
           game.songs.some(song => song.genre.toLowerCase() === searchTerm.Genre)
         );
-      } else if (searchTerm.Keyword.length > 1) {
+      } 
+      else if (searchTerm.Keyword.length > 1) {
         foundSongs = gamesEntries.filter(game =>
           game.songs.some(
             song =>
@@ -45,59 +45,59 @@ function songSearch() {
           )
         );
       }
-    } else {
+    } 
+    else {
       foundSongs = gamesEntries.filter(game =>
         game.title.toLowerCase().includes(searchTerm.Keyword)
       );
     }
   }
+
   return foundSongs;
 }
 
 // Create search result display game
 function renderResults(searchTerm) {
-  let gamesFound = songSearch(searchTerm); // get array from search results
-  contentHolder.innerHTML = null; // reset content div (to avoid duplicate sections)
+  let gamesFound = songSearch(searchTerm);
+  contentHolder.innerHTML = null;
 
   if (gamesFound.length > 0) {
-    createSearchResultPage(gamesFound); // create result page
+    createSearchResultPage(gamesFound);
     // add animation to reveal content, visual cue for visitor that new search is finished
-    contentHolder.style.display = "none"; // dirty hack to hide div before adding animations
-    $("#contentHolder").fadeIn(250); // set fadeIn duration
+    contentHolder.style.display = "none"; 
+    $("#contentHolder").fadeIn(250);
   } else {
-    createNoResultPage(); // create "no results found" page
+    createNoResultPage();
   }
 }
 
 // Create result page content
 function createSearchResultPage(gamesFound) {
-  const resultPageHolder = document.createElement("div"); // reference for resultPageHolder element
-  resultPageHolder.classList.add("resultPageHolder"); // add class to resultPageHolder
-  const resultPageTitle = document.createElement("h1"); // reference for songPage title H1 element
-  resultPageTitle.textContent = `${gamesFound.length} Games matched with search terms`; // text content for title element
-  resultPageHolder.appendChild(resultPageTitle); // add title element as resultPageHolder child
-  const songPage = document.createElement("div"); // reference for songPage element
-  songPage.classList.add("resultPage"); // add class to songPage
-  songPage.id = "songPage"; // set songPage id for possible future manipulation
-  resultPageHolder.appendChild(songPage); // add songPage as resultPageHolder children
-  contentHolder.appendChild(resultPageHolder); // add resultPageHolder as resultPageHolder contentHolder
-  contentHolder.insertBefore(resultPageTitle, resultPageHolder); // move section h1 element before content div
+  const resultPageHolder = document.createElement("div");
+  resultPageHolder.classList.add("resultPageHolder");
+  const resultPageTitle = document.createElement("h1");
+  resultPageTitle.textContent = `${gamesFound.length} Games matched with search terms`;
+  resultPageHolder.appendChild(resultPageTitle);
+  const songPage = document.createElement("div");
+  songPage.classList.add("resultPage");
+  songPage.id = "songPage";
+  resultPageHolder.appendChild(songPage);
+  contentHolder.appendChild(resultPageHolder);
+  contentHolder.insertBefore(resultPageTitle, resultPageHolder);
 
   gamesFound.forEach(item => {
-    let gameCard = document.createElement("div"); // wrap item with div
+    let gameCard = document.createElement("div");
     gameCard.setAttribute("gameid", item.title);
-    gameCard.classList.add("gameCard"); // add class to wrapper div
+    gameCard.classList.add("gameCard");
     gameCard.style.backgroundImage = `url("./img/${item.cover}")`;
-    let gameCardTitle = document.createElement("div"); // create card title div
-    gameCardTitle.classList.add("gameCardTitle"); // add class to card title
-    gameCardTitle.textContent = item.title; // set item text
+    let gameCardTitle = document.createElement("div");
+    gameCardTitle.classList.add("gameCardTitle");
+    gameCardTitle.textContent = item.title;
 
     gameCard.addEventListener("click", e => {
       // Replace whitespaces with dash, avoiding errors when searching complex game titles
       if (e.target.getAttribute("gameid") === null) return;
-      window.location.hash = e.target
-        .getAttribute("gameid")
-        .replace(/\s/g, "-");
+      window.location.hash = e.target.getAttribute("gameid").replace(/\s/g, "-");
       createGamePage(window.location.hash);
     });
 
@@ -110,85 +110,74 @@ function createSearchResultPage(gamesFound) {
     });
 
     gameCard.appendChild(gameCardTitle);
-    songPage.appendChild(gameCard); // place item inside result page div
+    songPage.appendChild(gameCard);
   });
 }
 
 // Create "nothing found" page
 function createNoResultPage() {
-  const resultPageHolder = document.createElement("div"); // reference for songPageHolder element
+  const resultPageHolder = document.createElement("div");
   resultPageHolder.classList.add("resultPageHolder");
-
-  const noResultsHolders = document.createElement("div"); // reference for "not found" page holder
+  const noResultsHolders = document.createElement("div");
   noResultsHolders.classList.add("noResults");
-
-  const pageTitle = document.createElement("h1"); // reference for pageTitle title H1 element
-  pageTitle.textContent = `Nothing found :(`; // text content for pageTitle
+  const pageTitle = document.createElement("h1");
+  pageTitle.textContent = `Nothing found :(`;
   resultPageHolder.appendChild(pageTitle);
-
-  const pageSubHeader = document.createElement("p"); // reference for pageTitle title H1 element
-  pageSubHeader.textContent = `Try using other search terms`; // text content for pageTitle
+  const pageSubHeader = document.createElement("p");
+  pageSubHeader.textContent = `Try using other search terms`;
   resultPageHolder.appendChild(pageSubHeader);
-
   noResultsHolders.appendChild(pageTitle);
   noResultsHolders.appendChild(pageSubHeader);
   resultPageHolder.append(noResultsHolders);
-  contentHolder.appendChild(resultPageHolder); // add result page as contentHolder child
+  contentHolder.appendChild(resultPageHolder);
 }
 
 // Create "Game View" page.
 function createGamePage(gameid) {
   gameid = gameid.substr(1, gameid.length - 1).replace("%20", " ").toLowerCase();
-  const foundGame = gamesEntries.find(
-    game => game.title.toLowerCase().replace(/\s/g, "-") === gameid
-  );
+  const foundGame = gamesEntries.find(game => game.title.toLowerCase().replace(/\s/g, "-") === gameid);
+  contentHolder.innerHTML = null;
+  let isAlreadySaved = savedGames.findIndex(game => foundGame.title === game.title);
 
-  contentHolder.innerHTML = null; // clear content secion
-  let isAlreadySaved = savedGames.findIndex(
-    game => foundGame.title === game.title
-  ); // get if item is already saved into localStorage (-1 if not)
+  const gamePageHolder = document.createElement("div");
+  const gamePageTitleHolder = document.createElement("div");
+  const gamePageTitle = document.createElement("h1");
+  const closeButton = document.createElement("div");
+  const saveButton = document.createElement("div");
+  const gamePage = document.createElement("div");
 
-  const gamePageHolder = document.createElement("div"); // reference for gamePageHolder element
-  const gamePageTitleHolder = document.createElement("div"); // reference for gamePage title H1 element
-  const gamePageTitle = document.createElement("h1"); // reference for gamePage title H1 element
-  const closeButton = document.createElement("div"); // reference for closeButton element
-  const saveButton = document.createElement("div"); // reference for closeButton element
-  const gamePage = document.createElement("div"); // reference for gamePage element
+  gamePageHolder.classList.add("gamePageHolder");
+  gamePageTitleHolder.classList.add("gamePageTitle");
+  gamePageTitle.textContent = `${foundGame.title}`;
+  contentHolder.appendChild(gamePageTitleHolder);
+  gamePageHolder.appendChild(gamePageTitle);
 
-  gamePageHolder.classList.add("gamePageHolder"); // add class to gamePageHolder
-  gamePageTitleHolder.classList.add("gamePageTitle"); //add class to gamePageTitle
-  gamePageTitle.textContent = `${foundGame.title}`; // text content for title element
-  contentHolder.appendChild(gamePageTitleHolder); // add gamePageTitleHolder as contentHolder child
-  gamePageHolder.appendChild(gamePageTitle); // add title element as songPageHolder child
-
-  gamePage.classList.add("gamePage"); // add class to gamePage
-  gamePage.id = "gamePage"; // set gamePage id for possible future manipulation
-  gamePageHolder.appendChild(gamePage); // add gamePage as SongPageHolder children
-  contentHolder.appendChild(gamePageHolder); // add gamePage as contentHolder contentHolder
-  contentHolder.insertBefore(gamePageTitle, gamePageHolder); // move section h1 element before content div
+  gamePage.classList.add("gamePage");
+  gamePage.id = "gamePage";
+  gamePageHolder.appendChild(gamePage);
+  contentHolder.appendChild(gamePageHolder);
+  contentHolder.insertBefore(gamePageTitle, gamePageHolder);
   gamePageTitleHolder.appendChild(gamePageTitle);
 
-  saveButton.classList.add("saveButton"); // add class to Save Game button
-  saveButton.textContent = isAlreadySaved < 0 ? "Save Game" : "Remove Game"; // add text to Save Game button
-  saveButton.id = "saveGame"; /// add ID for closeButton
-  gamePageTitleHolder.appendChild(saveButton); // set Save Game button as gamePageTitleHolder child
+  saveButton.classList.add("saveButton");
+  saveButton.textContent = isAlreadySaved < 0 ? "Save Game" : "Remove Game";
+  saveButton.id = "saveGame";
+  gamePageTitleHolder.appendChild(saveButton);
 
-  closeButton.classList.add("closeButton"); // add class to closeButton
-  closeButton.textContent = "Close Page"; // add text to closeButton
-  closeButton.id = "closeGamePage"; /// add ID for closeButton
-  gamePageTitleHolder.appendChild(closeButton); // set closeButton as gamePageTitleHolder child
+  closeButton.classList.add("closeButton");
+  closeButton.textContent = "Close Page";
+  closeButton.id = "closeGamePage";
+  gamePageTitleHolder.appendChild(closeButton);
 
-  const gameInfo = document.createElement("div"); // create Game info element
-  const gameProfile = document.createElement("div"); // reference for game profile
-  const gameDetails = document.createElement("div"); // reference for game details
-  const gameCover = document.createElement("IMG"); // reference for game cover
+  const gameInfo = document.createElement("div");
+  const gameProfile = document.createElement("div");
+  const gameDetails = document.createElement("div");
+  const gameCover = document.createElement("IMG");
 
-  gameInfo.classList.add("gameInfo"); // add class for gameinfo div
-  gameProfile.classList.add("gameProfile"); // add class for game profile div
-  gameDetails.classList.add("gameDetails"); // add class for game details div
-  gameCover.setAttribute("src", `./img/${foundGame.cover}`); // set game cover image SRC
-
-  // Put sections where they belong
+  gameInfo.classList.add("gameInfo");
+  gameProfile.classList.add("gameProfile");
+  gameDetails.classList.add("gameDetails");
+  gameCover.setAttribute("src", `./img/${foundGame.cover}`);
   gamePage.appendChild(gameInfo);
   gameInfo.appendChild(gameProfile);
   gameInfo.appendChild(gameDetails);
@@ -198,7 +187,7 @@ function createGamePage(gameid) {
   // add event listener for closing page
   closeButton.addEventListener("click", () => {
     history.pushState("", document.title, window.location.pathname); // clear hash from URL, answer found from https://stackoverflow.com/questions/4508574/remove-hash-from-url
-    renderResults(searchTerm.Keyword); // return to main view and render search results again with last used search keyword
+    renderResults(searchTerm.Keyword);
   });
 
   // add event listener for saving/removing localStorage game item
@@ -206,29 +195,29 @@ function createGamePage(gameid) {
     localGameStatus(foundGame);
   });
 
-  let songListHeader = document.createElement("div"); // create "song list header" div element
-  songListHeader.classList.add("song-list-header"); // add class to "song list holder" element
+  let songListHeader = document.createElement("div");
+  songListHeader.classList.add("song-list-header");
   for (let x = 0; x < Object.keys(foundGame.songs[0]).length - 1; x++) {
-    let songListElement = document.createElement("div"); // create "song element" element
-    songListElement.classList.add("song-item"); // add class to "song element"
-    songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase(); // add song detail into song list element
-    songListHeader.appendChild(songListElement); // add "song element" into song "song list holder"
+    let songListElement = document.createElement("div");
+    songListElement.classList.add("song-item");
+    songListElement.textContent = Object.keys(foundGame.songs[0])[x].toUpperCase();
+    songListHeader.appendChild(songListElement);
   }
 
-  gameDetails.appendChild(songListHeader); // append song element into game details list
+  gameDetails.appendChild(songListHeader);
   // Loop each song item and add them under "Game Details" as song-list element
   foundGame.songs.forEach(song => {
-    let songListHolder = document.createElement("div"); // create "song holder" div element
+    let songListHolder = document.createElement("div");
     let songInfo = document.createElement("div");
-    songListHolder.classList.add("song-list"); // add class to "song list holder" element
+    songListHolder.classList.add("song-list");
     songInfo.id = `info-${song.title}`;
     songInfo.classList.add("song-info");
 
     for (let x = 0; x < Object.keys(song).length - 1; x++) {
-      let songListElement = document.createElement("div"); // create "song element" element
-      songListElement.classList.add("song-item"); // add class to "song element"
-      songListElement.textContent = Object.entries(song)[x][1]; // add song detail into song list element
-      songListHolder.appendChild(songListElement); // add "song element" into song "song list holder"
+      let songListElement = document.createElement("div");
+      songListElement.classList.add("song-item");
+      songListElement.textContent = Object.entries(song)[x][1];
+      songListHolder.appendChild(songListElement);
       songInfo.innerHTML = `<a href='https://www.youtube.com/watch?v=${song.youtube}' target='blank'>click to listen from youtube</a> (link opens to new window)`;
       // Highlight row which matches searchTerm Keyword
       if (searchTerm.Keyword.length > 2 &&Object.entries(song)[x][1].toLowerCase().includes(searchTerm.Keyword)) {
@@ -250,19 +239,15 @@ function createGamePage(gameid) {
         songDropDown.style.display = "block";
       }
     });
-    gameDetails.appendChild(songListHolder); // append song element into game details list
+    gameDetails.appendChild(songListHolder);
     gameDetails.appendChild(songInfo);
   });
 }
 
 // Update game page save/remove button text content
 function localGameStatus(foundGame) {
-  let isAlreadySaved = savedGames.findIndex(
-    game => foundGame.title === game.title
-  ); // get if item is already saved into localStorage (-1 if not)
-  isAlreadySaved < 0
-    ? (document.getElementById("saveGame").textContent = "Remove Game")
-    : (document.getElementById("saveGame").textContent = "Save Game");
+  let isAlreadySaved = savedGames.findIndex(game => foundGame.title === game.title); 
+  isAlreadySaved < 0 ? (document.getElementById("saveGame").textContent = "Remove Game") : (document.getElementById("saveGame").textContent = "Save Game");
   isAlreadySaved < 0 ? saveLocalGame(foundGame) : removeLocalGame(foundGame);
 }
 
