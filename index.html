@@ -11,34 +11,46 @@
 </head>
 
 <body>
-    <div class="PageHolder" id="PageHolder">
-        <div id="header" class="header">
-            <span class="logo">&#9834;</span>
-            <h1>GameTunes</h1>
-            <div id="SavedGamesContainer" class="SavedGamesContainer">
+    <div class='bodyHolder'>
+        <div class="PageHolder" id="PageHolder">
+            <div id="header" class="header">
+                <span class="logo">&#9834;</span>
+                <h1>GameTunes</h1>
+                <div id="SavedGamesContainer" class="SavedGamesContainer">
+                </div>
+                <div id="SavedGamesContainerList" class="SavedGamesContainerList">
+                </div>
             </div>
-            <div id="SavedGamesContainerList" class="SavedGamesContainerList">
+            <form id="searchForm">
+                <div class="searchContainer">
+                    <input type="text" name="searchField" placeholder="Search terms here..." id="searchField">
+                    <select id="searchType" name="searchType">
+                        <option value="artist">Search by artist</option>
+                        <option value="game">Search By Game</option>
+                    </select>
+                    <select id="selectGenre" name="selectGenre">
+                        <option value="">ALL GENRES</option>
+                        <option value="pop">POP</option>
+                        <option value="rock">Rock</option>
+                        <option value="Metal">Metal</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+            </form>
+            <div class="contentHolder" id="contentHolder">
             </div>
         </div>
-        <form id="searchForm">
-            <div class="searchContainer">
-                <input type="text" name="searchField" placeholder="Search terms here..." id="searchField">
-                <select id="searchType" name="searchType">
-                    <option value="artist">Search by artist</option>
-                    <option value="game">Search By Game</option>
-                </select>
-                <select id="selectGenre" name="selectGenre">
-                    <option value="">ALL GENRES</option>
-                    <option value="pop">POP</option>
-                    <option value="rock">Rock</option>
-                    <option value="Metal">Metal</option>
-                </select>
-                <button>Search</button>
+        <footer>
+            <div class='footer-item'>
+                GameTunes - 2019
             </div>
-        </form>
-
-        <div class="contentHolder" id="contentHolder">
-        </div>
+            <div class='footer-item'>
+                Made for Chingu Voyage 11
+            </div>
+            <div class='footer-item'>
+                Source code avaibale at <a href='https://github.com/chingu-voyages/v11-toucans-team-14/'>github</a>
+            </div>
+        </footer>
     </div>
     <script src="./JS/functions.js"></script>
     <script src="./JS/data.js"></script>
