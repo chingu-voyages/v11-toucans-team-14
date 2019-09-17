@@ -254,7 +254,7 @@ button:hover {
     display: grid;
     min-width: 100%;
     grid-gap: 18px;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
 }
 
 .gamePageHolder {
@@ -309,11 +309,11 @@ button:hover {
 }
 
 .gameProfile img {
-    width: 180px;
+    width: 240px;
+    
 }
 
 .gameDetails {
-    align-items: stretch;
     margin-left: 15px;
     padding: 0 9px 0 9px;
     color: #efefef;
@@ -321,7 +321,7 @@ button:hover {
 
 .song-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
     color: #fff;
 }
 
@@ -340,7 +340,7 @@ button:hover {
 
 .song-list-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
     background-color: #0b2747;
     border-top: 1px solid rgb(71, 71, 71);
     color: #fff;
