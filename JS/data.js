@@ -374,7 +374,7 @@ const gamesEntries = [
       {
         title: "Rattlesnake",
         artist: "Rogue",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "x0E39ug6t70"
       },
@@ -402,7 +402,7 @@ const gamesEntries = [
       {
         title: "Black Sun",
         artist: "Congorock",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "JmREem1aoVM"
        
@@ -410,28 +410,28 @@ const gamesEntries = [
       {
         title: "Flow",
         artist: "Lokate",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "9cYbiZEZaOM"
       },
       {
         title: "Vibe Out",
         artist: "GotSome",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "sCES_ssF1Zg"
       },
       {
         title: "Raw",
         artist: "Going Quantum",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "CRt7vZj4WXM"
       },
       {
         title: "Stand!",
         artist: "Junior Prom",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Pop",
         youtube: "vJX5A0E8w-k"
       },
@@ -445,7 +445,7 @@ const gamesEntries = [
       {
         title: "Get Around (Roni Size Remix)",
         artist: "Michael Woods ft. Sam Obernik",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "VXpBfMVUnNk"
       },
@@ -480,7 +480,7 @@ const gamesEntries = [
       {
         title: "Surface",
         artist: "Aero Chord",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Trap music, Dance/Electronic",
         youtube: "3FPwcaflCS8"
       },
@@ -529,8 +529,8 @@ const gamesEntries = [
       {
         title: "Modern Slang",
         artist: "Speaker of the House",
-        album: "",
-        genre: " Dance/Electronic",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
         youtube: "6JKJc4sDlkU"
       },
       {
@@ -543,21 +543,21 @@ const gamesEntries = [
       {
         title: "Blink",
         artist: "Zeds Dead",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "50X6FMYTq9k"
       },
       {
         title: "Odyssey",
         artist: "No Wyld",
-        album: "",
-        genre: " Alternative/Indie",
+        album: "Need for Speed (2015)",
+        genre: "Alternative/Indie",
         youtube: "Ulbt3tASoxw"
       },
       {
         title: "Better Hide, Better Run",
         artist: "The Glitch Mob",
-        album: "",
+        album: "Need for Speed (2015)",
         genre: "Dance/Electronic",
         youtube: "KGrpJWGl6tg"
       },
@@ -569,11 +569,364 @@ const gamesEntries = [
         youtube: "uuWQyfGa1yI"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Devil's Whisper",
+        artist: "Raury",
+        album: "All We Need",
+        genre: "Alternative/Indie",
+        youtube: "LoI2C6pW9AQ"
+      },
+      {
+        title: "Don't Trip",
+        artist: "Flosstradamus",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "9P35uYdfNQY"
+      },
+      {
+        title: "Night Riders",
+        artist: "Major Lazer",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "tpleNoWqvsc"
+      },
+      {
+        title: "Ice Hands",
+        artist: "Krakota",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "NA6NL2-8S_I"
+      },
+      {
+        title: "Blight Mamba",
+        artist: "Royalston",
+        album: "People On The Ground",
+        genre: "Dance/Electronic",
+        youtube: "7xUrlQP8TOA"
+      },
+      {
+        title: "Imbalanced",
+        artist: "Phace",
+        album: "Shape The Random",
+        genre: "Dance/Electronic",
+        youtube: "mszV8N3ACyk"
+      },
+      {
+        title: "Clap Track",
+        artist: "Lynx",
+        album: "I Am Lynx",
+        genre: "Dance/Electronic",
+        youtube: "ZtKQet0vavI"
+      },
+      {
+        title: "Nasty (Spor Remix)",
+        artist: "The Prodigy",
+        album: "The Day Is My Enemy",
+        genre: "Jungle/Drum 'n' Bass",
+        youtube: "NktEGEqkUz4"
+      },
+      {
+        title: "Here it Comes (N4S Mix)",
+        artist: "Botnek",
+        album: "(single)",
+        genre: "Dance/Electronic",
+        youtube: "6_3dYMnzo-Q"
+      },
+      {
+        title: "Move Faster",
+        artist: "Dimension",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "WydHCfudvik"
+      },
+      {
+        title: "Stormtrooper",
+        artist: "June Miller",
+        album: "Robots & Romans",
+        genre: "Dance/Electronic",
+        youtube: "xSNDdFHp9Do"
+      },
+      {
+        title: "Into The Light",
+        artist: "Lynx",
+        album: "I Am Lynx",
+        genre: "Dance/Electronic",
+        youtube: "kvnn0Db8VAA"
+      },
+      {
+        title: "Lifespan (Spor Remix)",
+        artist: "Vaults",
+        album: "(single)",
+        genre: "Dance/Electronic",
+        youtube: "rB0RoKjGTNU"
+      },
+      {
+        title: "Move It",
+        artist: "Reso",
+        album: "Ricochet",
+        genre: "Jungle/Drum 'n' Bass",
+        youtube: "4g0kscF3uJE"
+      },
+      {
+        title: "Under Control",
+        artist: "Gomad & Monster",
+        album: "Under Control",
+        genre: "Jungle/Drum 'n' Bass",
+        youtube: "66l4PaW0Zo4"
+      },
+      {
+        title: "Hey",
+        artist: "laves",
+        album: "Are You Satisfied?",
+        genre: "Alternative/Indie",
+        youtube: "nwrPs_wKnOM"
+      },
+    
+      {
+        title: "Machines",
+        artist: "Modestep",
+        album: "London Road",
+        genre: "Dance/Electronic, Rock",
+        youtube: "t9NK7ue27xo"
+      },
+      {
+        title: "Destruction (KOPPS Mix)",
+        artist: "Joywave",
+        album: "(single)",
+        genre: "Alternative/Indie",
+        youtube: "FnUzWrO-C-k"
+      },
+      {
+        title: "Wünsch dir was",
+        artist: "Genetikk",
+        album: "Achter Tag",
+        genre: "Hip-Hop/Rap",
+        youtube: "5FS8RIH7BpI"
+      },
+      {
+        title: "Elektra",
+        artist: "Refused",
+        album: "Freedom",
+        genre: "Punk",
+        youtube: "wRMXTvsCBwQ"
+      },
+      {
+        title: "Silver Surfer, Ghost Rider Go!!!",
+        artist: "Trentemøller",
+        album: "Into the Great Wide Yonder",
+        genre: "Electronica",
+        youtube: "_0gTZ6A0waE"
+      },
+      {
+        title: "Let's Take This Outside",
+        artist: "the one and only PPL MVR",
+        album: "Need for Speed (2015)",
+        genre: "Rock",
+        youtube: "liZWJg7cWJ8"
+      },
+      {
+        title: "25 Reasons",
+        artist: "Louis Berry",
+        album: "Need for Speed (2015)",
+        genre: "Alternative/Indie",
+        youtube: "xy6BZCyCV0g"
+      },
+      {
+        title: "We Can Do What We Want",
+        artist: "Drenge",
+        album: "Undertow",
+        genre: "Alternative/Indie",
+        youtube: "nsqy-z8HQ-o"
+      },
+      {
+        title: "Valkyrie",
+        artist: "Battle Tapes",
+        album: "Need for Speed (2015)",
+        genre: "Alternative/Indie",
+        youtube: "v_V13kbY4yI"
+      },
+      {
+        title: "Won",
+        artist: "The Bots",
+        album: "Pink Palms",
+        genre: "Alternative/Indie",
+        youtube: "nM0RFDpiVrM"
+      },
+      {
+        title: "Get Into It",
+        artist: "The Strypes",
+        album: "Little Victories",
+        genre: "Alternative/Indie",
+        youtube: "lFUN3iM7Az8"
+      },
+      {
+        title: "Shake and Tremble",
+        artist: "Django Django",
+        album: "Born Under Saturn",
+        genre: "Alternative/Indie",
+        youtube: "Lqy3l63px9U"
+      },
+      {
+        title: "Break Them",
+        artist: "Aero Chord",
+        album: "Need for Speed (2015)",
+        genre: "Dance/Electronic",
+        youtube: "nnAy1906EHg"
+      },
+      {
+        title: "Get Rowdy",
+        artist: "Clement Marfo & The Frontline",
+        album: "Need for Speed (2015)",
+        genre: "Hip-Hop/Rap",
+        youtube: "_oltBrgeUMg"
+      },
+      {
+        title: "The Unknown",
+        artist: "Dirty South",
+        album: "With You",
+        genre: "Dance/Electronic",
+        youtube: "RwxtfTiTv-0"
+      },
+      {
+        title: "Koi No Radio",
+        artist: "Bob Bradley & Erik Reiff",
+        album: "(single)",
+        genre: "J-pop",
+        youtube: "0urPj5atmjM"
+      },
+      {
+        title: "Come On",
+        artist: "The Hives",
+        album: "Lex Hives",
+        genre: "Alternative/Indie, Rock",
+        youtube: "HoBr4x-hF_M"
+      },
+      {
+        title: "How You Like Me Now",
+        artist: "The Heavy",
+        album: "The House That Dirt Built",
+        genre: "Rock",
+        youtube: "sVzvRsl4rEM"
+      }
+     
+
+    ]
+  },
+  {
+    title: "Metal Gear Solid V: The Phantom Pain",
+    year: "2015",
+    cover: "Metal Gear Solid V.jpg",
+    songs: [
+      {
+        title: "Take on Me",
+        artist: "a-ha",
+        album: "Hunting High and Low",
+        genre: "Synthpop",
+        youtube: "CK0HFb6fM6E"
+      },
+      {
+        title: "Only Time Will Tell",
+        artist: "Asia",
+        album: "Asia",
+        genre: "Progressive rock",
+        youtube: "KFZ3Qhn5dW8"
+      },
+      {
+        title: "Rebel Yell",
+        artist: "Billy Idol",
+        album: "Rebel Yell",
+        genre: "New Wave/Post-Punk",
+        youtube: "VdphvuyaV_I"
+      },
+      {
+        title: "Friday I'm in Love",
+        artist: "The Cure",
+        album: "Wish",
+        genre: "New Wave/Post-Punk, Alternative/Indie",
+        youtube: "0thnAQKadpo"
+      },
+      {
+        title: "You Spin Me Round (Like a Record)",
+        artist: "Dead or Alive",
+        album: "Youthquake",
+        genre: "‎Hi-NRG‎/ ‎synth-pop‎/‎new wave",
+        youtube: "fpmTe3TDdVU"
+      },
+      {
+        title: "The Final Countdown",
+        artist: "Europe",
+        album: "The Final Countdown",
+        genre: "Hard rock, Glam metal, Rock",
+        youtube: "9jK-NcRmVcw"
+      },
+      {
+        title: "Maneater",
+        artist: "Hall & Oates",
+        album: "H2O",
+        genre: "Adult Contemporary",
+        youtube: "yRYFKcMa_Ek"
+      },
+      {
+        title: "Quiet Life",
+        artist: "Japan",
+        album: "Quiet Life",
+        genre: "Art pop‎, ‎synth-pop",
+        youtube: "xhm-EqcPta0"
+      },
+      {
+        title: "Love Will Tear Us Apart",
+        artist: "Joy Division",
+        album: "Closer",
+        genre: "Post-punk‎, ‎synth-pop‎",
+        youtube: "zuuObGsB0No"
+      },
+      {
+        title: "Too Shy",
+        artist: "Kajagoogoo",
+        album: "White Feathers",
+        genre: "Rock",
+        youtube: "-CfV2iVMeKA"
+      },
+      {
+        title: "Kids in America",
+        artist: "Kim Wilde",
+        album: "Never Say Never",
+        genre: "Pop",
+        youtube: "r_GH6M7cUq4"
+      },
+      {
+        title: "Gloria",
+        artist: "Laura Branigan",
+        album: "Branigan",
+        genre: "Pop",
+        youtube: "355Fk8drgZE"
+      },
+      {
+        title: "The Man Who Sold the World",
+        artist: "Midge Ure",
+        album: "The Gift",
+        genre: "Pop",
+        youtube: "IU2wBKoDOzg"
+      },
+      {
+        title: "True",
+        artist: "Spandau Ballet",
+        album: "True",
+        genre: "Blue-eyed soul‎, ‎new wave",
+        youtube: "AR8D2yqgQ1U"
+      },
+      {
+        title: "She Blinded Me with Science",
+        artist: "Thomas Dolby",
+        album: "The Golden Age of Wireless",
+        genre: "Alternative/Indie",
+        youtube: "V83JR2IoI8k"
+      },
+      {
+        title: "Dancing with Tears in My Eyes",
+        artist: "Ultravox",
+        album: "Lament",
+        genre: "Pop",
+        youtube: "PSQWUZ8a2Ho"
       },
       {
         title: "",
@@ -586,16 +939,102 @@ const gamesEntries = [
     ]
   },
   {
-    title: "Rock-Example Game Tit(le)",
-    year: "2019",
-    cover: "cover.jpg",
+    title: "Far Cry 5",
+    year: "2018",
+    cover: "FC5.jpg",
     songs: [
       {
-        title: "Title #1",
-        artist: "Artist #1",
-        album: "Album #1",
-        genre: "Rock"
-      }
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
     ]
+
   }
 ];
