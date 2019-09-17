@@ -87,6 +87,7 @@ function createSearchResultPage(gamesFound) {
     let gameCard = document.createElement("div"); // wrap item with div
     gameCard.setAttribute("gameid", item.title);
     gameCard.classList.add("gameCard"); // add class to wrapper div
+    gameCard.style.backgroundImage = `url("./img/${item.cover}")`;
     let gameCardTitle = document.createElement("div"); // create card title div
     gameCardTitle.classList.add("gameCardTitle"); // add class to card title
     gameCardTitle.textContent = item.title; // set item text
