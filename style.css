@@ -17,14 +17,18 @@ body {
 .header {
     position: relative;
     display: grid;
+    width: 100%;
     text-transform: uppercase;
     grid-template-columns: 75% 25%;
-    margin-bottom: 18px;
+    margin-bottom: 48px;
 }
 
 .header h1 {
-    z-index: 1;
-    color: #efefef;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #000;
+    letter-spacing: 2px;
+    margin-left: 84px;
+    margin-bottom: 30px;
 }
 
 .header::after {
@@ -37,15 +41,24 @@ body {
     border: 1px solid #f30196;
 }
 
-.header h1::first-letter {
+.logo {
+    position: absolute;
+    z-index: 1;
+    color: #f30196;
+    text-shadow: 6px 6px #111;
+    font-size: 64px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    bottom: 0px;
     background-color: #5c1249;
-    border: 2px solid #f30196;
+    border: 3px solid #f30196;
     border-radius: 50%;
-    padding: 3px 12px 3px 12px;
-    margin-right: 4px;
+    padding: 18px;
 }
 
 .SavedGamesContainer {
+    position: relative;
     background-color: #47125c;
     border: 1px solid #c301f3;
     align-self: center;
@@ -53,7 +66,34 @@ body {
     padding: 4px;
     border-radius: 4px;
     margin-bottom: 18px;
-    color: #efefef;
+    color: #ffffff;
+}
+
+.SavedGamesContainer:hover {
+    cursor: pointer;
+}
+
+.SavedGamesContainerList {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    color: #eee;
+}
+
+.SavedGamesContainerList ul {
+    list-style-type: none;
+    border: 1px solid #47125c;
+    margin: 0;
+    padding: 0;
+}
+
+.SavedGamesContainerList li {
+    cursor: pointer;
+    color: #fff;
+    background-color: #47125c;
+    border-bottom: 1px solid #111;
+    padding: 9px;
 }
 
 /* SEARCH FORM */
@@ -94,8 +134,8 @@ select {
 
 button {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(16, 45, 73);
-    border: 1px solid rgb(114, 114, 114);
+    background-color: #0b2747;
+    border: 1px solid #0162f3;
     margin-right: 24px;
     height: 48px;
     align-self: center;
@@ -231,7 +271,8 @@ button:hover {
     font-size: 1em;
     border-radius: 4px;
     color: #fff;
-    background-color: red;
+    background-color: #5c1212;
+    border: 1px solid #f30101;
 }
 
 .saveButton {
@@ -242,7 +283,8 @@ button:hover {
     font-size: 1em;
     border-radius: 4px;
     color: #fff;
-    background-color: rgb(6, 79, 128);
+    background-color: #12355c;
+    border: 1px solid #0162f3;
 }
 
 .gameProfile {
@@ -266,10 +308,23 @@ button:hover {
     color: #fff;
 }
 
+.song-info {
+    display: none;
+    background-color: #3b092f;
+    padding: 9px 9px 9px 9px;
+    border-bottom: 1px solid #333;
+    width: 98%;
+}
+
+.song-info a {
+    color: rgb(20, 179, 219);
+    text-decoration: none;
+}
+
 .song-list-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: rgb(42, 51, 80);
+    background-color: #0b2747;
     border-top: 1px solid rgb(71, 71, 71);
     color: #fff;
     font-weight: 700;
@@ -285,6 +340,7 @@ button:hover {
 }
 
 .song-item {
+    cursor: pointer;
     padding: 9px 9px 9px 9px;
     border-bottom: 1px solid rgb(71, 71, 71);
 }
