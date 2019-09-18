@@ -362,6 +362,19 @@ button:hover {
     border-bottom: 1px solid rgb(71, 71, 71);
 }
 
+/* LIGHTBOX */
+.lightbox {
+    position: fixed;
+    background-color: #000;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    margin: 0 auto;
+    width: 240px;
+    height: 168px;
+    border: 2px solid #47125c;
+}
+
 /* FOOTER */
 footer {
     position: absolute;
@@ -377,7 +390,6 @@ footer {
     bottom: 0;
     left: 0;
 }
-
 
 @media (max-width: 1260px) { 
     .searchContainer {
