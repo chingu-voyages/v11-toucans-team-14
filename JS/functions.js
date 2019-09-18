@@ -299,16 +299,26 @@ function buildSavedGameList() {
   });
 }
 
-// Temp function for building youtube video
+// Create youtube video window
 function createVideoPlayer (videoID) {
   if (document.getElementById("videoplayer") !== null) {
-    let createWindow = document.getElementById("videoplayer");
-    createWindow.innerHTML = `<iframe width='100%' height='100%' src='https://www.youtube.com/embed/${videoID}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
-    return;
+    let createVideoPlayer = document.getElementById("videoplayer");
+    createVideoPlayer.outerHTML = '';
+
   }
-  let createWindow = document.createElement("div");
-  createWindow.classList.add("lightbox");
-  createWindow.id = 'videoplayer';
-  createWindow.innerHTML = `<iframe width='100%' height='100%' src='https://www.youtube.com/embed/${videoID}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
-  document.getElementById("gameProfile").appendChild(createWindow);
+
+  let createVideoPlayer = document.createElement("div");
+  let createPlayerCloseButton = document.createElement("div");
+
+  createPlayerCloseButton.addEventListener('click', (e) => {
+    e.target.parentElement.outerHTML = '';
+  });
+
+  createVideoPlayer.classList.add("videoplayer");
+  createVideoPlayer.id = 'videoplayer';
+  createVideoPlayer.innerHTML = `<iframe width='100%' height='100%' src='https://www.youtube.com/embed/${videoID}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
+  createPlayerCloseButton.classList.add('videoplayer-close');
+  createPlayerCloseButton.textContent = "X";
+  document.getElementById("bodyHolder").appendChild(createVideoPlayer);
+  createVideoPlayer.appendChild(createPlayerCloseButton);
 }
