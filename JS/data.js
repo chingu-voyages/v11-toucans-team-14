@@ -944,11 +944,326 @@ const gamesEntries = [
     cover: "FC5.jpg",
     songs: [
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Blackjack Moon",
+        artist: "7horse",
+        album: "Let The 7Horse Run",
+        genre: "Rock",
+        youtube: "VG56jMGf7CY"
+      },
+      {
+        title: "Meth Lab Zoso Sticker",
+        artist: "7horse",
+        album: "Let The 7Horse Run",
+        genre: "Rock",
+        youtube: "1MNv6c9M3rk"
+      },
+      {
+        title: "Rock 'N' Roll Fantasy",
+        artist: "Bad Company",
+        album: "Desolation Angels",
+        genre: "Rock",
+        youtube: "5eQGqUfKbzk"
+      },
+      {
+        title: "Nerve Jamming",
+        artist: "Bass Drum of Death",
+        album: "GB City",
+        genre: "Alternative/Indie",
+        youtube: "cHZpznGLiRk"
+      },
+      {
+        title: "Boom Boom",
+        artist: "Big Head Todd and the Monsters ft John Lee Hooker",
+        album: "Beautiful World",
+        genre: "Pop",
+        youtube: "LtOd-NR8bv0"
+      },
+      {
+        title: "Keys To Your Coffin",
+        artist: "Bite the Buffalo",
+        album: "Big Blind",
+        genre: "Rock",
+        youtube: "ein8PPiMfhw"
+      },
+      {
+        title: "Chicken Bone George",
+        artist: "Black Eyed Snakes",
+        album: "It's The Black Eyed Snakes",
+        genre: "Rock",
+        youtube: "brMNawrf3Zg"
+      },
+      {
+        title: "Skulldiggin'",
+        artist: "Black Joe Lewis",
+        album: "Electric Slave",
+        genre: "Rock",
+        youtube: "ufLdyZxPFBo"
+      },
+      {
+        title: "Ain't No Easy Way",
+        artist: "Black Rebel Motorcycle Club",
+        album: "Howl",
+        genre: "Alternative/Indie, Rock",
+        youtube: "S-nSPVZuKwI"
+      },
+      {
+        title: "Beat the Devil's Tattoo",
+        artist: "Black Rebel Motorcycle Club",
+        album: "Beat the devil's Tattoo",
+        genre: "Alternative/Indie, Rock",
+        youtube: "gn9C1vKd7Gc"
+      },
+      {
+        title: "Train, Train",
+        artist: "Blackfoot",
+        album: "Strikes",
+        genre: "Hard Rock",
+        youtube: "hBP15lRprPs"
+      },
+      {
+        title: "Put That There",
+        artist: "Bob Log III",
+        album: "Log Bomb",
+        genre: "Blues",
+        youtube: "ZuN3fdfCW1s"
+      },
+      {
+        title: "Honey",
+        artist: "Bonjah",
+        album: "Beautiful Wild",
+        genre: "Blues Rock",
+        youtube: "yZ9Jy3407Gc"
+      },
+      {
+        title: "Fools Rush In",
+        artist: "Brook Benton",
+        album: "Songs I Love to Sing",
+        genre: "Jazz, Pop",
+        youtube: "D1krxVSX5H0"
+      },
+      {
+        title: "Mess Around",
+        artist: "Cage The Elephant",
+        album: "Tell Me I'm Pretty",
+        genre: "Alternative/Indie",
+        youtube: "Wl7cF9bwNHE"
+      },
+      {
+        title: "Vincent",
+        artist: "Car Seat Headrest",
+        album: "Teens of Denial",
+        genre: "Alternative/Indie",
+        youtube: "bEsItsZphwQ"
+      },
+      {
+        title: "The God That You Deserve",
+        artist: "Channel 3",
+        album: "Put 'Em Up",
+        genre: "Punk",
+        youtube: "J14rgbuUXsw"
+      },
+      {
+        title: "Tiger Eyes",
+        artist: "Claire Guerreso",
+        album: "Tiger Eyes",
+        genre: "Alternative/Indie",
+        youtube: "2pc47Yb04j8"
+      },
+      {
+        title: "Ain't Got No Home",
+        artist: "Clarence \"Frogman\" Henry",
+        album: "A Rage In Harlem (Music From The Film)",
+        genre: "Pop",
+        youtube: "om0ZkQzL7bo"
+      },
+      {
+        title: "But I Do",
+        artist: " Clarence \"Frogman\" Henry",
+        album: "You Always Hurt the One You Love",
+        genre: "R&B/Soul",
+        youtube: "UbfJ3t3CwBc"
+      },
+      {
+        title: "Higher Than My Station",
+        artist: "Close Your Eyes",
+        album: "Line in the Sand",
+        genre: "Punk",
+        youtube: "2lyiGHm7kRg"
+      },
+      {
+        title: "Electric Worry",
+        artist: "Clutch",
+        album: "From Beale Street to Oblivion",
+        genre: "Rock",
+        youtube: "s4ABpbxIPFI"
+      },
+      {
+        title: "Psychotic Reaction",
+        artist: "Count Five",
+        album: "Psychotic Reaction",
+        genre: "Rock",
+        youtube: "fBTT3VPriV8"
+      },
+      {
+        title: "Bad Moon Rising",
+        artist: "Creedence Clearwater Revival",
+        album: "Green River",
+        genre: "Classic Rock",
+        youtube: "zUQiUFZ5RDw"
+      },
+      {
+        title: "Up Around The Bend",
+        artist: "Creedence Clearwater Revival",
+        album: "Cosmo's Factory",
+        genre: "Rock",
+        youtube: "BnRsaHXHznQ"
+      },
+      {
+        title: "The Prowl",
+        artist: "Dan Auerbach",
+        album: "Keep It Hid",
+        genre: "Rock",
+        youtube: "vcunGT_KsfM"
+      },
+      {
+        title: "Get Mine",
+        artist: "Davis",
+        album: "Crooked Finger",
+        genre: "Rock",
+        youtube: "BJ4dOtH3IqI"
+      },
+      {
+        title: "Mashed Potato Time",
+        artist: "Dee Dee Sharp",
+        album: "It's Mashed Potato Time",
+        genre: "Pop",
+        youtube: "51eJ3-h86JQ"
+      },
+      {
+        title: "Let's All Go To The Bar",
+        artist: "Deer Tick",
+        album: "Divine Providence",
+        genre: "Alternative/Indie",
+        youtube: "urjLGdHi2UU"
+      },
+      {
+        title: "Com / Broke",
+        artist: "Dion Lunadon",
+        album: "Dion Lunadon",
+        genre: "Rock",
+        youtube:"rvPQGzGsCJg"
+      },
+      {
+        title: "Raise Hell",
+        artist: "Dorothy",
+        album: "Rockisdead",
+        genre: "Rock",
+        youtube: "rmYyPcEQKU4"
+      },
+      {
+        title: "Rebel Rouser",
+        artist: "Duane Eddy",
+        album: "Have 'Twangy' Guitar Will Travel",
+        genre: "Rock, Blues, Pop",
+        youtube: "K8uZutr1avs"
+      },
+      {
+        title: "Fast As You",
+        artist: "Dwight Yoakam",
+        album: "This Time",
+        genre: "Country",
+        youtube: "A2qo1x9rcCc"
+      },
+      {
+        title: "Prizefighter",
+        artist: "Eels",
+        album: "Hombre Lobo",
+        genre: "Alternative/Indie",
+        youtube: "N3sdPM5mfJ4"
+      },
+      {
+        title: "Still Standing",
+        artist: "Electric Owls",
+        album: "Still Standing",
+        genre: "Alternative/Indie",
+        youtube: "64wiwgj5RU8"
+      },
+      {
+        title: "Cut Ya Down",
+        artist: "Eli \"Paperboy\" Reed",
+        album: "My Way Home",
+        genre: "R&B/Soul",
+        youtube: "d5jSGupt_BA"
+      },
+      {
+        title: "Road Runner",
+        artist: "Bo Diddley",
+        album: "(single)",
+        genre: "Blues",
+        youtube: "1Qng5aH05qI"
+      },
+      {
+        title: "Last Damn Night",
+        artist: "Elle King",
+        album: "Love Stuff",
+        genre: "Alternative/Indie",
+        youtube: "My2qJpd1QVI"
+      },
+      {
+        title: "Write It All Down For You (W.I.A.D.F.Y.)",
+        artist: "Elliot Brood",
+        album: "Mountain Meadows",
+        genre: "Singer-Songwriter, Rock, Folk",
+        youtube: "33jfKsSfkho"
+      },
+      {
+        title: "When I Fall In Love",
+        artist: "Etta Jones",
+        album: "(single)",
+        genre: "Jazz",
+        youtube: "SHUocQ_Sxcw"
+      },
+      {
+        title: "Slow Ride",
+        artist: "Foghat",
+        album: "Fool for the City",
+        genre: "Classic Rock, Rock",
+        youtube: "GcCNcgoyG_0"
+      },
+      {
+        title: "All Right Now",
+        artist: "Free",
+        album: "American Beauty",
+        genre: "Rock",
+        youtube: "rl51s5Osutg"
+      },
+      {
+        title: "The Diamond Ring",
+        artist: "Gary Lewis & the Playboys",
+        album: "Everybody Loves a Clown",
+        genre: "Vocal/Easy Listening, Rock",
+        youtube: "L5V9KUcYneg"
+      },
+       {
+        title: "Black Sheep",
+        artist: "Gin Wigmore",
+        album: "Gravel & Wine",
+        genre: "Alternative/Indie, Pop",
+        youtube: "u7aNKstBCM4"
+      },
+      {
+        title: "Country Sleaze",
+        artist: "Goat Girl",
+        album: "Goat Girl",
+        genre: "Alternative/Indie",
+        youtube: "1lq5Sz9lLOo"
+      },
+      {
+        title: "Highway Tune",
+        artist: "Greta Van Fleet",
+        album: "Black Smoke Rising",
+        genre: "Rock",
+        youtube: "aJg4OJxp-co"
       },
       {
         title: "",
@@ -1034,6 +1349,15 @@ const gamesEntries = [
         genre: "",
         youtube: ""
       },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      
+      
     ]
 
   }
