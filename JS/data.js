@@ -1266,18 +1266,116 @@ const gamesEntries = [
         youtube: "aJg4OJxp-co"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Safari Song",
+        artist: "Greta Van Fleet",
+        album: "Black Smoke Rising",
+        genre: "Rock",
+        youtube: "HxbT5jSxGJ0"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "All Time Low",
+        artist: "Greyarea",
+        album: "Grey Area",
+        genre: "Rock",
+        youtube: "DzMQK-6XZa0"
+      },
+      {
+        title: "Barracuda",
+        artist: "Heart",
+        album: "Little Queen",
+        genre: "Rock",
+        youtube: "PeMvMNpvB5M"
+      },
+      {
+        title: "Hillbillies On Speed",
+        artist: "Hillbilly Hellcats",
+        album: "Rev It Up With Taz",
+        genre: "Rockabilly, Rock",
+        youtube: "pp0oGXbdD4s"
+      },
+      {
+        title: "Fake It",
+        artist: "Holy White Hounds",
+        album: "Sparkle Sparkle",
+        genre: "Alternative/Indie",
+        youtube: "5KywbwN-ydo"
+      },
+      {
+        title: "Smokestack Lightin'",
+        artist: "Howlin' Wolf",
+        album: "You Can't Be Beat",
+        genre: "Classic Blues, Blues",
+        youtube: "9Ri7TcukAJ8"
+      },
+      {
+        title: "Let's Go Young",
+        artist: "Hundred Visions",
+        album: "Permanent Basement",
+        genre: "Rock",
+        youtube: "6sFvLNca1cw"
+      },
+      {
+        title: "I Have to Slow Down",
+        artist: "Jim And The French Vanilla",
+        album: "Afraid Of The House",
+        genre: "Alternative/Indie",
+        youtube: "ZORXgzHjqtw"
+      },
+      {
+        title: "Rocky Mountain Way",
+        artist: "Joe Walsh",
+        album: "The Smoker You Drink, the Player You Get",
+        genre: "Rock",
+        youtube: "UsEE5usGodQ"
+      },
+      {
+        title: "Hot Blood",
+        artist: "Kaleo",
+        album: "A/B",
+        genre: "Folk",
+        youtube: "p6PuTFmn_ds"
+      },
+      {
+        title: "No Good",
+        artist: "Kaleo",
+        album: "A/B",
+        genre: "Folk",
+        youtube: "HC6QJsxRypQ"
+      },
+      {
+        title: "Black+Beige",
+        artist: "Kid Karaté",
+        album: "Black & Beige",
+        genre: "Alternative/Indie",
+        youtube: "jkX-Y5e3uf0"
+      },
+      {
+        title: "Koo Koo Ka Choo",
+        artist: "King Koyote",
+        album: "(single)",
+        genre: "Rock",
+        youtube: "TZk1H53eZLU"
+      },
+      {
+        title: "Working In The Coal Mine",
+        artist: "Lee Dorsey",
+        album: "(single)",
+        genre: "R&B/Soul",
+        youtube: "FA3Royf9_zM"
+      },
+      {
+        title: "Curious Mind (Um, Um, Um, Um, Um, Um)",
+        artist: "Major Lance",
+        album: "Major's Greatest Hits",
+        genre: " R&B/Soul, Vocal/Easy Listening, Rock, Pop, Hip-Hop/Rap",
+        youtube: "Xs9kcio4Dbw"
+      },
+      {
+        title: "The Monkey Time",
+        artist: "Major Lance",
+        album: "Major's Greatest Hits",
+        genre: "Jazz, R&B/Soul, Rock, Pop, Hip-Hop/Rap",
+        youtube: "B0KlRpQeyvo"
       },
       {
         title: "",
