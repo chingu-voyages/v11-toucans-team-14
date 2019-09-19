@@ -151,7 +151,7 @@ function createGamePage(gameid) {
   gamePageTitle.textContent = `${foundGame.title}`;
   contentHolder.appendChild(gamePageTitleHolder);
   gamePageHolder.appendChild(gamePageTitle);
-
+  gamePageTitleHolder.classList.add("gamePageTitle");
   gamePage.classList.add("gamePage");
   gamePage.id = "gamePage";
   gamePageHolder.appendChild(gamePage);
@@ -163,7 +163,6 @@ function createGamePage(gameid) {
   saveButton.textContent = isAlreadySaved < 0 ? "Save Game" : "Remove Game";
   saveButton.id = "saveGame";
   gamePageTitleHolder.appendChild(saveButton);
-
   closeButton.classList.add("closeButton");
   closeButton.textContent = "Close Page";
   closeButton.id = "closeGamePage";
@@ -231,6 +230,22 @@ function createGamePage(gameid) {
       createVideoPlayer(song.youtube);
     });
     gameDetails.appendChild(songListHolder);
+   
+    if (screen.width <= 520) {
+      window.scrollTo({
+        top: 384,
+        left: 0,
+        behavior: 'smooth'
+      });  
+    }
+
+    else {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      }); 
+    }
   });
 }
 

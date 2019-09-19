@@ -502,7 +502,28 @@ footer {
         min-width: 300px;
     }
     
+    .gamePageTitle {
+        display: inline-grid;
+        text-transform: uppercase;
+        grid-template-columns: 1fr 120px 120px;
+    }
+
     .resultPage {
         grid-template-columns: 1fr;
+    }
+
+    .gamePageTitle {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        grid-gap: 18px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .gamePageTitle h1 {
+        margin: 0;
+        text-align: center;
     }
  }
