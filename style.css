@@ -1,16 +1,32 @@
 /* QUICK AND DIRTY CSS FOR PROTOTYPE APP */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
     background-color: #000;
-    margin-top: 48px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
 }
 
 .PageHolder {
+    position: relative;
     margin: 0 auto;
     width: 75vw;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.bodyHolder {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
 }
 
 /* HEADER */
@@ -149,22 +165,24 @@ button:hover {
     background-color: rgb(8, 21, 34);
 }
 
-/* SEARCH ITEMS */
+/* GAME CARDS */
 
 .gameCard {
     position: relative;
     cursor: pointer;
     background-image: url('./img/cover.jpg');
     background-size: cover;
-    min-height: 360px;
-    min-width: 240px;
+    background-position: center center;
+    min-height: 288px;
+    min-width: 192px;
     background-color: rgb(6, 53, 75);
     border-radius: 8px;
-    border: 1px solid rgb(124, 124, 124);
+    border: 1px solid rgb(66, 66, 66);
 }
 
 .gameCardTitle {
     position: absolute;
+    display: none;
     background-color: rgb(131, 30, 114);
     color: rgb(255, 255, 255);
     width: 100%;
@@ -196,19 +214,21 @@ button:hover {
 
 .resultPageHolder {
     display: grid;
-    background-color: rgb(19, 19, 19);
-    border: 1px solid #333;
+    /* background-color: rgb(19, 19, 19); 
+    border: 1px solid #333; */
     min-width: 100%;
     margin-top: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 72px;
     padding: 18px 0px 18px 0px;
 }
 
 .resultPage {
     display: grid;
     color: #eee;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 24px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-row-gap: 48px;
+    grid-column-gap: 18px;
+    justify-content: center;
     justify-items: center;
     width: 100%;
 }
@@ -237,7 +257,7 @@ button:hover {
     display: grid;
     min-width: 100%;
     grid-gap: 18px;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 168px 1fr;
 }
 
 .gamePageHolder {
@@ -246,6 +266,7 @@ button:hover {
     border: 1px solid #333;
     width: 100%;
     margin-top: 36px;
+    margin-bottom: 72px;
     padding: 24px 0px 24px 0;
 }
 
@@ -292,11 +313,11 @@ button:hover {
 }
 
 .gameProfile img {
-    width: 180px;
+    width: 168px;
+    
 }
 
 .gameDetails {
-    align-items: stretch;
     margin-left: 15px;
     padding: 0 9px 0 9px;
     color: #efefef;
@@ -304,7 +325,7 @@ button:hover {
 
 .song-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
     color: #fff;
 }
 
@@ -323,7 +344,7 @@ button:hover {
 
 .song-list-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
     background-color: #0b2747;
     border-top: 1px solid rgb(71, 71, 71);
     color: #fff;
@@ -345,6 +366,66 @@ button:hover {
     border-bottom: 1px solid rgb(71, 71, 71);
 }
 
+/* LIGHTBOX */
+.videoplayer {
+    position: fixed;
+    background-color: #000;
+    z-index: 2;
+    width: 235px;
+    height: 168px;
+    bottom: 27px;
+    left: 27px;
+    margin-top: 18px;
+    border-radius: 4px;
+    border: 2px solid #0b2747;
+}
+
+.videoplayer-close {
+    position: absolute;
+    cursor: pointer;
+    display: grid;
+    border-radius: 50%;
+    background-color: #ff1100;
+    border: 2px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    color: #FFF;
+    top: -18px;
+    z-index: 40;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    align-content: center;
+    border-top: 4px dotted #000;
+    color: #EEE;
+    background: rgb(20, 20, 20);
+    width: 100%;
+    height: 48px;
+    bottom: 0;
+    left: 0;
+}
+
+footer a:link {
+    color: #3e8bff;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #3e8bff;
+}
+
+footer a:hover {
+    color: #efefef;
+}
+
 @media (max-width: 1260px) { 
     .searchContainer {
         display: grid;
@@ -353,11 +434,21 @@ button:hover {
     }
 
     .resultPage {
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     }
  }
 
  @media (max-width: 960px) { 
+    .bodyHolder {
+        width: 95%;
+    }
+
+    .header {
+        width: 99%;
+        margin: 0 0 24px 0;
+        padding: 0;
+    }
+
     .PageHolder {
         width: 100%;
     }
@@ -370,11 +461,19 @@ button:hover {
     }
 
     .resultPage {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 33% 33% 33%;
     }
  }
 
  @media (max-width: 690px) { 
+    .searchContainer {
+        display: grid;
+        text-transform: uppercase;
+        grid-template-columns: auto;
+        grid-template: 1fr auto;
+        margin-bottom: 48px;
+    }
+    
     .cardHolder {
         min-height: 248px;
         min-width: 148px;
@@ -394,15 +493,61 @@ button:hover {
         grid-template-columns: 1fr 1fr;
         grid-gap: 18px;
     }
+
+    .song-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #131313;
+        border: 0 !important;
+        color: #fff;
+        background-color: #222 !important;
+    }
+
+    .song-list:nth-child(even) {
+        background-color: #222 !important;
+    }
+
+    .song-list:nth-child(odd) {
+        background-color: rgb(53, 12, 31) !important;
+    }
+    
+    footer {
+        min-height: 48px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 9px;
+        padding: 9px;
+    }
  }
 
- @media (max-width: 460px) { 
+ @media (max-width: 520px) { 
     .cardHolder {
         min-height: 420px;
         min-width: 300px;
     }
     
+    .gamePageTitle {
+        display: inline-grid;
+        text-transform: uppercase;
+        grid-template-columns: 1fr 120px 120px;
+    }
+
     .resultPage {
         grid-template-columns: 1fr;
+    }
+
+    .gamePageTitle {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        grid-gap: 18px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .gamePageTitle h1 {
+        margin: 0;
+        text-align: center;
     }
  }
