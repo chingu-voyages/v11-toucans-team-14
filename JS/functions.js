@@ -319,16 +319,12 @@ function createVideoPlayer (videoID) {
   if (document.getElementById("videoplayer") !== null) {
     let createVideoPlayer = document.getElementById("videoplayer");
     createVideoPlayer.outerHTML = '';
-
   }
-
   let createVideoPlayer = document.createElement("div");
   let createPlayerCloseButton = document.createElement("div");
-
   createPlayerCloseButton.addEventListener('click', (e) => {
     e.target.parentElement.outerHTML = '';
   });
-
   createVideoPlayer.classList.add("videoplayer");
   createVideoPlayer.id = 'videoplayer';
   createVideoPlayer.innerHTML = `<iframe width='100%' height='100%' src='https://www.youtube.com/embed/${videoID}' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;

@@ -217,7 +217,7 @@ button:hover {
     border: 1px solid #333;
     min-width: 100%;
     margin-top: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 72px;
     padding: 18px 0px 18px 0px;
 }
 
@@ -254,7 +254,7 @@ button:hover {
     display: grid;
     min-width: 100%;
     grid-gap: 18px;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 168px 1fr;
 }
 
 .gamePageHolder {
@@ -263,6 +263,7 @@ button:hover {
     border: 1px solid #333;
     width: 100%;
     margin-top: 36px;
+    margin-bottom: 72px;
     padding: 24px 0px 24px 0;
 }
 
@@ -309,7 +310,7 @@ button:hover {
 }
 
 .gameProfile img {
-    width: 240px;
+    width: 168px;
     
 }
 
@@ -396,17 +397,30 @@ button:hover {
 /* FOOTER */
 footer {
     position: absolute;
-    display: none;
+    display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-items: center;
     align-content: center;
-    border-top: 1px solid #666;
+    border-top: 4px dotted #000;
     color: #EEE;
-    background: #222;
+    background: rgb(20, 20, 20);
     width: 100%;
-    height: 64px;
+    height: 48px;
     bottom: 0;
     left: 0;
+}
+
+footer a:link {
+    color: #3e8bff;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #3e8bff;
+}
+
+footer a:hover {
+    color: #efefef;
 }
 
 @media (max-width: 1260px) { 
@@ -494,6 +508,13 @@ footer {
         background-color: rgb(53, 12, 31) !important;
     }
     
+    footer {
+        min-height: 48px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 9px;
+        padding: 9px;
+    }
  }
 
  @media (max-width: 520px) { 
