@@ -2,7 +2,7 @@
 const isActive = false;
 function testContent(itemAmount) {
   for (let x = 0; x < itemAmount; x++) {
-    gamesEntries.push(gamesEntries[0]);
+    gamesEntries.push(gamesEntries[3]);
   }
 }
 
