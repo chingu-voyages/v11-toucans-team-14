@@ -1378,6 +1378,147 @@ const gamesEntries = [
         youtube: "B0KlRpQeyvo"
       },
       {
+        title: "Hella Miss Lanesome",
+        artist: "Marlon Willims",
+        album: "Marlon Williams",
+        genre: "Alternative/Indie",
+        youtube: "ow8qMY8JkR0"
+      },
+      {
+        title: "Sexual Healing",
+        artist: "Marvin Gaye",
+        album: "Midnight Love",
+        genre: "Classic Soul",
+        youtube: "rjlSiASsUIs"
+      },
+      {
+        title: "My Guy",
+        artist: "Mary Wells",
+        album: "Mary Wells Sings My Guy",
+        genre: "R&B/Soul",
+        youtube: "4WT7nBGX5eU"
+      },
+      {
+        title: "You Beat Me To The Punch",
+        artist: "Mary Wells",
+        album: "The One Who Really Loves You",
+        genre: "R&B/Soul",
+        youtube: "OCUXSdg6PCc"
+      },
+      {
+        title: "Powertrip",
+        artist: "Monster Magnet",
+        album: "Powertrip",
+        genre: "Hard Rock/Rock",
+        youtube: "jE7Zv6d-HUA"
+      },
+      {
+        title: "Van Gogh",
+        artist: "OL CD",
+        album: "Van Gogh",
+        genre: "Rock",
+        youtube: "anNKI6NLdzw"
+      },
+      {
+        title: "Smash The Control Machine",
+        artist: "Otep",
+        album: "Smash The Control Machine",
+        genre: "Heavy Metal/Rock",
+        youtube: "RuOfyA1bh2M"
+      },
+      {
+        title: "Quite Contrary",
+        artist: "Parker Millsap",
+        album: "Parker Millsap",
+        genre: "Folk",
+        youtube: "T3GYXO0XBSI"
+      },
+      {
+        title: "My Youth Generation",
+        artist: "Palaye Royale",
+        album: "Boom Boom Room",
+        genre: "Rock",
+        youtube: "upQlcXP0T74"
+      },
+      {
+        title: "Mad Mad Heart",
+        artist: "The Reverend Horton Heat",
+        album: "Rev",
+        genre: "Alternative/Indie",
+        youtube: "WDMU2KhSBXo"
+      },
+      {
+        title: "Gotta Get It",
+        artist: "River City Rebels",
+        album: "Playing to Live, Living to Play",
+        genre: "Alternative/Indie",
+        youtube: "K34Ttc_iV_c"
+      },
+      
+      {
+        title: "Reload",
+        artist: "Saint PHNX",
+        album: "Reload",
+        genre: "Rock",
+        youtube: "n1Dm-w526Kw"
+      },
+      {
+        title: "The Truth Won't Set Us Free",
+        artist: "Sara Watkins",
+        album: "Young in All the Wrong Ways",
+        genre: "Singer-Songwriter",
+        youtube: "9g2bQSfEswQ"
+      },
+      {
+        title: "Blood, Sweat & Murder",
+        artist: "Scott H. Biram",
+        album: "Hell Or High Water",
+        genre: "Blues",
+        youtube: "3Xb6PkwSKAE"
+      },
+      {
+        title: "Draggin' Down The Line",
+        artist: "Scott H. Biram",
+        album: "Something's Wrong/Lost Forever",
+        genre: "Blues",
+        youtube: "KxbAn8GER2k"
+      },
+      {
+        title: "Roll The Bones (Audiotree Session)",
+        artist: "Shakey Graves",
+        album: "Roll the Bones",
+        genre: "Rock, Folk",
+        youtube: "sD72LbIk02M"
+      },
+      {
+        title: "Buffalo Nicket",
+        artist: "Shovels & Rope",
+        album: "Little Seeds",
+        genre: "Alt Country",
+        youtube: "6tJoslE21Ng"
+      },
+      {
+        title: "I Hate You",
+        artist: "Singapore Sling",
+        album: "Silver Monk Time",
+        genre: "Dance/Electronic",
+        youtube: "3WxaV33PNk8"
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
         title: "",
         artist: "",
         album: "",
