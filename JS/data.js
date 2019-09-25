@@ -312,21 +312,8 @@ const gamesEntries = [
         album:"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
         genre:"Alternative/Indie",
         youtube:"Ah0Ys50CqO8"
-      },
-      {
-        title:"",
-        artist:"",
-        album:"",
-        genre:"",
-        youtube:""
-      },
-      {
-        title:"",
-        artist:"",
-        album:"",
-        genre:"",
-        youtube:""
-      },
+      }
+     
      
 
     ]
@@ -339,7 +326,7 @@ const gamesEntries = [
       {
         title: "Push It (Feat. Pusha T)",
         artist: "iSHi",
-        album: "(single)",
+        album: "",
         genre: "Trap",
         youtube: "VkTJC4A_TtM"
       },
@@ -395,7 +382,7 @@ const gamesEntries = [
       {
         title: "Kokayne (Video Games Clean)",
         artist: "Riff Raff",
-        album: "(single)",
+        album: "",
         genre: "Rap",
         youtube: "DAnOBWqrOpw"
       },
@@ -459,14 +446,14 @@ const gamesEntries = [
       {
         title: "Make The Crowd (NFS Vip Mix)",
         artist: "	Tropkillaz",
-        album: "(single)",
+        album: "",
         genre: "Trap",
         youtube: "xpBQgpLcotc"
       },
       {
         title: "Don't Stop",
         artist: "CamelPhat",
-        album: "(single)",
+        album: "",
         genre: "Dance/Electro",
         youtube: "7XyrH7qxBfQ"
       },
@@ -627,7 +614,7 @@ const gamesEntries = [
       {
         title: "Here it Comes (N4S Mix)",
         artist: "Botnek",
-        album: "(single)",
+        album: "",
         genre: "Dance/Electronic",
         youtube: "6_3dYMnzo-Q"
       },
@@ -789,7 +776,7 @@ const gamesEntries = [
       {
         title: "Koi No Radio",
         artist: "Bob Bradley & Erik Reiff",
-        album: "(single)",
+        album: "",
         genre: "J-pop",
         youtube: "0urPj5atmjM"
       },
@@ -1190,7 +1177,7 @@ const gamesEntries = [
       {
         title: "Road Runner",
         artist: "Bo Diddley",
-        album: "(single)",
+        album: "",
         genre: "Blues",
         youtube: "1Qng5aH05qI"
       },
@@ -1211,7 +1198,7 @@ const gamesEntries = [
       {
         title: "When I Fall In Love",
         artist: "Etta Jones",
-        album: "(single)",
+        album: "",
         genre: "Jazz",
         youtube: "SHUocQ_Sxcw"
       },
@@ -1344,14 +1331,14 @@ const gamesEntries = [
       {
         title: "Koo Koo Ka Choo",
         artist: "King Koyote",
-        album: "(single)",
+        album: "",
         genre: "Rock",
         youtube: "TZk1H53eZLU"
       },
       {
         title: "Working In The Coal Mine",
         artist: "Lee Dorsey",
-        album: "(single)",
+        album: "",
         genre: "R&B/Soul",
         youtube: "FA3Royf9_zM"
       },
@@ -1748,17 +1735,10 @@ const gamesEntries = [
         genre: "Folk",
         youtube: "XirsfmpK0oY"
       },
-       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
       {
         title: "We'll Meet Again",
         artist: "Vera Lynn",
-        album: "(single)",
+        album: "",
         genre: "Singer-songwriter",
         youtube: "cHcunREYzNY"
       },
@@ -1917,6 +1897,160 @@ const gamesEntries = [
         youtube: "2Ko9TpduOhE"
       },
       {
+        title: "Keep a Knockin' (But You Can't Come In)",
+        artist: "Louis Jordan & His Tympany Five",
+        album: "",
+        genre: "Jazz",
+        youtube: "4Uajijh9Lew"
+      },
+      {
+        title: "Maybe",
+        artist: "The Ink Spots",
+        album: "Whispering Grass",
+        genre: "Classical, Jazz, R&B/Soul",
+        youtube: "1E5vvulNS6A"
+      },
+      {
+        title: "Mighty, Mighty Man",
+        artist: "Roy Brown",
+        album: "",
+        genre: "Blues",
+        youtube: "rhp8jMykAVg"
+      },
+      {
+        title: "One More Tomorrow",
+        artist: "Frankie Carle & His Orchestra",
+        album: "",
+        genre: "Jazz",
+        youtube: "BNiqGatt6Nw"
+      },
+      {
+        title: "Orange Colored Sky",
+        artist: "Stan Kenton, featuring Nat King Cole",
+        album: "",
+        genre: "Vocal/Easy Listening",
+        youtube: "xdi97HHYJew"
+      },
+      {
+        title: "Personality",
+        artist: "Johnny Mercer & The Pied Pipers, Jo Stafford",
+        album: "",
+        genre: "Jazz",
+        youtube: "cBt9RnvXtEo"
+      },
+      {
+        title: "Pistol Packin' Mama",
+        artist: "Bing Crosby & The Andrews Sisters",
+        album: "",
+        genre: "Pop",
+        youtube: "b39ALX4neIk"
+      },
+      {
+        title: "Right Behind You Baby",
+        artist: "Ray Smith",
+        album: "I'm Right Behind You Baby",
+        genre: "Rock",
+        youtube: "zyTZ2Pkb9cA"
+      },
+      {
+        title: "Rocket 69",
+        artist: "Todd Rhodes Orchestra: Vocal by Connie Allen and the Band",
+        album: "",
+        genre: "Classic",
+        youtube: "Bo0xdilcCBA"
+      },
+      {
+        title: "Sixty Minute Man",
+        artist: "Billy Ward and his Dominoes",
+        album: "Clyde McPhatter with Billy Ward and His Dominoes",
+        genre: "Jazz, R&B/Soul",
+        youtube: "NlZqfNNtvVM"
+      },
+      {
+        title: "The End of the World",
+        artist: "Skeeter Davis",
+        album: "The Boat That Rocked",
+        genre: "Pop",
+        youtube: "sonLd-32ns4"
+      },
+      {
+        title: "The Wanderer",
+        artist: "Dion DiMucci",
+        album: "Runaround Sue",
+        genre: "Blues",
+        youtube: "IkoidwsLXCg"
+      },
+      {
+        title: "Undecided",
+        artist: "Ella Fitzgerald",
+        album: "",
+        genre: "Jazz",
+        youtube: "mpnDbJjBW8A"
+      },
+      {
+        title: "Uranium Fever",
+        artist: "Elton Britt",
+        album: "",
+        genre: "R&B/Soul, Country, Pop",
+        youtube: "2ANI6oj8p2M"
+      },
+      {
+        title: "Uranium Rock",
+        artist: "Warren Smith",
+        album: "Fallout 4: Soundtrack Highlights",
+        genre: "Rock",
+        youtube: "jq2kqNTHejM"
+      },
+      {
+        title: "Way Back Home",
+        artist: "Bob Crosby and the Bobcats",
+        album: "",
+        genre: "Vocal/Easy Listening",
+        youtube: "ir1A74UA2YE"
+      },
+      {
+        title: "Whole Lotta Shakin' Goin' On",
+        artist: "Big Maybelle",
+        album: "",
+        genre: "R&B/Soul",
+        youtube: "bp11vxr_pD4"
+      },
+      {
+        title: "Worry, Worry, Worry",
+        artist: "The Three Suns",
+        album: "This is The Three Suns",
+        genre: "Pop",
+        youtube: "pUDv3h09VBc"
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      }
+    ]
+  },
+  {
+  title: "Fallout 4",
+    year: "2015",
+    cover: "Fo4.jpg",
+    songs: [
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
         title: "",
         artist: "",
         album: "",
@@ -1944,6 +2078,59 @@ const gamesEntries = [
         genre: "",
         youtube: ""
       },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+
+
+
+
     ]
   }
 ];
