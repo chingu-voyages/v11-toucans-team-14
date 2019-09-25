@@ -927,15 +927,7 @@ const gamesEntries = [
         album: "Lament",
         genre: "Pop",
         youtube: "PSQWUZ8a2Ho"
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-
+      }
     ]
   },
   {
@@ -1505,6 +1497,258 @@ const gamesEntries = [
         youtube: "3WxaV33PNk8"
       },
       {
+        title: "Up Jumped The Devil",
+        artist: "Soledad Brothers",
+        album: "Live",
+        genre: "Alternative/Indie",
+        youtube: "KT1HZQVGOII"
+      },
+      {
+        title: "Bull In A China Shop",
+        artist: "Switchfoot",
+        album: "Where the Light Shines Through",
+        genre: "Rock",
+        youtube: "JUTYnW48C9E"
+      },
+      {
+        title: "20th Century Boy",
+        artist: "T. Rex",
+        album: "Billy Super Duper",
+        genre: "Alternative/Indie, Rock, Pop",
+        youtube: "sQw3LBl2eEU"
+      },
+      {
+        title: "Children Of The Revolution",
+        artist: "T. Rex",
+        album: "Billy Elliot",
+        genre: "Rock",
+        youtube: "pu3-ZGbqUyk"
+      },
+      {
+        title: "Stranglehold",
+        artist: "Ted Nugent",
+        album: "Ted Nugent",
+        genre: "Hard Rock, Rock",
+        youtube: "0c3d7QgZr7g"
+      },
+      {
+        title: "Shelter Song",
+        artist: "Temples",
+        album: "Sun Structures",
+        genre: "Alternative/Indie",
+        youtube: "vs4i41cOv0s"
+      },
+      {
+        title: "Heavy Soul",
+        artist: "The Black Keys",
+        album: "The Big Come Up",
+        genre: "Alternative/Indie",
+        youtube: "shM3Nm-wRrs"
+      },
+      {
+        title: "Lonely Boy",
+        artist: "The Black Keys",
+        album: "El Camino",
+        genre: "Alternative/Indie",
+        youtube: "a_426RiwST8"
+      },
+      {
+        title: "Dirty Sex",
+        artist: "The Bloody Hollies",
+        album: "Yours Until the Bitter End",
+        genre: "Rock",
+        youtube: "yzA1DZkli4g"
+      },
+      {
+        title: "Ghost Dance",
+        artist: "The Bright Light Social Hour",
+        album: "Space Is Still the Place",
+        genre: "Psychedelic Rock",
+        youtube: "nYX23jdYuek"
+      },
+      {
+        title: "Rhythm Of The Rain",
+        artist: "The Cascades",
+        album: "Rhythm Of The Rain",
+        genre: "‎Pop, ‎doo-wop	",
+        youtube: "bQstQST1GiM"
+      },
+      {
+        title: "Should I Stay Or Should I Go",
+        artist: "The Clash",
+        album: "Combat Rock",
+        genre: "Punk",
+        youtube: "BN1WwnEDWAM"
+      },
+      {
+        title: "He's A Rebel",
+        artist: "The Crystals",
+        album: "He's a Rebel",
+        genre: "R&B/Soul",
+        youtube: "G_SXJ18EkNw"
+      },
+      {
+        title: "I Can't Sleep At Night",
+        artist: "The Deadly Snakes",
+        album: "Ode to Joy",
+        genre: "Alternative/Indie",
+        youtube: "VCkYEwrIiNs"
+      },
+      {
+        title: "You Can't Sit Down",
+        artist: "The Dovells",
+        album: "Hully Gully Baby",
+        genre: "Pop",
+        youtube: "_t_Fso_F1lw"
+      },
+      {
+        title: "Save The Last Dance For me",
+        artist: "The Drifters",
+        album: "Save the Last Dance for Me",
+        genre: "R&B/Soul",
+        youtube: "n-XQ26KePUQ"
+      },
+      {
+        title: "This Magic Moment",
+        artist: "Ben E. King & The Drifters",
+        album: "Don't Play That Song!",
+        genre: "R&B/Soul",
+        youtube: "=Ul041CSNJto"
+      },
+      {
+        title: "Keep Your Hands To Yourself",
+        artist: "The Georgia Satellites",
+        album: "Coyote Ugly(movie)",
+        genre: "Rock",
+        youtube: "AMFMf9cN64U"
+      },
+      {
+        title: "I'll Be Loving You",
+        artist: "King Khan & BBQ Show",
+        album: "Invisible Girl",
+        genre: "Alternative/Indie",
+        youtube: "Nj_c5MCXrpQ "
+      },
+      {
+        title: "Shake Real Low",
+        artist: "King Khan & BBQ Show",
+        album: "King Khan & BBQ Show",
+        genre: "Alternative/Indie",
+        youtube: "dIT-5I0dHmw"
+      },
+      {
+        title: "Ophelia",
+        artist: "The Lumineers",
+        album: "Cleopatra",
+        genre: "Alternative/Indie",
+        youtube: "pTOC_q0NLTk"
+      },
+      {
+        title: "Sharp Leather Walkin' Shoes",
+        artist: "The Makers",
+        album: "Psychopathia Sexualis",
+        genre: "Alternative/Indie",
+        youtube: "wy6t1cA4o8A"
+      },
+      {
+        title: "Singin' A Song About Today",
+        artist: "The Mooney Suzuki",
+        album: "People Get Ready",
+        genre: "Alternative/Indie",
+        youtube: "HHvwdI2tzPg"
+      },
+      {
+        title: "Buddy",
+        artist: "The Orwells",
+        album: "Terrible Human Beings",
+        genre: "Alternative/Indie",
+        youtube: "pV6I3hVPUVU"
+      },
+      {
+        title: "Yes I Know",
+        artist: "The Pack A.D.",
+        album: "Positive Thinking",
+        genre: "Alternative/Indie",
+        youtube: "2xb_ulhXyjw"
+      },
+      {
+        title: "Only You",
+        artist: "The Platters",
+        album: "41 Original Hits from the Soundtrack of American Graffiti",
+        genre: "Doo-wop",
+        youtube: "3FygIKsnkCw"
+      },
+      {
+        title: "Deundes",
+        artist: "Quaker City Night Hawks",
+        album: "El Astronauta",
+        genre: "Rock",
+        youtube: "sKIbzd-bOHY"
+      },
+      {
+        title: "The Ballad Of Clutch Vikings",
+        artist: "The Road Vikings",
+        album: "(single)",
+        genre: "Rock",
+        youtube: "vcSW794ueZU"
+      },
+      {
+        title: "Shots Heard Round The World",
+        artist: "The Strike",
+        album: "Shots Heard Round The World",
+        genre: "Rock, Punk",
+        youtube: "BRnfLmWant0"
+      },
+      {
+        title: "Be My Queen",
+        artist: "The Telecaster Kings",
+        album: "The Telecater Kings",
+        genre: "Rock",
+        youtube: ""
+      },
+      {
+        title: "Disco Inferno",
+        artist: "The Trammps",
+        album: "Disco Inferno",
+        genre: "Dance/Electronic",
+        youtube: "A_sY2rjxq6M"
+      },
+      {
+        title: "If You Are Hell Girl",
+        artist: "The Upsidedown",
+        album: "Human Destination",
+        genre: "Indie",
+        youtube: "HPL-zxqlwng"
+      },
+      {
+        title: "Get Free",
+        artist: "The Vines",
+        album: "Highly Evolved",
+        genre: "Alternative/Indie",
+        youtube: "asOvnGHwtDU"
+      },
+       {
+        title: "The Price Of Punishment",
+        artist: "The Warriors",
+        album: "Genuine Sense Of Outrage",
+        genre: "Rock",
+        youtube: "Q9K9ECVKMt0"
+      },
+       {
+        title: "Carrion Crawler",
+        artist: "Thee Oh Sees",
+        album: "Carrion Crawler/The Dream",
+        genre: "Rock",
+        youtube: "HE93zWIkW_8"
+      },
+       {
+        title: "Codeine",
+        artist: "Trampled by Turtles",
+        album: "Blue Sky and the Devil",
+        genre: "Folk",
+        youtube: "XirsfmpK0oY"
+      },
+       {
         title: "",
         artist: "",
         album: "",
@@ -1512,92 +1756,194 @@ const gamesEntries = [
         youtube: ""
       },
       {
-        title: "",
-        artist: "",
-        album: "",
+        title: "We'll Meet Again",
+        artist: "Vera Lynn",
+        album: "(single)",
+        genre: "Singer-songwriter",
+        youtube: "cHcunREYzNY"
+      },
+      {
+        title: "Habitual",
+        artist: "VOMF",
+        album: "Habitual",
         genre: "",
         youtube: ""
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      
-      
+        title: "Little Silver Cross",
+        artist: "White Reaper",
+        album: "The World's Best American Band",
+        genre: "Rock",
+        youtube: "dBdFYTFiK3Y"
+      }
     ]
 
+  },
+  {
+    title: "Fallout 4",
+    year: "2015",
+    cover: "Fo4.jpg",
+    songs: [
+      {
+        title: "A Wonderful Guy",
+        artist: "Tex Beneke featuring Claire Chatwin",
+        album: "",
+        genre: "Country",
+        youtube: "Ig7jx4J399s"
+      },
+      {
+        title: "Ac-Cent-Tchu-Ate the Positive",
+        artist: "Bing Crosby",
+        album: "The Singing Detective(tv show)",
+        genre: "Classical, Jazz, R&B/Sou",
+        youtube: "5Qk9o_ZeR7s"
+      },
+      {
+        title: "Anything Goes",
+        artist: "Cole Porter",
+        album: "Anything Goes(musical)",
+        genre: "Jazz",
+        youtube: "3aeQ3DmKU7A"
+      },
+      {
+        title: "Atom Bomb Baby",
+        artist: "The Five Stars",
+        album: "Fallout 4: Soundtrack Highlights",
+        genre: "Doo-wop",
+        youtube: "KXSUEU7ISfQ"
+      },
+      {
+        title: "Butcher Pete (Part 1)",
+        artist: "Roy Brown",
+        album: "",
+        genre: "Vocal/Easy Listening",
+        youtube: "8V7AxNJWKYU"
+      },
+      {
+        title: "Butcher Pete (Part 2)",
+        artist: "Roy Brown",
+        album: "",
+        genre: "Vocal/Easy Listening",
+        youtube: "6VGDnqCV53w"
+      },
+      {
+        title: "Civilization (Bongo, Bongo, Bongo)",
+        artist: "The Andrews Sisters with Danny Kaye",
+        album: "",
+        genre: "Vocal",
+        youtube: "VEyDNTLlRgU"
+      },{
+        title: "Crawl Out Through the Fallout",
+        artist: "Sheldon Allman",
+        album: "",
+        genre: "Rock",
+        youtube: "8XPzICHxXoQ"
+      },
+      {
+        title: "Crazy He Calls Me",
+        artist: "Billie Holiday",
+        album: "",
+        genre: "Jazz",
+        youtube: "_mitLcbHHz8"
+      },
+      {
+        title: "Dear Hearts and Gentle People",
+        artist: "Bob Crosby and the Bobcats",
+        album: "Fallout 4: Soundtrack Highlights",
+        genre: "Jazz",
+        youtube: "lXNOz-HkoOM"
+      },
+      {
+        title: "Easy Living",
+        artist: "Billie Holiday",
+        album: "",
+        genre: "Jazz",
+        youtube: "RX7TA3ezjHc"
+      },
+      {
+        title: "Good Rockin' Tonight",
+        artist: "Roy Brown",
+        album: "",
+        genre: "Blues",
+        youtube: "cgdzS4OSQ1M"
+      },
+      {
+        title: "Grandma Plays the Numbers",
+        artist: "Wynonie Harris",
+        album: "",
+        genre: "Blues",
+        youtube: "m136JOv3z6w"
+      },
+      {
+        title: "Happy Times",
+        artist: "Bob Crosby and the Bobcats",
+        album: "",
+        genre: "Vocal/Easy Listening",
+        youtube: "HAsUPgc3HC8"
+      },
+      {
+        title: "He's a Demon, He's a Devil, He's a Doll",
+        artist: "Betty Hutton",
+        album: "",
+        genre: "Jazz",
+        youtube: "g6LlW902JRk"
+      },
+      {
+        title: "I Don't Want to Set the World on Fire",
+        artist: "The Ink Spots",
+        album: "I Don't Want to Set the World on Fire / Hey Doc!",
+        genre: "Jazz",
+        youtube: "6l6vqPUM_FE"
+      },
+      {
+        title: "Into Each Life Some Rain Must Fall",
+        artist: "The Ink Spots",
+        album: "The Ink Spots in Hi-Fi",
+        genre: "Jazz",
+        youtube: "PJ9IaplRrm4"
+      },
+      {
+        title: "It's a Man",
+        artist: "Betty Hutton",
+        album: "",
+        genre: "Jazz",
+        youtube: "ydLHY0qonl4"
+      },
+      {
+        title: "It's All Over But the Crying",
+        artist: "The Ink Spots",
+        album: "Keep Cool, Fool",
+        genre: "R&B/Soul",
+        youtube: "2Ko9TpduOhE"
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+    ]
   }
 ];
