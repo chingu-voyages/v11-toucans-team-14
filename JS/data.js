@@ -2032,16 +2032,261 @@ const gamesEntries = [
     ]
   },
   {
-  title: "Fallout 4",
-    year: "2015",
-    cover: "Fo4.jpg",
+  title: "Just Dance 2019"
+    year: "2018",
+    cover: "Just_dance_2019.webp",
     songs: [
       {
-        title: "",
-        artist: "",
+        title: "A Little Party Never Killed Nobody (All We Got)",
+        artist: "Fergie ft. Q-Tip and GoonRock",
+        album: "The Great Gatsby: Music from Baz Luhrmann's Film",
+        genre: "Hip hop‎/‎dubstep",
+        youtube: "0ZgjmE6xdaw"
+      },
+      {
+        title: "Adeyyo",
+        artist: "Ece Seçkin",
+        album: "Zamanım Yok",
+        genre: "Pop",
+        youtube: "2g3-Ba0NA5E"
+      },
+      {
+        title: "Bang Bang Bang",
+        artist: "Big Bang",
+        album: "Made Series",
+        genre: "Hip-Hop/Rap",
+        youtube: "2ips2mM7Zqw"
+      },
+      {
+        title: "Bum Bum Tam Tam",
+        artist: "MC Fioti",
+        album: "Bum bum tam tam (Jonas Blue remix)",
+        genre: "Funk, Hip-Hop/Rap",
+        youtube: "Xl4pbUfJENg"
+      },
+      {
+        title: "Ça Plane Pour Moi",
+        artist: "Plastic Bertrand",
+        album: "127 Hours (Music from the Motion Picture)",
+        genre: "Punk rock",
+        youtube: "savH9RIvbJM"
+      },
+      {
+        title: "Calypso",
+        artist: "Luis Fonsi, Stefflon Don",
+        album: " Vida",
+        genre: "Pop",
+        youtube: "Hnj_EMDUfjY"
+      },
+      {
+        title: "DDU-DU DDU-DU",
+        artist: "BLACKPINK",
+        album: "Blackpink in Your Area",
+        genre: "K-pop, J-Pop",
+        youtube: "IHNzOHi8sJs"
+      },
+      {
+        title: "Familiar",
+        artist: "Liam Payne, J Balvin",
+        album: "Familiar",
+        genre: "Pop",
+        youtube: "oWw1BcFhk-k"
+      },
+      {
+        title: "Finesse (Remix)",
+        artist: "Bruno Mars ft. Cardi B",
+        album: "24K Magic",
+        genre: "Funk, New jack swing, Pop",
+        youtube: "LsoLEjrDogU"
+      },
+      {
+        title: "Fire",
+        artist: "LLP ft. Mike Diamondz",
+        album: "Fire (feat. Mike Diamondz)",
+        genre: "Dance/Electronic",
+        youtube: "zrONabfpRss"
+      },
+      {
+        title: "Fire On The Floor",
+        artist: "Michelle Delamor",
+        album: "Fire on the Floor",
+        genre: "Pop",
+        youtube: "2zYuqEttwzs"
+      },
+      {
+        title: "Havana",
+        artist: "Camila Cabello",
+        album: "Camila",
+        genre: "Latin pop, Pop",
+        youtube: "BQ0mxQXmLsk"
+      },
+      {
+        title: "I'm Still Standing",
+        artist: "Elton John ",
+        album: "Too Low for Zero.",
+        genre: "Rock",
+        youtube: "TKe8ksm3FZQ"
+      },
+      {
+        title: "Mad Love",
+        artist: "Sean Paul, David Guetta, Becky G",
+        album: "Mad Love the Prequel",
+        genre: "Pop music, Dancehall, Pop",
+        youtube: "mlf4bidp2yc"
+      },
+      {
+        title: "Make Me Feel",
+        artist: "Janelle Monáe",
+        album: "Dirty Computer",
+        genre: "R&B/Soul",
+        youtube: "tGRzz0oqgUE"
+      },
+      {
+        title: "Mama Mia",
+        artist: "Mayra Verónica",
+        album: "Mama Mia",
+        genre: "Dance/Electronic",
+        youtube: "IIIgBm2MGeg"
+      },
+      {
+        title: "Mi Mi Mi",
+        artist: "Serebro(Hit The Elctro Beat)",
+        album: "",
+        genre: "Dance",
+        youtube: "QLF0pKpC9P8"
+      },
+      {
+        title: "Narco",
+        artist: "Blasterjaxx & Timmy Trumpet",
+        album: "Narco",
+        genre: "Dance/Electronic",
+        youtube: "S73zDvMgGmI"
+      },
+      {
+        title: "New Reality",
+        artist: "Gigi Rowe",
+        album: "New Reality",
+        genre: "Pop",
+        youtube: "dekwG3zCV-s"
+      },
+      {
+        title: "New Rules",
+        artist: "Dua Lipa",
+        album: "Dua Lipa",
+        genre: "Electropop, Pop",
+        youtube: "k2qgadSvNyU"
+      },
+      {
+        title: "New World",
+        artist: "Krewella, Yellow Claw ft. VAVA",
+        album: "New World",
+        genre: "Dance/Electronic",
+        youtube: "kwjCbKsY_Kc"
+      },
+      {
+        title: "No Tears Left To Cry",
+        artist: "Ariana Grande",
+        album: "Sweetener",
+        genre: "Pop",
+        youtube: "ffxKSjUwKdU"
+      },
+      {
+        title: "Not Your Oridnary",
+        artist: "Stella Mwangi",
+        album: "No Games",
+        genre: "Dance/Electronic",
+        youtube: "jKTWUWFDHxA"
+      },
+      {
+        title: "Obsesión",
+        artist: "Aventura",
+        album: "We Broke the Rules",
+        genre: "Bachata",
+        youtube: "qRTY_ja4EoU"
+      },
+      {
+        title: "OMG",
+        artist: "Arash ft. Snoop Dogg",
+        album: "OMG",
+        genre: "Dance/Electronic",
+        youtube: "pXvoeCgi59o"
+      },
+      {
+        title: "One Kiss",
+        artist: "Dua Lipa, Calvin Harris",
+        album: "Dua Lipa",
+        genre: "Eurodance, Deep house, Dance-pop, Funky house, Pop",
+        youtube: "DkeiKbqa02g"
+      },
+      {
+        title: "Pac Man",
+        artist: "Toshio Kai (Dancing Bros.)",
         album: "",
         genre: "",
-        youtube: ""
+        youtube: "eQ3ounnGZIA"
+      },
+      {
+        title: "Rhythm of the Night",
+        artist: "Corona (Ultraclub 90)",
+        album: "",
+        genre: "Dance",
+        youtube: "_MH5e7Gx8wU"
+      },
+      {
+        title: "Shaky Shaky",
+        artist: "Daddy Yankee",
+        album: "El Disco Duro",
+        genre: "Pop",
+        youtube: "aKuivabiOns"
+      },
+      {
+        title: "Sugar",
+        artist: "Maroon 5",
+        album: "V",
+        genre: "Pop",
+        youtube: "48VSP-atSeI"
+      },
+      {
+        title: "Sweet Little Unforgettable Thing",
+        artist: "Bea Miller",
+        album: "Aurora",
+        genre: "Pop",
+        youtube: "uGjCUY59B_0"
+      },
+      {
+        title: "Sweet Sensation",
+        artist: "Flo Rida",
+        album: "Sweet Sensation",
+        genre: "Hip-Hop/Rap",
+        youtube: "iDo4tqzmVoA"
+      },
+      {
+        title: "Toy",
+        artist: "Netta Barzilai",
+        album: "Toy (Riddler Remixes)",
+        genre: "",
+        youtube: "CziHrYYSyPc"
+      },
+      {
+        title: "Water Me",
+        artist: "Lizzo",
+        album: "Cuz I Love You",
+        genre: "Pop",
+        youtube: "49I6JrUnSQg"
+      },
+      {
+        title: "Where Are You Now?",
+        artist: "Lady Leshurr ft. Wiley",
+        album: "Where Are You Now?",
+        genre: "",
+        youtube: "WLFd6xaRLN0"
+      },
+      {
+        title: "Work Work",
+        artist: "Britney Spears",
+        album: "Britney Jean",
+        genre: "Pop",
+        youtube: "OpXFaynSHNQ"
       },
       {
         title: "",
@@ -2049,87 +2294,7 @@ const gamesEntries = [
         album: "",
         genre: "",
         youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-
-
-
+      }
 
     ]
   }
