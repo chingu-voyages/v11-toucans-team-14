@@ -2032,7 +2032,7 @@ const gamesEntries = [
     ]
   },
   {
-  title: "Just Dance 2019"
+  title: "Just Dance 2019",
     year: "2018",
     cover: "Just_dance_2019.webp",
     songs: [
