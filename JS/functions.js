@@ -53,6 +53,20 @@ function songSearch() {
     }
   }
 
+  else {
+    if (searchTerm.Genre.length > 1) {
+      if (searchTerm.Keyword.length > 1) {
+        foundSongs = gamesEntries.filter(game =>
+          game.songs.some(song => song.title.toLowerCase().includes(searchTerm.Keyword.toLowerCase()) && song.genre.toLowerCase() === searchTerm.Genre.toLowerCase())
+        );
+      }
+    }
+    else {
+      foundSongs = gamesEntries.filter(game =>
+        game.songs.some(song => song.title.toLowerCase().includes(searchTerm.Keyword.toLowerCase()))
+      );
+    }
+  }
   return foundSongs;
 }
 
