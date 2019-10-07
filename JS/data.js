@@ -184,7 +184,7 @@ const gamesEntries = [
         title:"Ordinary People",
         artist:"Bugzy Malone (Feat. JP Cooper)",
         album:"B. Inspired",
-        genre:"Grime/Hip-Hop",
+        genre:"Hip-Hop/Rap",
         youtube:"7gKgb_Hhmao"
       },
       {
@@ -205,7 +205,7 @@ const gamesEntries = [
         title:"Peach",
         artist:"Broods",
         album:"Don't Feed the Pop Monster",
-        genre:"Alternative/Indie, Pop",
+        genre:"Alternative/Indie",
         youtube:"Eiht451O8fM"
       },
       {
@@ -341,21 +341,21 @@ const gamesEntries = [
         title: "Vikings",
         artist: "Botnek",
         album: "Need for Speed (2015)",
-        genre: "Electro House",
+        genre: "Dance/Electronic",
         youtube: "ecIvEiEVx8Y"
       },
       {
         title: "Lose Ya Love",
         artist: "Kill The Noise",
         album: "Occult Classic",
-        genre: "Eurotrapbeat",
+        genre: "Trap",
         youtube: "kbNIF2RPG_c"
       },
       {
         title: "Break Yourself",
         artist: "Hook N Sling",
         album: "We Are Your Friends (Music From The Original Motion Picture)",
-        genre: "Electronica",
+        genre: "Electronic",
         youtube: "xw110Qt2JsE"
       },
       {
@@ -383,7 +383,7 @@ const gamesEntries = [
         title: "Kokayne (Video Games Clean)",
         artist: "Riff Raff",
         album: "",
-        genre: "Rap",
+        genre: "Hip-Hop/Rap",
         youtube: "DAnOBWqrOpw"
       },
       {
@@ -426,7 +426,7 @@ const gamesEntries = [
         title: "Go",
         artist: "The Chemical Brothers",
         album: "Born in the Echoes",
-        genre: "Instrumental Hip-Hop, Dance/Electronic",
+        genre: "Dance/Electronic",
         youtube: "LO2RPDZkY88"
       },
       {
@@ -454,21 +454,21 @@ const gamesEntries = [
         title: "Don't Stop",
         artist: "CamelPhat",
         album: "",
-        genre: "Dance/Electro",
+        genre: "Dance/Electronic",
         youtube: "7XyrH7qxBfQ"
       },
       {
         title: "Connection",
         artist: "Silversun Pickups",
         album: "Better Nature",
-        genre: "Alternative/Indie, Rock",
+        genre: "Alternative/Indie",
         youtube: "G4Qcl00VlXE"
       },
       {
         title: "Surface",
         artist: "Aero Chord",
         album: "Need for Speed (2015)",
-        genre: "Trap music, Dance/Electronic",
+        genre: "Trap",
         youtube: "3FPwcaflCS8"
       },
       {
@@ -510,7 +510,7 @@ const gamesEntries = [
         title: "Callisto",
         artist: "Reso",
         album: "Ricochet",
-        genre: "Jungle/Drum 'n' Bass",
+        genre: "Drum 'n' Bass",
         youtube: "tv2iQ8TYcvo"
       },
       {
@@ -524,7 +524,7 @@ const gamesEntries = [
         title: "Pure Grinding",
         artist: "Avicii",
         album: "Stories",
-        genre: "Dance/Electronic, Pop",
+        genre: "Dance/Electronic",
         youtube: "hzdIoghbFzg"
       },
       {
@@ -608,7 +608,7 @@ const gamesEntries = [
         title: "Nasty (Spor Remix)",
         artist: "The Prodigy",
         album: "The Day Is My Enemy",
-        genre: "Jungle/Drum 'n' Bass",
+        genre: "Drum 'n' Bass",
         youtube: "NktEGEqkUz4"
       },
       {
@@ -650,14 +650,14 @@ const gamesEntries = [
         title: "Move It",
         artist: "Reso",
         album: "Ricochet",
-        genre: "Jungle/Drum 'n' Bass",
+        genre: "Drum 'n' Bass",
         youtube: "4g0kscF3uJE"
       },
       {
         title: "Under Control",
         artist: "Gomad & Monster",
         album: "Under Control",
-        genre: "Jungle/Drum 'n' Bass",
+        genre: "Drum 'n' Bass",
         youtube: "66l4PaW0Zo4"
       },
       {
@@ -672,7 +672,7 @@ const gamesEntries = [
         title: "Machines",
         artist: "Modestep",
         album: "London Road",
-        genre: "Dance/Electronic, Rock",
+        genre: "Dance/Electronic",
         youtube: "t9NK7ue27xo"
       },
       {
@@ -784,7 +784,7 @@ const gamesEntries = [
         title: "Come On",
         artist: "The Hives",
         album: "Lex Hives",
-        genre: "Alternative/Indie, Rock",
+        genre: "Alternative/Indie",
         youtube: "HoBr4x-hF_M"
       },
       {
@@ -828,21 +828,21 @@ const gamesEntries = [
         title: "Friday I'm in Love",
         artist: "The Cure",
         album: "Wish",
-        genre: "New Wave/Post-Punk, Alternative/Indie",
+        genre: "New Wave/Post-Punk",
         youtube: "0thnAQKadpo"
       },
       {
         title: "You Spin Me Round (Like a Record)",
         artist: "Dead or Alive",
         album: "Youthquake",
-        genre: "‎Hi-NRG‎/ ‎synth-pop‎/‎new wave",
+        genre: "‎‎Synthpop‎",
         youtube: "fpmTe3TDdVU"
       },
       {
         title: "The Final Countdown",
         artist: "Europe",
         album: "The Final Countdown",
-        genre: "Hard rock, Glam metal, Rock",
+        genre: "Hard rock",
         youtube: "9jK-NcRmVcw"
       },
       {
@@ -856,7 +856,7 @@ const gamesEntries = [
         title: "Quiet Life",
         artist: "Japan",
         album: "Quiet Life",
-        genre: "Art pop‎, ‎synth-pop",
+        genre: "Synthpop",
         youtube: "xhm-EqcPta0"
       },
       {
@@ -982,14 +982,14 @@ const gamesEntries = [
         title: "Ain't No Easy Way",
         artist: "Black Rebel Motorcycle Club",
         album: "Howl",
-        genre: "Alternative/Indie, Rock",
+        genre: "Alternative/Indie",
         youtube: "S-nSPVZuKwI"
       },
       {
         title: "Beat the Devil's Tattoo",
         artist: "Black Rebel Motorcycle Club",
         album: "Beat the devil's Tattoo",
-        genre: "Alternative/Indie, Rock",
+        genre: "Alternative/Indie",
         youtube: "gn9C1vKd7Gc"
       },
       {
@@ -1143,7 +1143,7 @@ const gamesEntries = [
         title: "Rebel Rouser",
         artist: "Duane Eddy",
         album: "Have 'Twangy' Guitar Will Travel",
-        genre: "Rock, Blues, Pop",
+        genre: "Rock",
         youtube: "K8uZutr1avs"
       },
       {
@@ -1192,7 +1192,7 @@ const gamesEntries = [
         title: "Write It All Down For You (W.I.A.D.F.Y.)",
         artist: "Elliot Brood",
         album: "Mountain Meadows",
-        genre: "Singer-Songwriter, Rock, Folk",
+        genre: "Singer-Songwriter",
         youtube: "33jfKsSfkho"
       },
       {
@@ -1206,7 +1206,7 @@ const gamesEntries = [
         title: "Slow Ride",
         artist: "Foghat",
         album: "Fool for the City",
-        genre: "Classic Rock, Rock",
+        genre: "Classic Rock",
         youtube: "GcCNcgoyG_0"
       },
       {
@@ -1220,14 +1220,14 @@ const gamesEntries = [
         title: "The Diamond Ring",
         artist: "Gary Lewis & the Playboys",
         album: "Everybody Loves a Clown",
-        genre: "Vocal/Easy Listening, Rock",
+        genre: "Vocal/Easy Listening",
         youtube: "L5V9KUcYneg"
       },
        {
         title: "Black Sheep",
         artist: "Gin Wigmore",
         album: "Gravel & Wine",
-        genre: "Alternative/Indie, Pop",
+        genre: "Alternative/Indie",
         youtube: "u7aNKstBCM4"
       },
       {
@@ -1269,7 +1269,7 @@ const gamesEntries = [
         title: "Hillbillies On Speed",
         artist: "Hillbilly Hellcats",
         album: "Rev It Up With Taz",
-        genre: "Rockabilly, Rock",
+        genre: "Rockabilly",
         youtube: "pp0oGXbdD4s"
       },
       {
@@ -1283,7 +1283,7 @@ const gamesEntries = [
         title: "Smokestack Lightin'",
         artist: "Howlin' Wolf",
         album: "You Can't Be Beat",
-        genre: "Classic Blues, Blues",
+        genre: "Classic Blues",
         youtube: "9Ri7TcukAJ8"
       },
       {
@@ -1346,14 +1346,14 @@ const gamesEntries = [
         title: "Curious Mind (Um, Um, Um, Um, Um, Um)",
         artist: "Major Lance",
         album: "Major's Greatest Hits",
-        genre: " R&B/Soul, Vocal/Easy Listening, Rock, Pop, Hip-Hop/Rap",
+        genre: "R&B/Soul",
         youtube: "Xs9kcio4Dbw"
       },
       {
         title: "The Monkey Time",
         artist: "Major Lance",
         album: "Major's Greatest Hits",
-        genre: "Jazz, R&B/Soul, Rock, Pop, Hip-Hop/Rap",
+        genre: "Jazz",
         youtube: "B0KlRpQeyvo"
       },
       {
@@ -1402,7 +1402,7 @@ const gamesEntries = [
         title: "Smash The Control Machine",
         artist: "Otep",
         album: "Smash The Control Machine",
-        genre: "Heavy Metal/Rock",
+        genre: "Heavy Metal",
         youtube: "RuOfyA1bh2M"
       },
       {
@@ -1466,7 +1466,7 @@ const gamesEntries = [
         title: "Roll The Bones (Audiotree Session)",
         artist: "Shakey Graves",
         album: "Roll the Bones",
-        genre: "Rock, Folk",
+        genre: "Rock",
         youtube: "sD72LbIk02M"
       },
       {
@@ -1501,7 +1501,7 @@ const gamesEntries = [
         title: "20th Century Boy",
         artist: "T. Rex",
         album: "Billy Super Duper",
-        genre: "Alternative/Indie, Rock, Pop",
+        genre: "Alternative/Indie",
         youtube: "sQw3LBl2eEU"
       },
       {
@@ -1515,7 +1515,7 @@ const gamesEntries = [
         title: "Stranglehold",
         artist: "Ted Nugent",
         album: "Ted Nugent",
-        genre: "Hard Rock, Rock",
+        genre: "Hard Rock",
         youtube: "0c3d7QgZr7g"
       },
       {
@@ -1557,7 +1557,7 @@ const gamesEntries = [
         title: "Rhythm Of The Rain",
         artist: "The Cascades",
         album: "Rhythm Of The Rain",
-        genre: "‎Pop, ‎doo-wop	",
+        genre: "‎‎Doo-wop",
         youtube: "bQstQST1GiM"
       },
       {
@@ -1683,7 +1683,7 @@ const gamesEntries = [
         title: "Shots Heard Round The World",
         artist: "The Strike",
         album: "Shots Heard Round The World",
-        genre: "Rock, Punk",
+        genre: "Rock",
         youtube: "BRnfLmWant0"
       },
       {
@@ -1775,7 +1775,7 @@ const gamesEntries = [
         title: "Ac-Cent-Tchu-Ate the Positive",
         artist: "Bing Crosby",
         album: "The Singing Detective(tv show)",
-        genre: "Classical, Jazz, R&B/Sou",
+        genre: "Classical",
         youtube: "5Qk9o_ZeR7s"
       },
       {
@@ -1810,7 +1810,7 @@ const gamesEntries = [
         title: "Civilization (Bongo, Bongo, Bongo)",
         artist: "The Andrews Sisters with Danny Kaye",
         album: "",
-        genre: "Vocal",
+        genre: "Vocal/Easy Listening",
         youtube: "VEyDNTLlRgU"
       },{
         title: "Crawl Out Through the Fallout",
@@ -1907,7 +1907,7 @@ const gamesEntries = [
         title: "Maybe",
         artist: "The Ink Spots",
         album: "Whispering Grass",
-        genre: "Classical, Jazz, R&B/Soul",
+        genre: "R&B/Soul",
         youtube: "1E5vvulNS6A"
       },
       {
@@ -1963,7 +1963,7 @@ const gamesEntries = [
         title: "Sixty Minute Man",
         artist: "Billy Ward and his Dominoes",
         album: "Clyde McPhatter with Billy Ward and His Dominoes",
-        genre: "Jazz, R&B/Soul",
+        genre: "Jazz",
         youtube: "NlZqfNNtvVM"
       },
       {
@@ -1991,7 +1991,7 @@ const gamesEntries = [
         title: "Uranium Fever",
         artist: "Elton Britt",
         album: "",
-        genre: "R&B/Soul, Country, Pop",
+        genre: "R&B/Soul",
         youtube: "2ANI6oj8p2M"
       },
       {
@@ -2040,7 +2040,7 @@ const gamesEntries = [
         title: "A Little Party Never Killed Nobody (All We Got)",
         artist: "Fergie ft. Q-Tip and GoonRock",
         album: "The Great Gatsby: Music from Baz Luhrmann's Film",
-        genre: "Hip hop‎/‎dubstep",
+        genre: "Dubstep",
         youtube: "0ZgjmE6xdaw"
       },
       {
@@ -2061,14 +2061,14 @@ const gamesEntries = [
         title: "Bum Bum Tam Tam",
         artist: "MC Fioti",
         album: "Bum bum tam tam (Jonas Blue remix)",
-        genre: "Funk, Hip-Hop/Rap",
+        genre: "Hip-Hop/Rap",
         youtube: "Xl4pbUfJENg"
       },
       {
         title: "Ça Plane Pour Moi",
         artist: "Plastic Bertrand",
         album: "127 Hours (Music from the Motion Picture)",
-        genre: "Punk rock",
+        genre: "Punk",
         youtube: "savH9RIvbJM"
       },
       {
@@ -2096,7 +2096,7 @@ const gamesEntries = [
         title: "Finesse (Remix)",
         artist: "Bruno Mars ft. Cardi B",
         album: "24K Magic",
-        genre: "Funk, New jack swing, Pop",
+        genre: "Funk",
         youtube: "LsoLEjrDogU"
       },
       {
@@ -2117,7 +2117,7 @@ const gamesEntries = [
         title: "Havana",
         artist: "Camila Cabello",
         album: "Camila",
-        genre: "Latin pop, Pop",
+        genre: "Latin pop",
         youtube: "BQ0mxQXmLsk"
       },
       {
@@ -2131,7 +2131,7 @@ const gamesEntries = [
         title: "Mad Love",
         artist: "Sean Paul, David Guetta, Becky G",
         album: "Mad Love the Prequel",
-        genre: "Pop music, Dancehall, Pop",
+        genre: "Pop",
         youtube: "mlf4bidp2yc"
       },
       {
@@ -2173,7 +2173,7 @@ const gamesEntries = [
         title: "New Rules",
         artist: "Dua Lipa",
         album: "Dua Lipa",
-        genre: "Electropop, Pop",
+        genre: "Pop",
         youtube: "k2qgadSvNyU"
       },
       {
@@ -2215,7 +2215,7 @@ const gamesEntries = [
         title: "One Kiss",
         artist: "Dua Lipa, Calvin Harris",
         album: "Dua Lipa",
-        genre: "Eurodance, Deep house, Dance-pop, Funky house, Pop",
+        genre: "Dance",
         youtube: "DkeiKbqa02g"
       },
       {
@@ -2297,5 +2297,140 @@ const gamesEntries = [
       }
 
     ]
+  },
+  {
+    title: "NBA 2K19",
+    year: "2018",
+    cover: "Nba 2k19.jpg",
+    songs: [
+      {
+        title: "Hop Out (feat. A$AP Ferg)",
+        artist: "A$AP Twelvyy",
+        album: "12",
+        genre: "Hip-Hop/Rap",
+        youtube: "_RDVOYOW-rs"
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "",
+        artist: "",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+
+    ]
+
   }
 ];

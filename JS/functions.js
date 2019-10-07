@@ -148,6 +148,8 @@ function createGamePage(gameid) {
 
   gamePageHolder.classList.add("gamePageHolder");
   gamePageTitleHolder.classList.add("gamePageTitle");
+  gamePageTitleHolder.id ="gameTitle";
+  
   gamePageTitle.textContent = `${foundGame.title}`;
   contentHolder.appendChild(gamePageTitleHolder);
   gamePageHolder.appendChild(gamePageTitle);
@@ -333,3 +335,4 @@ function createVideoPlayer (videoID) {
   document.getElementById("bodyHolder").appendChild(createVideoPlayer);
   createVideoPlayer.appendChild(createPlayerCloseButton);
 }
+
