@@ -50,25 +50,17 @@ function addingGenresToDropDown(){
 } 
 
 addingGenresToDropDown();
-//console.log(dropDownMenu)
-
-function listen(){
-   
- // document.getElementById('contentHolder').addEvenlisnter('click', e => {
-
-    //e.preventDefault();
-    //console.log(e.target);
-  //})
-}
-//listen();
 
 let searchFieldToListen = document.getElementById('searchField');
 
 
-
-
 const theBodyofTheDocument = document.getElementById('bodyHolder');
 
+
+let titleForNow = "GameTunes - Matching games to tunes";
+
+document.title = titleForNow;
+let b = document.getElementById('contentHolder');
 
 
 theBodyofTheDocument.addEventListener('click', e => {
@@ -76,36 +68,38 @@ theBodyofTheDocument.addEventListener('click', e => {
  
   
   if(e.target.classList.contains('gameCard')) {
-    let gettingGameId = e.target.getAttribute('gameId');
+    const tab = window.location.href
+    console.log(typeof(tab))
+    let tabName = tab.split('#')[1];
+    console.log(tabName);
+    let realTab = tabName.replace(/-/g," ");
+    console.log(realTab)
+    document.title = realTab
     
-    let convertIdToString = gettingGameId.toString();
-    
-
-    document.title = convertIdToString;
-
-    
-
-    e.preventDefault();
-  
   } 
   
   if (e.target.innerHTML === "Search") {
     
-    document.title = 'GameTunes - Matching games to tunes';
+    titleForNow = 'GameTunes - Matching games to tunes';
+    document.title = titleForNow
+    
   } 
 
   if(e.target.classList.contains('closeButton')){
-    document.title = 'GameTunes - Matching games to tunes';
+    titleForNow = 'GameTunes - Matching games to tunes';
+    document.title = titleForNow
+   
+
   }
 
   if(e.target.tagName == "LI") {
-    let b = e.target.getAttribute('gameId');
-   
-    let c = b.toString();
-    
-
-   document.title = c;
-   e.preventDefault();
+    const tab = window.location.href
+    console.log(typeof(tab))
+    let tabName = tab.split('#')[1];
+    console.log(tabName);
+    let realTab = tabName.replace(/-/g," ");
+    console.log(realTab)
+    document.title = realTab
 
   
 
@@ -115,3 +109,19 @@ theBodyofTheDocument.addEventListener('click', e => {
 })
 
 
+
+function onReload(){
+  const tab = window.location.href
+ console.log(typeof(tab))
+ let tabName = tab.split('#')[1];
+
+ if(tabName == undefined){
+   document.title = "GameTunes - Matching games to tunes"
+ } else {
+  let realTab = tabName.replace(/-/g," ");
+  console.log(realTab)
+  document.title = realTab
+ }
+}
+
+onReload();
