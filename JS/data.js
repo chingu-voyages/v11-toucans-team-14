@@ -2431,6 +2431,258 @@ const gamesEntries = [
       },
 
     ]
-
+  },
+  {
+    title: "NHL 2017 (NA)",
+    year: "2016",
+    cover: "nhl2017.jpg",
+    songs: [
+      {
+        title: "Fleet Foot",
+        artist: "Black Pistol Fire",
+        album: "Don't Wake the Riot",
+        genre: "Indie",
+        youtube: "poxUxgDuh-g"
+      },
+      {
+        title: "Somebody's Gonna Get It",
+        artist: "Selves",
+        album: "Caligo",
+        genre: "Indie",
+        youtube: "pFbIy_daFJE"
+      },
+      {
+        title: "No Way Out feat. Kat Nestel",
+        artist: "Vicetone",
+        album: "No Way Out (feat. Kat Nestel)",
+        genre: "Dance/Electronic",
+        youtube: "Q--nWCmM-3g"
+      },
+      {
+        title: "Figuring It Out",
+        artist: "SWMRS",
+        album: "Drive North",
+        genre: "Indie",
+        youtube: "arG2PSaR6e4"
+      },
+      {
+        title: "In Your Head",
+        artist: "Bob Bradley, Matt Sanchez, Steve Dymond, Giuseppe De Luca",
+        album: "(unknown)",
+        genre: "(unknown)",
+        youtube: ""
+      },
+      {
+        title: "Underestimated feat. JD Era and JRDN",
+        artist: "Maestro Fresh Wes",
+        album: "Compositions Volume 1",
+        genre: "Hip-Hop/Rap",
+        youtube: "gh1Qyf3FEpo"
+      },
+      {
+        title: "Headturner",
+        artist: "Max Brodie",
+        album: "ANW2212 - Neon Grooves",
+        genre: "Dance/Electronic",
+        youtube: "TQs4Ti1DrE0"
+      },
+      {
+        title: "Righteous Smoke",
+        artist: "Monster Truck",
+        album: "The Brown EP",
+        genre: "hard rock",
+        youtube: ""
+      },
+      {
+        title: "You Feel Alive",
+        artist: "Chris Bussey, James Brander",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "Air Traffic Controller",
+        artist: "People Watching",
+        album: "Black Box",
+        genre: "Pop",
+        youtube: "YrVQb7iB86A"
+      },
+      {
+        title: "Feeling Good",
+        artist: "The Sheepdogs",
+        album: "The Sheepdogs",
+        genre: "Rock",
+        youtube: "arMJ6j1Jnh8"
+      },
+      {
+        title: "Round and Round",
+        artist: "Arkells",
+        album: "Morning Report (Deluxe Edition)",
+        genre: "Indie",
+        youtube: "2_1dz6vK2bI"
+      },
+      {
+        title: "Young & Wild",
+        artist: "The Strumbellas",
+        album: "Hope",
+        genre: "Rock",
+        youtube: "ot1gidixnzQ"
+      },
+      {
+        title: "Wake Up Call",
+        artist: "Nothing But Thieves",
+        album: "Nothing But Thieves",
+        genre: "Indie",
+        youtube: "ClQlF-0mbZc"
+      },
+      {
+        title: "Until You Were Gone ft. Emily Warren",
+        artist: "The Chainsmokers & Tritonal",
+        album: "Bouquet",
+        genre: "Dance/Electronic",
+        youtube: "u-51P-Gdt6A"
+      },
+      {
+        title: "Do What I Do",
+        artist: "William Davies, Dag Torgersbraten, Ian Tunstall",
+        album: "ANW2034 - Rap",
+        genre: "Hip-Hop/Rap",
+        youtube: "NjUBfli2fEg"
+      },
+      {
+        title: "Crash 2.0",
+        artist: "Adventure Club vs DallasK",
+        album: "Crash 2.0",
+        genre: "Dance/Electronic",
+        youtube: "KlcJjMxjjBs"
+      }
+    ]
+  },
+  {
+    title: "NHL 2018 (NA)",
+    year: "2017",
+    cover: "nhl2018.jpg",
+    songs: [
+      {
+        title: "Fire That Burns",
+        artist: "Circa Waves",
+        album: "Different Creatures",
+        genre: "Indie",
+        youtube: "miIIAQDVTVA"
+      },
+      {
+        title: "Ready For The Devil (No Mercy)",
+        artist: "Vision Vision",
+        album: "(unknown)",
+        genre: "Indie",
+        youtube: "PE3TZn_LtkE"
+      },
+      {
+        title: "Havent You Heard",
+        artist: "The North Panics",
+        album: "No Way Out (feat. Kat Nestel)",
+        genre: "Rock",
+        youtube: "BoTg3vGmc78"
+      },
+      {
+        title: "Figuring It Out",
+        artist: "SWMRS",
+        album: "Drive North",
+        genre: "Indie",
+        youtube: "arG2PSaR6e4"
+      },
+      {
+        title: "In Your Head",
+        artist: "Bob Bradley, Matt Sanchez, Steve Dymond, Giuseppe De Luca",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "Underestimated feat. JD Era and JRDN",
+        artist: "Maestro Fresh Wes",
+        album: "Compositions Volume 1",
+        genre: "Hip-Hop/Rap",
+        youtube: "gh1Qyf3FEpo"
+      },
+      {
+        title: "Headturner",
+        artist: "Max Brodie",
+        album: "ANW2212 - Neon Grooves",
+        genre: "Dance/Electronic",
+        youtube: "TQs4Ti1DrE0"
+      },
+      {
+        title: "Righteous Smoke",
+        artist: "Monster Truck",
+        album: "The Brown EP",
+        genre: "hard rock",
+        youtube: ""
+      },
+      {
+        title: "You Feel Alive",
+        artist: "Chris Bussey, James Brander",
+        album: "",
+        genre: "",
+        youtube: ""
+      },
+      {
+        title: "Air Traffic Controller",
+        artist: "People Watching",
+        album: "Black Box",
+        genre: "Pop",
+        youtube: "YrVQb7iB86A"
+      },
+      {
+        title: "Feeling Good",
+        artist: "The Sheepdogs",
+        album: "The Sheepdogs",
+        genre: "Rock",
+        youtube: "arMJ6j1Jnh8"
+      },
+      {
+        title: "Round and Round",
+        artist: "Arkells",
+        album: "Morning Report (Deluxe Edition)",
+        genre: "Indie",
+        youtube: "2_1dz6vK2bI"
+      },
+      {
+        title: "Young & Wild",
+        artist: "The Strumbellas",
+        album: "Hope",
+        genre: "Rock",
+        youtube: "ot1gidixnzQ"
+      },
+      {
+        title: "Wake Up Call",
+        artist: "Nothing But Thieves",
+        album: "Nothing But Thieves",
+        genre: "Indie",
+        youtube: "ClQlF-0mbZc"
+      },
+      {
+        title: "Until You Were Gone ft. Emily Warren",
+        artist: "The Chainsmokers & Tritonal",
+        album: "Bouquet",
+        genre: "Dance/Electronic",
+        youtube: "u-51P-Gdt6A"
+      },
+      {
+        title: "Do What I Do",
+        artist: "William Davies, Dag Torgersbraten, Ian Tunstall",
+        album: "ANW2034 - Rap",
+        genre: "Hip-Hop/Rap",
+        youtube: "NjUBfli2fEg"
+      },
+      {
+        title: "Crash 2.0",
+        artist: "Adventure Club vs DallasK",
+        album: "Crash 2.0",
+        genre: "Dance/Electronic",
+        youtube: "KlcJjMxjjBs"
+      }
+    ]
   }
+
 ];
