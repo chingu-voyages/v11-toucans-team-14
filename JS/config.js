@@ -125,3 +125,18 @@ function onReload(){
 }
 
 onReload();
+
+ window.onpopstate = () => {
+
+  const tab = window.location.href
+  console.log(typeof(tab))
+  let tabName = tab.split('#')[1];
+ 
+  if(tabName == undefined){
+    document.title = "GameTunes - Matching games to tunes"
+  } else {
+   let realTab = tabName.replace(/-/g," ");
+   console.log(realTab)
+   document.title = realTab
+  }
+ }
