@@ -1,7 +1,7 @@
 // Data entries
 const gamesEntries = [
   {
-    title: "Fifa 19", // Game title (name)
+    title: "FIFA 19", // Game title (name)
     year: "2018", // Year when game was released
     cover: "Fifa.jpg", // Example: cover-art.jpg
     songs: [
