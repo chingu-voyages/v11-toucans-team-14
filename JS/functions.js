@@ -6,6 +6,7 @@ let searchTerm = {
   Type: "artist"
 };
 
+
 // Get games by search terms
 function songSearch() {
   let foundSongs = "";
@@ -350,3 +351,12 @@ function createVideoPlayer (videoID) {
   createVideoPlayer.appendChild(createPlayerCloseButton);
 }
 
+function navigationEvent (gameid) {
+  if (gameid.length > 0) {
+    createGamePage(gameid);
+  }
+
+  else {
+    renderResults(searchTerm.Keyword);
+  }
+}

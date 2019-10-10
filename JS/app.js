@@ -43,3 +43,9 @@ document.addEventListener('click', (e) => {
     document.getElementById("SavedGamesContainerList").style.visibility = "hidden"; 
   }
 });
+
+// Load new gamepage if user navigates using back button or similiar methods
+window.addEventListener('popstate', () => {
+    const popHash = document.location.hash;
+    navigationEvent(popHash);
+});
