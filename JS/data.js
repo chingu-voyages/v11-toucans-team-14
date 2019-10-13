@@ -2603,6 +2603,20 @@ const gamesEntries = [
         album: "Praktice",
         genre: "Hip-Hop/Rap",
         youtube: "4wAu7KaMYPg"
+      },
+      {
+        title: "Stargazing",
+        artist: "Travis Scott",
+        album: "Astroworld",
+        genre: "Hip-Hop/Rap",
+        youtube: "2a8PgqWrc_4"
+      },
+      {
+        title: "Sicko Mode",
+        artist: "Travis Scott ft. Drake, Swae Lee, Big Hawk",
+        album: "Astroworld",
+        genre: "Hip-Hop/Rap",
+        youtube: "6ONRf7h3Mdk"
       }
 
 
