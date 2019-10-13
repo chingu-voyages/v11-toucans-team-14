@@ -4,6 +4,8 @@ GameTunes | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
 
 GameTunes is a site that catalogues lincensed music used in video games. It allows users to find the music by game, artist and song. Users can listen to the music on the platform and also discover more licensed music used in video games.
 
+**Live demo:** https://gametunes.netlify.com/
+
 Features:
 
 * Search for music
