@@ -2761,118 +2761,271 @@ const gamesEntries = [
         youtube: "miIIAQDVTVA"
       },
       {
-        title: "Ready For The Devil (No Mercy)",
-        artist: "Vision Vision",
-        album: "(unknown)",
+        title: "The Relevator",
+        artist: "Cmd & Ctrl",
+        album: "Dirty Jobs",
         genre: "Indie",
-        youtube: "PE3TZn_LtkE"
+        youtube: "6fJQ3ykfesk"
       },
       {
-        title: "Havent You Heard",
-        artist: "The North Panics",
+        title: "What We Started ft. BullySongs",
+        artist: "Don Diablo & Steve Aoki x Lush & Simon",
         album: "No Way Out (feat. Kat Nestel)",
         genre: "Rock",
-        youtube: "BoTg3vGmc78"
+        youtube: "4aldkngvhH8"
       },
       {
-        title: "Figuring It Out",
-        artist: "SWMRS",
+        title: "Day Glow Fire",
+        artist: "Future Islands",
         album: "Drive North",
         genre: "Indie",
-        youtube: "arG2PSaR6e4"
+        youtube: "LnwNOTSb3dA"
       },
       {
-        title: "In Your Head",
-        artist: "Bob Bradley, Matt Sanchez, Steve Dymond, Giuseppe De Luca",
+        title: "Feel So Good",
+        artist: "Ghost Beach",
         album: "",
         genre: "",
-        youtube: ""
+        youtube: "xEPsgwc5Jhw"
       },
       {
-        title: "Underestimated feat. JD Era and JRDN",
-        artist: "Maestro Fresh Wes",
-        album: "Compositions Volume 1",
-        genre: "Hip-Hop/Rap",
-        youtube: "gh1Qyf3FEpo"
-      },
-      {
-        title: "Headturner",
-        artist: "Max Brodie",
-        album: "ANW2212 - Neon Grooves",
-        genre: "Dance/Electronic",
-        youtube: "TQs4Ti1DrE0"
-      },
-      {
-        title: "Righteous Smoke",
-        artist: "Monster Truck",
-        album: "The Brown EP",
-        genre: "hard rock",
-        youtube: ""
-      },
-      {
-        title: "You Feel Alive",
-        artist: "Chris Bussey, James Brander",
-        album: "",
-        genre: "",
-        youtube: ""
-      },
-      {
-        title: "Air Traffic Controller",
-        artist: "People Watching",
-        album: "Black Box",
+        title: "Watch Me Walk",
+        artist: "Jay Watts",
+        album: "Watch Me Walk",
         genre: "Pop",
-        youtube: "YrVQb7iB86A"
+        youtube: "9eJJs5tjBvA"
       },
       {
-        title: "Feeling Good",
-        artist: "The Sheepdogs",
-        album: "The Sheepdogs",
+        title: "Air Is Free",
+        artist: "Johnossi",
+        album: "Blood Jungle",
         genre: "Rock",
-        youtube: "arMJ6j1Jnh8"
+        youtube: "QuVszf-W4cw"
       },
       {
-        title: "Round and Round",
-        artist: "Arkells",
-        album: "Morning Report (Deluxe Edition)",
+        title: "Hot Blood",
+        artist: "Kaleo",
+        album: "A/B",
+        genre: "Rock",
+        youtube: "p6PuTFmn_ds"
+      },
+      {
+        title: "Can't Stop Me Now",
+        artist: "Kid Dean",
+        album: "Kid Dean",
+        genre: "Folk",
+        youtube: "6_Ottcle7jc"
+      },
+      {
+        title: "Hit Parade",
+        artist: "Mutemath",
+        album: "Play Dead",
         genre: "Indie",
-        youtube: "2_1dz6vK2bI"
+        youtube: "lsUyLdihndc"
       },
       {
-        title: "Young & Wild",
-        artist: "The Strumbellas",
-        album: "Hope",
-        genre: "Rock",
-        youtube: "ot1gidixnzQ"
-      },
-      {
-        title: "Wake Up Call",
+        title: "Amsterdam",
         artist: "Nothing But Thieves",
-        album: "Nothing But Thieves",
+        album: "Broken Machine",
         genre: "Indie",
-        youtube: "ClQlF-0mbZc"
+        youtube: "X2zcG3bcuMI"
       },
       {
-        title: "Until You Were Gone ft. Emily Warren",
-        artist: "The Chainsmokers & Tritonal",
-        album: "Bouquet",
-        genre: "Dance/Electronic",
-        youtube: "u-51P-Gdt6A"
+        title: "Shock Me Wide Awake",
+        artist: "Paul Layton",
+        album: "Shock Me Wide Awake EP",
+        genre: "Pop",
+        youtube: "UBmCHNSUqRI"
       },
       {
-        title: "Do What I Do",
-        artist: "William Davies, Dag Torgersbraten, Ian Tunstall",
-        album: "ANW2034 - Rap",
-        genre: "Hip-Hop/Rap",
-        youtube: "NjUBfli2fEg"
+        title: "Be Who You Are",
+        artist: "The Kooks",
+        album: "Best Of… So Far",
+        genre: "Indie",
+        youtube: "zH28w77Nq1k"
+      },
+      {
+        title: "They Put A Body In The Bayou",
+        artist: "The North Panics",
+        album: "Rock",
+        genre: "Rock",
+        youtube: "xvoKjjF6Yf0"
+      },
+      {
+        title: "Legend",
+        artist: "The Score",
+        album: "Atlas",
+        genre: "Indie",
+        youtube: "r1lST6mCdSA"
+      },
+      {
+        title: "Ready For The Devil (No Mercy)",
+        artist: "Vision Vision",
+        album: "Ready for the Devil (No Mercy)",
+        genre: "Indie",
+        youtube: "Kvz1Hoyd5m4"
+      },
+      {
+        title: "We Got It All",
+        artist: "Whissell",
+        album: "(unknown)",
+        genre: "Indie",
+        youtube: "tu12ybgpr5k"
       },
       {
         title: "Crash 2.0",
-        artist: "Adventure Club vs DallasK",
-        album: "Crash 2.0",
+        artist: "Adventure Club",
+        album: "Red // Blue",
         genre: "Dance/Electronic",
-        youtube: "KlcJjMxjjBs"
+        youtube: "fDZo3wZWOV8"
+      }
+    ]
+  },
+  {
+    title: "NHL 2019 (NA)",
+    year: "2018",
+    cover: "nhl2019.jpg",
+    songs: [
+      {
+        title: "People’s Champ",
+        artist: "Arkells",
+        album: "Rally Cry",
+        genre: "Indie",
+        youtube: "miIIAQDVTVA"
+      },
+      {
+        title: "White Flag",
+        artist: "Bishop Briggs",
+        album: "Church of Scars",
+        genre: "Indie",
+        youtube: "syhBqULC99I"
+      },
+      {
+        title: "Head Up feat. James Newman",
+        artist: "Don Diablo",
+        album: "No Way Out (feat. Kat Nestel)",
+        genre: "Future",
+        youtube: "PtOb57oY4Sk"
+      },
+      {
+        title: "Blood // Water",
+        artist: "grandson",
+        album: "a modern tragedy vol. 1",
+        genre: "Indie",
+        youtube: "Sk-U8ruIQyA"
+      },
+      {
+        title: "When The Curtain Falls",
+        artist: "Greta Van Fleet",
+        album: "Anthem of the Peaceful Army",
+        genre: "rock",
+        youtube: "86_vnQc1oBE"
+      },
+      {
+        title: "Natural",
+        artist: "Imagine Dragons",
+        album: "Origins",
+        genre: "indie",
+        youtube: "0I647GU3Jsc"
+      },
+      {
+        title: "Psycho Star",
+        artist: "King Tuff",
+        album: "The Other",
+        genre: "Indie",
+        youtube: "uiVnT1gSXZg"
+      },
+      {
+        title: "Good As Gold",
+        artist: "Moon Taxi",
+        album: "Let the Record Play",
+        genre: "Indie",
+        youtube: "sOVFw38gbMM"
+      },
+      {
+        title: "All Roads Lead Home",
+        artist: "Ohana Bam",
+        album: "Fast & Furious Presents: Hobbs & Shaw (Original Motion Picture Soundtrack)",
+        genre: "Hip-Hop/Rap",
+        youtube: "4fWIM3O08UA"
+      },
+      {
+        title: "High Hopes",
+        artist: "Panic! At The Disco",
+        album: "Pray for the Wicked",
+        genre: "Pop",
+        youtube: "IPXIgEAGe4U"
+      },
+      {
+        title: "I Want It All",
+        artist: "Parade Of Lights",
+        album: "(unknown)",
+        genre: "Rock",
+        youtube: "4UJsIVfH_To"
+      },
+      {
+        title: "Almost Had To Start A Fight/In And Out Of Patience",
+        artist: "Parquet Courts",
+        album: "Wide Awake!",
+        genre: "Indie",
+        youtube: "l-Bka7yNyKA"
+      },
+      {
+        title: "Favorite Color Is Blue feat. K.Flay",
+        artist: "Robert DeLong",
+        album: "See You In The Future",
+        genre: "Indie",
+        youtube: "_GGWt7EwzG8"
+      },
+      {
+        title: "Make It To Morning",
+        artist: "SUR",
+        album: "SAVAGE BEAST",
+        genre: "Indie",
+        youtube: "WLmMimk31zE"
+      },
+      {
+        title: "Know My Name",
+        artist: "The Blancos",
+        album: "Know My Name",
+        genre: "Indie",
+        youtube: "vP1pvwolIbI"
+      },
+      {
+        title: "The Cool Quest",
+        artist: "Goodlife",
+        album: "VIVID",
+        genre: "Hip-Hop/Rap",
+        youtube: "FsYB1bnQaS0"
+      },
+      {
+        title: "Bulletproof Baby",
+        artist: "The Struts",
+        album: "Young & Dangerous",
+        genre: "Rock",
+        youtube: "DS2B3fq2F5U"
+      },
+      {
+        title: "Where It’s At Ain’t What It Is",
+        artist: "Tom Morello feat. Gary Clark Jr. and Nico Stadi",
+        album: "The Atlas Underground",
+        genre: "Indie",
+        youtube: "RSUcfUZfT_k"
+      },
+      {
+        title: "Jumpsuit",
+        artist: "Twenty One Pilots",
+        album: "Trench",
+        genre: "Hard Rock",
+        youtube: "UOUBW8bkjQ4"
+      },
+      {
+        title: "Pulling Leaves Off Trees",
+        artist: "Wallows",
+        album: "Pulling Leaves off Trees",
+        genre: "Indie",
+        youtube: "a_wILUjN0a8"
       }
     ]
   }
-
 ];
