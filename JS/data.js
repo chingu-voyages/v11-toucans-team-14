@@ -114,7 +114,7 @@ const gamesEntries = [
         title:"Habibi",
         artist:"Ghali",
         album:"",
-        genre:"Album",
+        genre:"",
         youtube:"fgt6luBwzz0"
       },
       {
@@ -445,7 +445,7 @@ const gamesEntries = [
       },
       {
         title: "Make The Crowd (NFS Vip Mix)",
-        artist: "	Tropkillaz",
+        artist: "Tropkillaz",
         album: "",
         genre: "Trap",
         youtube: "xpBQgpLcotc"
@@ -2021,13 +2021,6 @@ const gamesEntries = [
         album: "This is The Three Suns",
         genre: "Pop",
         youtube: "pUDv3h09VBc"
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
       }
     ]
   },
@@ -2287,13 +2280,6 @@ const gamesEntries = [
         album: "Britney Jean",
         genre: "Pop",
         youtube: "OpXFaynSHNQ"
-      },
-      {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
       }
 
     ]
@@ -2311,124 +2297,314 @@ const gamesEntries = [
         youtube: "_RDVOYOW-rs"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Cry",
+        artist: "Alison Wonderland & Buddy",
+        album: "Awake",
+        genre: "Dance/Electronic",
+        youtube: "KcirZRptWTI"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "The Life",
+        artist: "Angel The God",
+        album: "Sacrifice",
+        genre: "Hip-Hop/Rap",
+        youtube: "P6jIUMcSNkE"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Speaking Gently",
+        artist: "BADBADNOTGOOD",
+        album: "IV",
+        genre: "Jazz",
+        youtube: "jAM--61-3Qw"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Hands Off My Body",
+        artist: "Ball Park Music",
+        album: "Good Mood",
+        genre: "Rock",
+        youtube: "f7VokfmltY8"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Driftin'",
+        artist: "Bishop Nehru",
+        album: "ELEVATORS: Act I & II",
+        genre: "Hip-Hop/Rap",
+        youtube: "z5Z9Rm5z4qQ"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "The Last One",
+        artist: "Black Veil Brides",
+        album: "Vale",
+        genre: "Rock",
+        youtube: "e0KYYDBnKbk"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "ZIPPER",
+        artist: "Brockhampton",
+        album: "Saturation III",
+        genre: "Hip-Hop/Rap",
+        youtube: "r3J-aQB54GM"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Finesse (Remix) (feat. Cardi B)",
+        artist: "Bruno Mars",
+        album: "24K Magic",
+        genre: "Pop",
+        youtube: "LsoLEjrDogU"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "NoEyeInTeam",
+        artist: "Childish Major",
+        album: "WOO$AH",
+        genre: "Hip-Hop/Rap",
+        youtube: "xhOPiPwpEHQ"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Live On Stage",
+        artist: "Dilated Peoples",
+        album: "Expansion Team",
+        genre: "Hip-Hop/Rap",
+        youtube: "hxOZtXNEjKY"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Ankle Bully",
+        artist: "Dribble2much",
+        album: "Locker Room",
+        genre: "Hip-Hop/Rap",
+        youtube: "EOBPM_M4PAA"
       },
       {
-        title: "",
-        artist: "",
+        title: "New Rules (Alison Wonderland Remix)",
+        artist: "Dua Lipa",
         album: "",
-        genre: "",
-        youtube: ""
+        genre: "Dance/Electronic",
+        youtube: "aSJpnjmqGkY"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Swervin",
+        artist: "Skippa Da Flippa, EMoney One11",
+        album: "Swervin",
+        genre: "Hip-Hop/Rap",
+        youtube: "QKoZY18_R3w"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "The Last of the Real Ones",
+        artist: "Fall Out Boy",
+        album: "Mania",
+        genre: "Punk",
+        youtube: "7YAAyUFL1GQ"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Go Thru Face",
+        artist: "Frisco, Shorty, Jme",
+        album: "Back 2 Da Lab Volume 5",
+        genre: "Hip-Hop/Rap",
+        youtube: "M10ZmEz_uT4"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "Man Now",
+        artist: "G Herbo",
+        album: "Humble Beast",
+        genre: "Hip-Hop/Rap",
+        youtube: "pwdNcS_KpYg"
       },
       {
-        title: "",
-        artist: "",
-        album: "",
-        genre: "",
-        youtube: ""
+        title: "I Can't Hold On",
+        artist: "GTA ft Dillon Francis, Wax Motif, Anna Lunoe",
+        album: "Death To Genres (Vol. 3)",
+        genre: "Hip-Hop/Rap",
+        youtube: "iVG6I4YtSbA"
       },
+       {
+        title: "Chanel",
+        artist: "Higher Brothers",
+        album: "",
+        genre: "Hip-Hop/Rap",
+        youtube: "_tGiigGPs9E"
+      },
+       {
+        title: "Really Got It",
+        artist: "Jerreau",
+        album: "Never How You Plan",
+        genre: "Hip-Hop/Rap",
+        youtube: "=qw3H0tX6CrU"
+      },
+       {
+        title: "Music to My Ears (feat. Tory Lanez)",
+        artist: "Keys N Krates",
+        album: "Cura",
+        genre: "Dance/Electronic",
+        youtube: "71kLtUbADuc"
+      },
+       {
+        title: "Dum Surfer",
+        artist: "King Krule",
+        album: "The Ooz",
+        genre: "Alternative/Indie",
+        youtube: "K5-f1Bnltu8"
+      },
+       {
+        title: "Game Over",
+        artist: "Lil' Flip",
+        album: "U Gotta Feel Me",
+        genre: "Hip-Hop/Rap",
+        youtube: "i7OyKAFu50M"
+      },
+       {
+        title: "Wanna Be a Baller",
+        artist: "Lil' Troy ft Fat Pat, Yungstar, Big T",
+        album: "Sittin' Fat Down South",
+        genre: "Hip-Hop/Rap",
+        youtube: "InGtiEXQyF0"
+      },
+       {
+        title: "Sauce It Up",
+        artist: "Lil Uzi Vert",
+        album: "Luv Is Rage 2",
+        genre: "Hip-Hop/Rap",
+        youtube: "bncb3dm8K7g"
+      },
+       {
+        title: "Fly (feat. Leah Culver)",
+        artist: "Marshmello",
+        album: "Fly",
+        genre: "Dance/Electronic",
+        youtube: "iRSfujpwzkc"
+      },
+       {
+        title: "Stir Fry",
+        artist: "Migos",
+        album: "Culture II",
+        genre: "Hip-Hop/Rap",
+        youtube: "HI-mXMr8glQ"
+      },
+       {
+        title: "Sky Walker (feat. Travis Scott)",
+        artist: "Miguel",
+        album: "War & Leisure",
+        genre: "R&B/Soul",
+        youtube: "76O3w4pt0CA"
+      },
+       {
+        title: "Still Tippin' (feat. Slim Thug & Paul Wall)",
+        artist: "Mike Jones",
+        album: "Who Is Mike Jones?",
+        genre: "Hip-Hop/Rap",
+        youtube: "PM7_V8Hxaqg"
+      },
+       {
+        title: "Damage (feat. Halsey)",
+        artist: "PARTYNEXTDOOR",
+        album: "Seven Days",
+        genre: "R&B/Soul",
+        youtube: "4PPHoCymPEA"
+      },
+       {
+        title: "Rock It",
+        artist: "PRhyme",
+        album: "PRhyme 2",
+        genre: "Hip-Hop/Rap",
+        youtube: "0rkprvDvCB0"
+      },
+      {
+        title: "Attention (feat. Offset)",
+        artist: "Rich Brian",
+        album: "Amen",
+        genre: "Hip-Hop/Rap",
+        youtube: "Ml90FJK-emo"
+      },
+      {
+        title: "Mo Bamba",
+        artist: "Sheck Wes",
+        album: "Mudboy",
+        genre: "Hip-Hop/Rap",
+        youtube: "VWoIpDVkOH0"
+      },
+      {
+        title: "No Security",
+        artist: "Skepta",
+        album: "Vicious EP",
+        genre: "Hip-Hop/Rap",
+        youtube: "f6suaDGWmOo"
+      },
+      {
+        title: "Anti",
+        artist: "SOB X RBE",
+        album: "SOB X RBE",
+        genre: "Hip-Hop/Rap",
+        youtube: "WM5yCRiSQPY"
+      },
+      {
+        title: "Up Right Now (feat. Xavier Omar)",
+        artist: "Supa Bwe",
+        album: "Finally Dead",
+        genre: "Hip-Hop/Rap",
+        youtube: "BBDMXxdnJHg"
+      },
+      {
+        title: "No Escapin' This",
+        artist: "The Beatnuts",
+        album: "Take It or Squeeze It",
+        genre: "Hip-Hop/Rap",
+        youtube: "g8DGrc1uh7I"
+      },
+      {
+        title: "Outstanding",
+        artist: "The Gap Band",
+        album: "Gap Band IV",
+        genre: "Funk",
+        youtube: "MjtOzLfebgY"
+      },
+      {
+        title: "The Mountain",
+        artist: "Three Days Grace",
+        album: "Outsider",
+        genre: "Rock",
+        youtube: "XblV5A1PlDo"
+      },
+      {
+        title: "Mirage",
+        artist: "Toro y Moi",
+        album: "Boo Boo",
+        genre: "Alternative/Indie",
+        youtube: "C6qFBCFZpic"
+      },
+      {
+        title: "Sweet Sweet",
+        artist: "Travis Scott",
+        album: "Birds in the Trap Sing McKnight",
+        genre: "Hip-Hop/Rap",
+        youtube: "o7_4l3xbUtY"
+      },
+      {
+        title: "A-Team",
+        artist: "Travis Scott",
+        album: "A-Team",
+        genre: "Hip-Hop/Rap",
+        youtube: "RsVs7AxqyYo"
+      },
+      {
+        title: "Antidote",
+        artist: "Travis Scott",
+        album: "Rodeo",
+        genre: "Hip-Hop/Rap",
+        youtube: "KnZ8h3MRuYg"
+      },
+      {
+        title: "Dark Knight Dummo (feat. Travis Scott)",
+        artist: "Trippie Redd",
+        album: "LIFE'S A TRIP",
+        genre: "Hip-Hop/Rap",
+        youtube: "wrvN87l3s08"
+      },
+      {
+        title: "Practice",
+        artist: "Young M.A.",
+        album: "Praktice",
+        genre: "Hip-Hop/Rap",
+        youtube: "4wAu7KaMYPg"
+      }
+
 
     ]
   },
